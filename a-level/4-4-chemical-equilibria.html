@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4.4 Chemical Equilibria · Topic 13 – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/4-5-acid-base-equilibria.html" rel="next">
+<link href="../a-level/4-3-energetics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-4-chemical-equilibria.html">4.4 Chemical Equilibria · Topic 13</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals and their Chemistry · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#chemical-equilibria-topic-13" id="toc-chemical-equilibria-topic-13" class="nav-link active" data-scroll-target="#chemical-equilibria-topic-13">4.4 Chemical Equilibria · Topic 13</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#equilibrium-constant-k_c" id="toc-equilibrium-constant-k_c" class="nav-link" data-scroll-target="#equilibrium-constant-k_c">13.1 Equilibrium constant, <span class="math inline">\(K_c\)</span></a>
+  <ul class="collapse">
+  <li><a href="#dynamic-equilibrium" id="toc-dynamic-equilibrium" class="nav-link" data-scroll-target="#dynamic-equilibrium">Dynamic equilibrium</a></li>
+  <li><a href="#deducing-a-k_c-expression" id="toc-deducing-a-k_c-expression" class="nav-link" data-scroll-target="#deducing-a-k_c-expression">Deducing a <span class="math inline">\(K_c\)</span> expression</a></li>
+  <li><a href="#concentration-from-amount" id="toc-concentration-from-amount" class="nav-link" data-scroll-target="#concentration-from-amount">Concentration from amount</a></li>
+  <li><a href="#ice-table" id="toc-ice-table" class="nav-link" data-scroll-target="#ice-table">ICE table</a></li>
+  </ul></li>
+  <li><a href="#equilibrium-constant-k_p" id="toc-equilibrium-constant-k_p" class="nav-link" data-scroll-target="#equilibrium-constant-k_p">13.2 Equilibrium constant, <span class="math inline">\(K_p\)</span></a>
+  <ul class="collapse">
+  <li><a href="#partial-pressure-expression" id="toc-partial-pressure-expression" class="nav-link" data-scroll-target="#partial-pressure-expression">Partial-pressure expression</a></li>
+  <li><a href="#mole-fraction-and-partial-pressure" id="toc-mole-fraction-and-partial-pressure" class="nav-link" data-scroll-target="#mole-fraction-and-partial-pressure">Mole fraction and partial pressure</a></li>
+  </ul></li>
+  <li><a href="#changing-conditions" id="toc-changing-conditions" class="nav-link" data-scroll-target="#changing-conditions">13.4-13.5 Changing conditions</a>
+  <ul class="collapse">
+  <li><a href="#le-chatelier-link" id="toc-le-chatelier-link" class="nav-link" data-scroll-target="#le-chatelier-link">Le Chatelier link</a></li>
+  <li><a href="#changing-concentration" id="toc-changing-concentration" class="nav-link" data-scroll-target="#changing-concentration">Changing concentration</a></li>
+  <li><a href="#changing-pressure" id="toc-changing-pressure" class="nav-link" data-scroll-target="#changing-pressure">Changing pressure</a></li>
+  <li><a href="#adding-a-catalyst" id="toc-adding-a-catalyst" class="nav-link" data-scroll-target="#adding-a-catalyst">Adding a catalyst</a></li>
+  </ul></li>
+  <li><a href="#temperature-and-k" id="toc-temperature-and-k" class="nav-link" data-scroll-target="#temperature-and-k">13.6-13.7 Temperature and <span class="math inline">\(K\)</span></a>
+  <ul class="collapse">
+  <li><a href="#temperature-changes-the-equilibrium-constant" id="toc-temperature-changes-the-equilibrium-constant" class="nav-link" data-scroll-target="#temperature-changes-the-equilibrium-constant">Temperature changes the equilibrium constant</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul></li>
+  <li><a href="#entropy-and-equilibrium-constant" id="toc-entropy-and-equilibrium-constant" class="nav-link" data-scroll-target="#entropy-and-equilibrium-constant">13.8 Entropy and equilibrium constant</a>
+  <ul class="collapse">
+  <li><a href="#delta-s_mathrmtotal-at-different-temperatures" id="toc-delta-s_mathrmtotal-at-different-temperatures" class="nav-link" data-scroll-target="#delta-s_mathrmtotal-at-different-temperatures"><span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> at different temperatures</a></li>
+  <li><a href="#relationship-between-entropy-and-k" id="toc-relationship-between-entropy-and-k" class="nav-link" data-scroll-target="#relationship-between-entropy-and-k">Relationship between entropy and <span class="math inline">\(K\)</span></a></li>
+  </ul></li>
+  <li><a href="#equilibrium-position-and-extent" id="toc-equilibrium-position-and-extent" class="nav-link" data-scroll-target="#equilibrium-position-and-extent">13.9 Equilibrium position and extent</a>
+  <ul class="collapse">
+  <li><a href="#interpreting-the-size-of-k" id="toc-interpreting-the-size-of-k" class="nav-link" data-scroll-target="#interpreting-the-size-of-k">Interpreting the size of <span class="math inline">\(K\)</span></a></li>
+  <li><a href="#equilibrium-and-entropy" id="toc-equilibrium-and-entropy" class="nav-link" data-scroll-target="#equilibrium-and-entropy">Equilibrium and entropy</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a>
+  <ul class="collapse">
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-4-chemical-equilibria.html">4.4 Chemical Equilibria · Topic 13</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">4.4 Chemical Equilibria · Topic 13</h1>
+<p class="subtitle lead">Kc, Kp, changing conditions, entropy and equilibrium position</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="chemical-equilibria-topic-13" class="level1">
+<h1>4.4 Chemical Equilibria · Topic 13</h1>
+<p>本页严格按 Pearson Edexcel International Advanced Level Chemistry specification 的 <strong>Topic 13: Chemical Equilibria</strong> 编排，内容来自项目内的 `4.4 Chemical Equilibria.pdf.pdf`。解释采用中文，专业词汇保留 English，便于和 specification、Data Booklet 及 exam wording 对照。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本章后，你应该能够：</p>
+<ul>
+<li>deduce <span class="math inline">\(K_c\)</span> expressions for homogeneous and heterogeneous equilibria；</li>
+<li>calculate equilibrium concentrations from moles and volume，并求 <span class="math inline">\(K_c\)</span> 及其 units；</li>
+<li>deduce <span class="math inline">\(K_p\)</span> expressions using equilibrium partial pressures；</li>
+<li>use mole fraction 和 total pressure 计算 partial pressure，再求 <span class="math inline">\(K_p\)</span>；</li>
+<li>explain how temperature、pressure、concentration 和 catalyst affect equilibrium composition；</li>
+<li>explain why only temperature changes the value of <span class="math inline">\(K_c\)</span> or <span class="math inline">\(K_p\)</span>；</li>
+<li>use temperature changes to explain changes in <span class="math inline">\(K\)</span> and equilibrium position；</li>
+<li>calculate <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> at different temperatures；</li>
+<li>use <span class="math inline">\(\Delta S_{\mathrm{total}}=R\ln K\)</span> 连接 entropy 与 equilibrium constant；</li>
+<li>use the size of <span class="math inline">\(K\)</span> 判断 equilibrium position 和 reaction extent。</li>
+</ul>
+</section>
+<section id="equilibrium-constant-k_c" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-constant-k_c">13.1 Equilibrium constant, <span class="math inline">\(K_c\)</span></h2>
+<section id="dynamic-equilibrium" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="dynamic-equilibrium">Dynamic equilibrium</h3>
+<p>在 a <strong>closed system</strong> 中，reversible reaction 达到 equilibrium 时：</p>
+<ul>
+<li>forward reaction 和 reverse reaction 仍然同时进行；</li>
+<li>forward rate = reverse rate；</li>
+<li>concentrations 保持 constant，但不一定相等；</li>
+<li>macroscopic properties 不再发生 net change。</li>
+</ul>
+<p>Equilibrium position 指 mixture 中 reactants 和 products 的相对 amounts。它由 thermodynamics 决定，而不是由 reaction rate 决定。</p>
+</section>
+<section id="deducing-a-k_c-expression" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="deducing-a-k_c-expression">Deducing a <span class="math inline">\(K_c\)</span> expression</h3>
+<p>对于 general equilibrium：</p>
+<p><span class="math display">\[
+\ce{aA + bB &lt;=&gt; cC + dD}
+\]</span></p>
+<p>equilibrium constant expression 为：</p>
+<p><span class="math display">\[
+K_c=\frac{[\ce{C}]^c[\ce{D}]^d}
+{[\ce{A}]^a[\ce{B}]^b}
+\]</span></p>
+<p>方括号表示 equilibrium concentration，单位通常为 <span class="math inline">\(\mathrm{mol\,dm^{-3}}\)</span>。Balanced equation 中的 stoichiometric coefficients 变成 concentration 的 powers。</p>
+<p>Pure solids 和 pure liquids 通常不写入 equilibrium expression，因为它们的 effective concentration 近似 constant。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/equilibria/kc-equilibrium-expression.webp" class="concept-figure img-fluid figure-img" alt="General Kc equilibrium expression and definitions"></p>
+<figcaption>General equilibrium expression for Kc</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · writing <span class="math inline">\(K_c\)</span> expressions</span></p>
+<p>写出以下 equilibria 的 <span class="math inline">\(K_c\)</span> expression：</p>
+<ol type="1">
+<li><span class="math inline">\(\ce{Ag+(aq) + Fe^{2+}(aq) &lt;=&gt; Ag(s) + Fe^{3+}(aq)}\)</span></li>
+<li><span class="math inline">\(\ce{N2(g) + 3H2(g) &lt;=&gt; 2NH3(g)}\)</span></li>
+<li><span class="math inline">\(\ce{2SO2(g) + O2(g) &lt;=&gt; 2SO3(g)}\)</span></li>
+</ol>
+<div class="we-answer">
+<p><span class="math display">\[
+K_c=\frac{[\ce{Fe^{3+}}]}
+{[\ce{Ag+}][\ce{Fe^{2+}}]}
+\]</span></p>
+<p><span class="math inline">\(\ce{Ag(s)}\)</span> 是 pure solid，因此 omit。</p>
+<p><span class="math display">\[
+K_c=\frac{[\ce{NH3}]^2}
+{[\ce{N2}][\ce{H2}]^3}
+\]</span></p>
+<p><span class="math display">\[
+K_c=\frac{[\ce{SO3}]^2}
+{[\ce{SO2}]^2[\ce{O2}]}
+\]</span></p>
+</div>
+</div>
+<section id="concentration-from-amount" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="concentration-from-amount">Concentration from amount</h3>
+<p>如果题目给出 moles 和 total volume：</p>
+<p><span class="math display">\[
+[\text{species}]
+=\frac{\text{number of moles}}{\text{volume in }\mathrm{dm^3}}
+\]</span></p>
+<p>先把 <span class="math inline">\(\mathrm{cm^3}\)</span> 换成 <span class="math inline">\(\mathrm{dm^3}\)</span>，再代入 <span class="math inline">\(K_c\)</span> expression。<span class="math inline">\(K_c\)</span> 的 units 取决于 expression 的 powers；有些 calculation 中 units 会完全 cancel。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · calculating <span class="math inline">\(K_c\)</span> from equilibrium data</span></p>
+<p>对于 esterification：</p>
+<p><span class="math display">\[
+\ce{CH3COOH(l) + C2H5OH(l) &lt;=&gt; CH3COOC2H5(l) + H2O(l)}
+\]</span></p>
+<p>在 <span class="math inline">\(0.500\ \mathrm{dm^3}\)</span> reaction mixture 中，equilibrium moles 为：</p>
+<p><span class="math display">\[
+n(\ce{CH3COOH})=0.235,\quad n(\ce{C2H5OH})=0.035
+\]</span></p>
+<p><span class="math display">\[
+n(\ce{CH3COOC2H5})=0.182,\quad n(\ce{H2O})=0.182
+\]</span></p>
+<div class="we-answer">
+<p>Equilibrium concentrations：</p>
+<p><span class="math display">\[
+[\ce{CH3COOH}]=\frac{0.235}{0.500}=0.470
+\]</span></p>
+<p><span class="math display">\[
+[\ce{C2H5OH}]=\frac{0.035}{0.500}=0.070
+\]</span></p>
+<p><span class="math display">\[
+[\ce{CH3COOC2H5}]
+=[\ce{H2O}]
+=\frac{0.182}{0.500}=0.364
+\]</span></p>
+<p>代入：</p>
+<p><span class="math display">\[
+K_c=\frac{[0.364][0.364]}{[0.470][0.070]}
+=4.03
+\]</span></p>
+<p>四个 concentration terms 的 units cancel，因此 <span class="math inline">\(K_c=4.03\)</span> 无 units。</p>
+</div>
+</div>
+<section id="ice-table" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="ice-table">ICE table</h3>
+<p>如果只给 initial data 和一个 equilibrium concentration，可以使用 <strong>ICE table</strong>：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Reactants</th>
+<th>Products</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial</td>
+<td>initial amount / concentration</td>
+<td>initial amount / concentration</td>
+</tr>
+<tr class="even">
+<td>Change</td>
+<td>根据 stoichiometric ratio 减少</td>
+<td>根据 stoichiometric ratio 增加</td>
+</tr>
+<tr class="odd">
+<td>Equilibrium</td>
+<td>initial + change</td>
+<td>initial + change</td>
+</tr>
+</tbody>
+</table>
+<p>先确定 limiting change，再按 balanced equation 的 coefficients 推出其他 species 的 change。最后把 equilibrium values 换成 concentration，代入 <span class="math inline">\(K_c\)</span>。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · ICE table</span></p>
+<p>Ethyl ethanoate hydrolysis：</p>
+<p><span class="math display">\[
+\ce{CH3COOC2H5(l) + H2O(l) &lt;=&gt; CH3COOH(l) + C2H5OH(l)}
+\]</span></p>
+<p>开始时有 <span class="math inline">\(0.1000\)</span> mol ester 和 <span class="math inline">\(0.1000\)</span> mol water，volume 为 <span class="math inline">\(1.00\ \mathrm{dm^3}\)</span>。Equilibrium 时 water 为 <span class="math inline">\(0.0654\)</span> mol。</p>
+<div class="we-answer">
+<p>Water 消耗：</p>
+<p><span class="math display">\[
+0.1000-0.0654=0.0346\ \mathrm{mol}
+\]</span></p>
+<p>由 <span class="math inline">\(1:1:1:1\)</span> stoichiometric ratio：</p>
+<p><span class="math display">\[
+n(\ce{CH3COOC2H5})=n(\ce{H2O})=0.0654
+\]</span></p>
+<p><span class="math display">\[
+n(\ce{CH3COOH})=n(\ce{C2H5OH})=0.0346
+\]</span></p>
+<p>因为 volume 为 <span class="math inline">\(1.00\ \mathrm{dm^3}\)</span>，这些数值也就是 concentrations：</p>
+<p><span class="math display">\[
+K_c=\frac{[0.0346][0.0346]}{[0.0654][0.0654]}
+=0.280
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="equilibrium-constant-k_p" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-constant-k_p">13.2 Equilibrium constant, <span class="math inline">\(K_p\)</span></h2>
+<section id="partial-pressure-expression" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="partial-pressure-expression">Partial-pressure expression</h3>
+<p>对于 all-gas equilibrium：</p>
+<p><span class="math display">\[
+\ce{aA(g) + bB(g) &lt;=&gt; cC(g) + dD(g)}
+\]</span></p>
+<p><span class="math display">\[
+K_p=\frac{(p_{\ce{C}})^c(p_{\ce{D}})^d}
+{(p_{\ce{A}})^a(p_{\ce{B}})^b}
+\]</span></p>
+<p><span class="math inline">\(p_i\)</span> 是 equilibrium partial pressure。Pure solids 和 pure liquids 同样 omit；只有 gaseous species 出现在 <span class="math inline">\(K_p\)</span> expression 中。</p>
+<p>本章笔记中使用 Pa 或 kPa 表示 pressure，实际 exam 应按题目给出的 pressure unit 保持一致。<span class="math inline">\(K_p\)</span> 的 units 取决于 total powers。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · writing <span class="math inline">\(K_p\)</span> expressions</span></p>
+<ol type="1">
+<li><span class="math inline">\(\ce{N2(g) + 3H2(g) &lt;=&gt; 2NH3(g)}\)</span></li>
+</ol>
+<p><span class="math display">\[
+K_p=\frac{(p_{\ce{NH3}})^2}
+{p_{\ce{N2}}(p_{\ce{H2}})^3}
+\]</span></p>
+<ol start="2" type="1">
+<li><span class="math inline">\(\ce{CaCO3(s) &lt;=&gt; CaO(s) + CO2(g)}\)</span></li>
+</ol>
+<p><span class="math display">\[
+K_p=p_{\ce{CO2}}
+\]</span></p>
+<p>两种 solids 都被 omit。</p>
+</div>
+<section id="mole-fraction-and-partial-pressure" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="mole-fraction-and-partial-pressure">Mole fraction and partial pressure</h3>
+<p>如果题目给出 moles 和 total pressure，先求 mole fraction：</p>
+<p><span class="math display">\[
+x_i=\frac{n_i}{n_{\mathrm{total}}}
+\]</span></p>
+<p>再求 partial pressure：</p>
+<p><span class="math display">\[
+p_i=x_i p_{\mathrm{total}}
+\]</span></p>
+<p>最后把 equilibrium partial pressures 代入 <span class="math inline">\(K_p\)</span> expression。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · calculating <span class="math inline">\(K_p\)</span></span></p>
+<p>对于：</p>
+<p><span class="math display">\[
+\ce{H2(g) + I2(g) &lt;=&gt; 2HI(g)}
+\]</span></p>
+<p>在 equilibrium 时：</p>
+<p><span class="math display">\[
+n(\ce{H2})=1.71\times10^{-3},\quad
+n(\ce{I2})=2.91\times10^{-3}
+\]</span></p>
+<p><span class="math display">\[
+n(\ce{HI})=1.65\times10^{-2}
+\]</span></p>
+<p>total pressure 为 <span class="math inline">\(100\ \mathrm{kPa}\)</span>。</p>
+<div class="we-answer">
+<p><span class="math display">\[
+n_{\mathrm{total}}=2.112\times10^{-2}\ \mathrm{mol}
+\]</span></p>
+<p>Mole fractions：</p>
+<p><span class="math display">\[
+x_{\ce{H2}}=0.0810,\quad x_{\ce{I2}}=0.1378,\quad x_{\ce{HI}}=0.7813
+\]</span></p>
+<p>Partial pressures：</p>
+<p><span class="math display">\[
+p_{\ce{H2}}=8.10,\quad p_{\ce{I2}}=13.78,\quad p_{\ce{HI}}=78.13\ \mathrm{kPa}
+\]</span></p>
+<p>因此：</p>
+<p><span class="math display">\[
+K_p=\frac{(78.13)^2}{(8.10)(13.78)}
+=54.7
+\]</span></p>
+<p>pressure powers 相同，所以 units cancel。</p>
+</div>
+</div>
+</section>
+<section id="changing-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="changing-conditions">13.4-13.5 Changing conditions</h2>
+<section id="le-chatelier-link" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="le-chatelier-link">Le Chatelier link</h3>
+<p>当 equilibrium system 受到 change of conditions 的 disturbance，equilibrium position 会移动，产生 opposing change。这个 principle 可以帮助解释 composition 的改变，但要区分：</p>
+<ul>
+<li>equilibrium position 改变；</li>
+<li>numerical value of <span class="math inline">\(K\)</span> 改变。</li>
+</ul>
+<p><strong>只有 temperature change 会改变 <span class="math inline">\(K_c\)</span> 或 <span class="math inline">\(K_p\)</span> 的 value。</strong> Concentration、pressure 和 catalyst 会改变 equilibrium position 或达到 equilibrium 的速度，但不会改变 <span class="math inline">\(K\)</span>。</p>
+</section>
+<section id="changing-concentration" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="changing-concentration">Changing concentration</h3>
+<p>增加某 species 的 concentration 后，system 会 shift away from that species，直到恢复 equilibrium ratio。移除某 species 时，system 会 shift towards that species。</p>
+<p>但新的 equilibrium position 只是在恢复原来的 <span class="math inline">\(K\)</span> value；<span class="math inline">\(K\)</span> 本身不变。</p>
+</section>
+<section id="changing-pressure" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="changing-pressure">Changing pressure</h3>
+<p>Pressure changes 只对 gas molecules 参与的 equilibrium 有影响：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Change</th>
+<th>Equilibrium shift</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Increase pressure</td>
+<td>shift towards side with fewer moles of gas</td>
+</tr>
+<tr class="even">
+<td>Decrease pressure</td>
+<td>shift towards side with more moles of gas</td>
+</tr>
+<tr class="odd">
+<td>Equal gaseous moles on both sides</td>
+<td>no position shift</td>
+</tr>
+</tbody>
+</table>
+<p>对于 <span class="math inline">\(\ce{N2(g) + 3H2(g) &lt;=&gt; 2NH3(g)}\)</span>，increase pressure 会 shift right，因为右侧只有 2 moles gas，左侧有 4 moles gas。</p>
+<p>Pressure 改变不会改变 <span class="math inline">\(K_p\)</span> value；system 通过 shift 到新的 composition 恢复相同的 <span class="math inline">\(K_p\)</span>。</p>
+</section>
+<section id="adding-a-catalyst" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="adding-a-catalyst">Adding a catalyst</h3>
+<p>Catalyst 同时加快 forward 和 reverse reactions，且加快程度相同。因此：</p>
+<ul>
+<li>equilibrium position 不变；</li>
+<li><span class="math inline">\(K_c\)</span> / <span class="math inline">\(K_p\)</span> value 不变；</li>
+<li>只会更快达到 equilibrium。</li>
+</ul>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · which condition changes <span class="math inline">\(K\)</span>?</span></p>
+<p>对于：</p>
+<p><span class="math display">\[
+\ce{AB(aq) + CD(aq) &lt;=&gt; AC(aq) + BD(aq)}
+\]</span></p>
+<p>如果 reaction 的 <span class="math inline">\(\Delta H=+180\ \mathrm{kJ\,mol^{-1}}\)</span>，哪些 changes 会改变 <span class="math inline">\(K_c\)</span>？</p>
+<div class="we-answer">
+<p>只有 <strong>temperature change</strong> 会改变 <span class="math inline">\(K_c\)</span>。由于 forward direction 是 endothermic，increase temperature 会使 equilibrium shift right，并使 <span class="math inline">\(K_c\)</span> increase。</p>
+<p>Changing concentration、pressure 或 adding a catalyst 都不会改变 <span class="math inline">\(K_c\)</span>。</p>
+</div>
+</div>
+</section>
+<section id="temperature-and-k" class="level2">
+<h2 class="anchored" data-anchor-id="temperature-and-k">13.6-13.7 Temperature and <span class="math inline">\(K\)</span></h2>
+<section id="temperature-changes-the-equilibrium-constant" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="temperature-changes-the-equilibrium-constant">Temperature changes the equilibrium constant</h3>
+<p>把 heat 看作 equation 中的 reactant 或 product：</p>
+<ul>
+<li>forward reaction endothermic：heat 在左侧，increase temperature shift right，<span class="math inline">\(K\)</span> increase；</li>
+<li>forward reaction exothermic：heat 在右侧，increase temperature shift left，<span class="math inline">\(K\)</span> decrease。</li>
+</ul>
+<p>对于 endothermic reaction，temperature 增加会增加 products / reactants ratio，因此 <span class="math inline">\(K_c\)</span> 和 <span class="math inline">\(K_p\)</span> 增加。对于 exothermic reaction，temperature 增加会使该 ratio 减小，因此 <span class="math inline">\(K\)</span> 减小。</p>
+</section>
+<section id="summary" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Forward reaction</th>
+<th>Increase temperature</th>
+<th>Value of <span class="math inline">\(K\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>endothermic</td>
+<td>shift in forward direction</td>
+<td>increase</td>
+</tr>
+<tr class="even">
+<td>exothermic</td>
+<td>shift in reverse direction</td>
+<td>decrease</td>
+</tr>
+</tbody>
+</table>
+<p>Decrease temperature 的 effect 相反。</p>
+</section>
+</section>
+<section id="entropy-and-equilibrium-constant" class="level2">
+<h2 class="anchored" data-anchor-id="entropy-and-equilibrium-constant">13.8 Entropy and equilibrium constant</h2>
+<section id="delta-s_mathrmtotal-at-different-temperatures" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="delta-s_mathrmtotal-at-different-temperatures"><span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> at different temperatures</h3>
+<p>对于 reaction：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=\Delta S_{\mathrm{system}}
++\Delta S_{\mathrm{surroundings}}
+\]</span></p>
+<p>并且：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}=-\frac{\Delta H}{T}
+\]</span></p>
+<p>当 temperature 改变时，<span class="math inline">\(\Delta S_{\mathrm{system}}\)</span> 通常变化不大，除非 reactants / products 发生 change of state；但 <span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span> 会明显变化，因为它与 <span class="math inline">\(1/T\)</span> 有关。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · feasibility at different temperatures</span></p>
+<p>判断以下 reaction 在 <span class="math inline">\(293\ \mathrm{K}\)</span> 与 <span class="math inline">\(1173\ \mathrm{K}\)</span> 是否 spontaneous：</p>
+<p><span class="math display">\[
+\ce{CaCO3(s) -&gt; CaO(s) + CO2(g)}
+\]</span></p>
+<p>已知：</p>
+<p><span class="math display">\[
+\Delta H=+177.9\ \mathrm{kJ\,mol^{-1}},\quad
+\Delta S_{\mathrm{system}}=+160.4\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<div class="we-answer">
+<p>在 <span class="math inline">\(293\ \mathrm{K}\)</span>：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}
+= -\frac{177900}{293}
+=-607.2\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=160.4-607.2
+=-446.8\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>Not spontaneous。</p>
+<p>在 <span class="math inline">\(1173\ \mathrm{K}\)</span>：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}
+=-\frac{177900}{1173}
+=-151.7\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=160.4-151.7
+=+8.7\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>Spontaneous at <span class="math inline">\(1173\ \mathrm{K}\)</span>。</p>
+</div>
+</div>
+<section id="relationship-between-entropy-and-k" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="relationship-between-entropy-and-k">Relationship between entropy and <span class="math inline">\(K\)</span></h3>
+<p>Specification 给出的 relationship 为：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}=R\ln K
+\]</span></p>
+<p>因此：</p>
+<p><span class="math display">\[
+\ln K=\frac{\Delta S_{\mathrm{total}}}{R}
+\]</span></p>
+<p><span class="math display">\[
+K=e^{\Delta S_{\mathrm{total}}/R}
+\]</span></p>
+<p>其中 <span class="math inline">\(R\)</span> 是 gas constant。<span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> 越 positive，<span class="math inline">\(K\)</span> 越 large，equilibrium position 越偏向 products。</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/equilibria/entropy-equilibrium-position.webp" class="concept-figure img-fluid figure-img" alt="Entropy changes for mixtures moving toward equilibrium"></p>
+<figcaption>Entropy and equilibrium position</figcaption>
+</figure>
+</div>
+</section>
+<section id="equilibrium-position-and-extent" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-position-and-extent">13.9 Equilibrium position and extent</h2>
+<section id="interpreting-the-size-of-k" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="interpreting-the-size-of-k">Interpreting the size of <span class="math inline">\(K\)</span></h3>
+<p><span class="math inline">\(K\)</span> 的大小可以帮助判断 reaction extent：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Value of <span class="math inline">\(K\)</span></th>
+<th>Equilibrium position</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">very large</td>
+<td>far to the right</td>
+<td>products predominate</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">very small</td>
+<td>far to the left</td>
+<td>reactants predominate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">around 1</td>
+<td>between both sides</td>
+<td>appreciable amounts of both remain</td>
+</tr>
+</tbody>
+</table>
+<p>这不是 absolute rule；要结合 stoichiometry、units、initial composition 和题目给出的 data。<span class="math inline">\(K\)</span> 只适用于指定 temperature。</p>
+</section>
+<section id="equilibrium-and-entropy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="equilibrium-and-entropy">Equilibrium and entropy</h3>
+<p>Reversible reaction 可以从 either side approach equilibrium。到 equilibrium 时，forward 和 backward net entropy changes balance；在 note 的 convention 中：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total,forward}}
+=\Delta S_{\mathrm{total,backward}}
+\]</span></p>
+<p>并且 equilibrium mixture 不能继续向 reactants 或 products 完全推进，因为从 equilibrium mixture 到任一端点的 entropy change 会变成 negative。</p>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="study-card">
+<ul class="checklist">
+<li>
+<label><input type="checkbox"> 我能从 balanced equation 写出正确的 <span class="math inline">\(K_c\)</span> expression，并 omit pure solids / liquids。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 moles、volume 和 ICE table 求 equilibrium concentrations。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能正确处理 <span class="math inline">\(K_c\)</span> 的 units 或判断 units cancel。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能写出 <span class="math inline">\(K_p\)</span> expression，并用 mole fraction 求 partial pressure。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能区分 equilibrium position 改变与 <span class="math inline">\(K\)</span> value 改变。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能解释 temperature、pressure、concentration 和 catalyst 的 effects。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能判断 endothermic / exothermic reaction 中 temperature 对 <span class="math inline">\(K\)</span> 的影响。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能计算不同 temperature 下的 <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span>。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能使用 <span class="math inline">\(\Delta S_{\mathrm{total}}=R\ln K\)</span> 解释 equilibrium position。</label>
+</li>
+</ul>
+</div>
+<section id="source-note" class="level3">
+<h3 class="anchored" data-anchor-id="source-note">Source note</h3>
+<p>本页章节素材来自项目内的 `Note per Chapter/Note per Chapter/4.4 Chemical Equilibria.pdf.pdf`；考纲校对来自 `International-A-Level-Chemistry-Spec.pdf` 的 <strong>Topic 13: Chemical Equilibria</strong>。图像已从 PDF 内嵌对象独立提取并存放在 `assets/notes/equilibria/`。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/4-3-energetics.html" class="pagination-link" aria-label="4.3 Energetics · Topic 12B">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.3 Energetics · Topic 12B</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/4-5-acid-base-equilibria.html" class="pagination-link" aria-label="4.5 Acid-base Equilibria · Topic 14">
+        <span class="nav-page-text">4.5 Acid-base Equilibria · Topic 14</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

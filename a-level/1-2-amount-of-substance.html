@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1.2 Amount of Substance – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/3-1-physical-chemistry-core-practicals.html" rel="next">
+<link href="../a-level/1-1-formulae-equations.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/1-1-formulae-equations.html">Unit 1 · Formulae, Structure and Bonding</a></li><li class="breadcrumb-item"><a href="../a-level/1-2-amount-of-substance.html">1.2 Amount of Substance</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 1 · Formulae, Structure and Bonding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-1-formulae-equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Formulae and Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-2-amount-of-substance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1.2 Amount of Substance</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 3 · Physical Chemistry Core Practicals</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-2-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals - Complexes · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-3-transition-metal-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Transition Metal Reactions · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 6 · Advanced Practical Chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Advanced Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-2-advanced-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Advanced Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#amount-of-substance" id="toc-amount-of-substance" class="nav-link active" data-scroll-target="#amount-of-substance">1.2 Amount of Substance</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#concentration-calculations" id="toc-concentration-calculations" class="nav-link" data-scroll-target="#concentration-calculations">1.2.1 Concentration calculations</a>
+  <ul class="collapse">
+  <li><a href="#amount-of-substance-in-solution" id="toc-amount-of-substance-in-solution" class="nav-link" data-scroll-target="#amount-of-substance-in-solution">Amount of substance in solution</a></li>
+  <li><a href="#mass-concentration" id="toc-mass-concentration" class="nav-link" data-scroll-target="#mass-concentration">Mass concentration</a></li>
+  <li><a href="#worked-examplesodium-chloride-solution" id="toc-worked-examplesodium-chloride-solution" class="nav-link" data-scroll-target="#worked-examplesodium-chloride-solution">Worked example：sodium chloride solution</a></li>
+  <li><a href="#unit-conversions" id="toc-unit-conversions" class="nav-link" data-scroll-target="#unit-conversions">Unit conversions</a></li>
+  <li><a href="#parts-per-million-ppm" id="toc-parts-per-million-ppm" class="nav-link" data-scroll-target="#parts-per-million-ppm">Parts per million (ppm)</a></li>
+  </ul></li>
+  <li><a href="#reacting-mass-calculations" id="toc-reacting-mass-calculations" class="nav-link" data-scroll-target="#reacting-mass-calculations">1.2.2 Reacting mass calculations</a>
+  <ul class="collapse">
+  <li><a href="#standard-method" id="toc-standard-method" class="nav-link" data-scroll-target="#standard-method">Standard method</a></li>
+  <li><a href="#worked-examplemagnesium-oxide" id="toc-worked-examplemagnesium-oxide" class="nav-link" data-scroll-target="#worked-examplemagnesium-oxide">Worked example：magnesium oxide</a></li>
+  <li><a href="#large-scale-mass-calculations" id="toc-large-scale-mass-calculations" class="nav-link" data-scroll-target="#large-scale-mass-calculations">Large-scale mass calculations</a></li>
+  <li><a href="#balancing-and-reacting-masses" id="toc-balancing-and-reacting-masses" class="nav-link" data-scroll-target="#balancing-and-reacting-masses">Balancing and reacting masses</a></li>
+  </ul></li>
+  <li><a href="#reacting-volume-calculations" id="toc-reacting-volume-calculations" class="nav-link" data-scroll-target="#reacting-volume-calculations">1.2.3 Reacting volume calculations</a>
+  <ul class="collapse">
+  <li><a href="#molar-gas-volume" id="toc-molar-gas-volume" class="nav-link" data-scroll-target="#molar-gas-volume">Molar gas volume</a></li>
+  <li><a href="#worked-examplegas-volume-from-moles" id="toc-worked-examplegas-volume-from-moles" class="nav-link" data-scroll-target="#worked-examplegas-volume-from-moles">Worked example：gas volume from moles</a></li>
+  <li><a href="#reacting-gas-volumes" id="toc-reacting-gas-volumes" class="nav-link" data-scroll-target="#reacting-gas-volumes">Reacting gas volumes</a></li>
+  <li><a href="#ideal-gas-equation" id="toc-ideal-gas-equation" class="nav-link" data-scroll-target="#ideal-gas-equation">Ideal gas equation</a></li>
+  <li><a href="#worked-exampleideal-gas-volume" id="toc-worked-exampleideal-gas-volume" class="nav-link" data-scroll-target="#worked-exampleideal-gas-volume">Worked example：ideal gas volume</a></li>
+  </ul></li>
+  <li><a href="#calculations-of-product" id="toc-calculations-of-product" class="nav-link" data-scroll-target="#calculations-of-product">1.2.4 Calculations of product</a>
+  <ul class="collapse">
+  <li><a href="#limiting-reactant-and-theoretical-yield" id="toc-limiting-reactant-and-theoretical-yield" class="nav-link" data-scroll-target="#limiting-reactant-and-theoretical-yield">Limiting reactant and theoretical yield</a></li>
+  <li><a href="#percentage-yield" id="toc-percentage-yield" class="nav-link" data-scroll-target="#percentage-yield">Percentage yield</a></li>
+  <li><a href="#atom-economy" id="toc-atom-economy" class="nav-link" data-scroll-target="#atom-economy">Atom economy</a></li>
+  <li><a href="#percentage-yield-vs-atom-economy" id="toc-percentage-yield-vs-atom-economy" class="nav-link" data-scroll-target="#percentage-yield-vs-atom-economy">Percentage yield vs atom economy</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a></li>
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/1-1-formulae-equations.html">Unit 1 · Formulae, Structure and Bonding</a></li><li class="breadcrumb-item"><a href="../a-level/1-2-amount-of-substance.html">1.2 Amount of Substance</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">1.2 Amount of Substance</h1>
+<p class="subtitle lead">Concentration, reacting quantities, gas volumes and yield</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="amount-of-substance" class="level1">
+<h1>1.2 Amount of Substance</h1>
+<p>本页对应 <code>1.2 Amount of Substance.pdf.pdf</code>，整理 amount of substance 的四类 calculation：concentration、reacting masses、reacting gas volumes，以及 percentage yield / atom economy。专业词汇保留 English，所有 calculation 都先写 balanced equation，再进行 mole-ratio conversion。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本页后，你应该能够：</p>
+<ul>
+<li>calculate amount of substance from mass、concentration、gas volume、pressure and temperature；</li>
+<li>convert between mass concentration <code>g dm⁻³</code> and molar concentration <code>mol dm⁻³</code>；</li>
+<li>use mole ratios from a balanced equation to calculate reacting masses；</li>
+<li>calculate gas volume at room conditions and use the ideal gas equation；</li>
+<li>identify the limiting reactant and calculate theoretical yield；</li>
+<li>calculate percentage yield、atom economy and explain their economic importance。</li>
+</ul>
+</section>
+<section id="concentration-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="concentration-calculations">1.2.1 Concentration calculations</h2>
+<section id="amount-of-substance-in-solution" class="level3">
+<h3 class="anchored" data-anchor-id="amount-of-substance-in-solution">Amount of substance in solution</h3>
+<p>For a solute dissolved in a measured volume of solution：</p>
+<p><span class="math display">\[
+n=\frac{m}{M_r}
+\]</span></p>
+<p>where <code>n</code> is amount in <code>mol</code>，<code>m</code> is mass in <code>g</code>，and <code>Mᵣ</code> is molar mass in <code>g mol⁻¹</code>。</p>
+<p>If concentration is given in <code>mol dm⁻³</code>，use：</p>
+<p><span class="math display">\[
+n=cV
+\]</span></p>
+<p>where <code>c</code> is molar concentration in <code>mol dm⁻³</code> and <code>V</code> is volume in <code>dm³</code>。</p>
+<p>Therefore：</p>
+<p><span class="math display">\[
+c=\frac{n}{V}=\frac{m}{M_rV}
+\]</span></p>
+</section>
+<section id="mass-concentration" class="level3">
+<h3 class="anchored" data-anchor-id="mass-concentration">Mass concentration</h3>
+<p>Mass concentration tells us the mass of solute in each <code>dm³</code> of solution：</p>
+<p><span class="math display">\[
+\text{mass concentration}=\frac{\text{mass of solute in g}}{\text{volume of solution in dm}^3}
+\]</span></p>
+<p>Units are <code>g dm⁻³</code>。To convert mass concentration into molar concentration，divide by the molar mass：</p>
+<p><span class="math display">\[
+c(\mathrm{mol\ dm^{-3}})=\frac{\text{mass concentration (g dm}^{-3})}{M_r(\mathrm{g\ mol^{-1}})}
+\]</span></p>
+</section>
+<section id="worked-examplesodium-chloride-solution" class="level3">
+<h3 class="anchored" data-anchor-id="worked-examplesodium-chloride-solution">Worked example：sodium chloride solution</h3>
+<p><code>6.34 g</code> of <code>NaCl</code> is dissolved to make <code>250 cm³</code> of solution。</p>
+<ol type="1">
+<li>Convert the volume：</li>
+</ol>
+<p><span class="math display">\[
+250\ \mathrm{cm^3}=0.250\ \mathrm{dm^3}
+\]</span></p>
+<ol start="2" type="1">
+<li>Calculate mass concentration：</li>
+</ol>
+<p><span class="math display">\[
+\frac{6.34}{0.250}=25.4\ \mathrm{g\ dm^{-3}}
+\]</span></p>
+<ol start="3" type="1">
+<li>Calculate molar concentration using <code>Mᵣ(NaCl) = 58.5</code>：</li>
+</ol>
+<p><span class="math display">\[
+c=\frac{25.4}{58.5}=0.434\ \mathrm{mol\ dm^{-3}}
+\]</span></p>
+</section>
+<section id="unit-conversions" class="level3">
+<h3 class="anchored" data-anchor-id="unit-conversions">Unit conversions</h3>
+<p>Use these conversions carefully：</p>
+<p><span class="math display">\[
+1\ \mathrm{dm^3}=1000\ \mathrm{cm^3},\qquad 1\ \mathrm{cm^3}=1\ \mathrm{mL}
+\]</span></p>
+<p>Thus，to convert <code>cm³</code> to <code>dm³</code>，divide by <code>1000</code>；to convert <code>dm³</code> to <code>cm³</code>，multiply by <code>1000</code>。</p>
+</section>
+<section id="parts-per-million-ppm" class="level3">
+<h3 class="anchored" data-anchor-id="parts-per-million-ppm">Parts per million (ppm)</h3>
+<p>For a very dilute gas or pollutant，concentration may be expressed as parts per million：</p>
+<p><span class="math display">\[
+\text{concentration in ppm}=\frac{\text{volume of gas}}{\text{volume of air}}\times10^6
+\]</span></p>
+<p>For example，<code>2.5 cm³</code> of a gas in <code>10 000 cm³</code> of air gives：</p>
+<p><span class="math display">\[
+\frac{2.5}{10000}\times10^6=250\ \mathrm{ppm}
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">提示</span>Concentration checklist
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before substituting，check whether the question asks for mass concentration or molar concentration，and whether volume is in <code>cm³</code> or <code>dm³</code>。A concentration in <code>g dm⁻³</code> is not the same quantity as one in <code>mol dm⁻³</code>。</p>
+</div>
+</div>
+</section>
+</section>
+<section id="reacting-mass-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="reacting-mass-calculations">1.2.2 Reacting mass calculations</h2>
+<p>The coefficients in a balanced chemical equation give the mole ratio of reactants and products. They do <strong>not</strong> directly give a mass ratio because different substances have different molar masses。</p>
+<section id="standard-method" class="level3">
+<h3 class="anchored" data-anchor-id="standard-method">Standard method</h3>
+<ol type="1">
+<li>Write and balance the equation。</li>
+<li>Convert the known mass into moles using <code>n = m/Mᵣ</code>。</li>
+<li>Use the balanced-equation ratio to find moles of the required substance。</li>
+<li>Convert moles into mass using <code>m = nMᵣ</code>。</li>
+<li>Check units and significant figures。</li>
+</ol>
+</section>
+<section id="worked-examplemagnesium-oxide" class="level3">
+<h3 class="anchored" data-anchor-id="worked-examplemagnesium-oxide">Worked example：magnesium oxide</h3>
+<p>Calculate the mass of <code>MgO</code> made from <code>6.0 g</code> of magnesium。</p>
+<p><span class="math display">\[
+\ce{2Mg(s) + O2(g) -&gt; 2MgO(s)}
+\]</span></p>
+<p>The mole ratio <code>Mg : MgO</code> is <code>2 : 2</code>, which simplifies to <code>1 : 1</code>。</p>
+<p><span class="math display">\[
+n(\ce{Mg})=\frac{6.0}{24.0}=0.25\ \mathrm{mol}
+\]</span></p>
+<p>Therefore，<code>n(MgO) = 0.25 mol</code> and：</p>
+<p><span class="math display">\[
+m(\ce{MgO})=0.25\times40.0=10.0\ \mathrm{g}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/amount-of-substance/reacting-mass-magnesium-oxide-steps.png" class="concept-figure img-fluid figure-img" alt="Step-by-step reacting mass calculation for magnesium oxide"></p>
+<figcaption>Reacting mass magnesium oxide calculation</figcaption>
+</figure>
+</div>
+</section>
+<section id="large-scale-mass-calculations" class="level3">
+<h3 class="anchored" data-anchor-id="large-scale-mass-calculations">Large-scale mass calculations</h3>
+<p>The same method applies when values are given in tonnes or kilograms. Keep the mass unit consistent until the final conversion：</p>
+<p><span class="math display">\[
+1\ \mathrm{tonne}=10^6\ \mathrm{g}
+\]</span></p>
+<p>For example，<code>51,000,000 g</code> of <code>\ce{Al2O3}</code> is <code>500,000 mol</code> because <code>Mᵣ(\ce{Al2O3}) = 102</code>。From：</p>
+<p><span class="math display">\[
+\ce{2Al2O3 -&gt; 4Al}
+\]</span></p>
+<p>the mole ratio <code>Al₂O₃ : Al</code> is <code>1 : 2</code>，so the amount of aluminium is <code>1,000,000 mol</code> and its mass is <code>27,000,000 g = 27 tonnes</code>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/amount-of-substance/reacting-mass-aluminium-oxide-steps.png" class="concept-figure img-fluid figure-img" alt="Step-by-step reacting mass calculation for aluminium from aluminium oxide"></p>
+<figcaption>Reacting mass aluminium oxide calculation</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/amount-of-substance/reacting-mass-tonnes-conversion.png" class="concept-figure img-fluid figure-img" alt="Converting a reacting mass from grams to tonnes"></p>
+<figcaption>Converting grams to tonnes</figcaption>
+</figure>
+</div>
+</section>
+<section id="balancing-and-reacting-masses" class="level3">
+<h3 class="anchored" data-anchor-id="balancing-and-reacting-masses">Balancing and reacting masses</h3>
+<p>If the equation is not balanced，the mole ratio will be wrong and every subsequent mass calculation will be wrong。For example：</p>
+<p><span class="math display">\[
+\ce{C(s) + ZnO(s) -&gt; CO2(g) + Zn(s)}
+\]</span></p>
+<p>has unequal oxygen atoms. The balanced equation is：</p>
+<p><span class="math display">\[
+\boxed{\ce{C(s) + 2ZnO(s) -&gt; CO2(g) + 2Zn(s)}}
+\]</span></p>
+<p>The mole ratio is <code>1 : 2 : 1 : 2</code>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/amount-of-substance/balancing-equation-moles-steps-1.png" class="concept-figure img-fluid figure-img" alt="Writing relative formula masses and calculating moles for a reacting mass calculation"></p>
+<figcaption>Balancing equation and calculating moles</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/amount-of-substance/balancing-equation-moles-steps-2.png" class="concept-figure img-fluid figure-img" alt="Using the simplest whole-number ratio to complete a balanced equation"></p>
+<figcaption>Completing the balanced equation</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="reacting-volume-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="reacting-volume-calculations">1.2.3 Reacting volume calculations</h2>
+<section id="molar-gas-volume" class="level3">
+<h3 class="anchored" data-anchor-id="molar-gas-volume">Molar gas volume</h3>
+<p>At room temperature and pressure，one mole of gas occupies approximately <code>24.0 dm³</code>：</p>
+<p><span class="math display">\[
+n=\frac{V}{V_m},\qquad V=nV_m
+\]</span></p>
+<p>where <code>Vₘ = 24.0 dm³ mol⁻¹</code> at room temperature and pressure. At standard temperature and pressure，a commonly used value is <code>22.4 dm³ mol⁻¹</code>。Use the value specified in the question。</p>
+</section>
+<section id="worked-examplegas-volume-from-moles" class="level3">
+<h3 class="anchored" data-anchor-id="worked-examplegas-volume-from-moles">Worked example：gas volume from moles</h3>
+<p>Calculate the volume occupied by <code>4.5 dm³</code> of carbon dioxide in moles at room temperature and pressure：</p>
+<p><span class="math display">\[
+n(\ce{CO2})=\frac{4.5}{24.0}=0.1875\ \mathrm{mol}
+\]</span></p>
+<p>If the gas is used in a reaction，then apply the balanced-equation ratio after finding its moles。</p>
+</section>
+<section id="reacting-gas-volumes" class="level3">
+<h3 class="anchored" data-anchor-id="reacting-gas-volumes">Reacting gas volumes</h3>
+<p>At the same temperature and pressure，gas volumes react in the same simple ratio as the coefficients in the balanced equation. For propane combustion：</p>
+<p><span class="math display">\[
+\ce{C3H8(g) + 5O2(g) -&gt; 3CO2(g) + 4H2O(g)}
+\]</span></p>
+<p>The volume ratio is <code>1 : 5 : 3 : 4</code>。Therefore，<code>6.5 dm³</code> of propane produces：</p>
+<p><span class="math display">\[
+V(\ce{H2O})=6.5\times4=26.0\ \mathrm{dm^3}
+\]</span></p>
+<p>This shortcut works only when the gases are measured at the same temperature and pressure。</p>
+</section>
+<section id="ideal-gas-equation" class="level3">
+<h3 class="anchored" data-anchor-id="ideal-gas-equation">Ideal gas equation</h3>
+<p>When pressure、temperature or volume is specified，use：</p>
+<p><span class="math display">\[
+pV=nRT
+\]</span></p>
+<p>where <code>p</code> is pressure in <code>Pa</code>，<code>V</code> is volume in <code>m³</code>，<code>n</code> is amount in <code>mol</code>，<code>R = 8.31 J mol⁻¹ K⁻¹</code> and <code>T</code> is temperature in <code>K</code>。</p>
+<p>Rearrangements include：</p>
+<p><span class="math display">\[
+V=\frac{nRT}{p},\qquad n=\frac{pV}{RT},\qquad T=\frac{pV}{nR}
+\]</span></p>
+</section>
+<section id="worked-exampleideal-gas-volume" class="level3">
+<h3 class="anchored" data-anchor-id="worked-exampleideal-gas-volume">Worked example：ideal gas volume</h3>
+<p>Calculate the volume of <code>0.781 mol</code> of gas at <code>220 kPa</code> and <code>21°C</code>。</p>
+<p><span class="math display">\[
+T=21+273=294\ \mathrm{K},\qquad p=220000\ \mathrm{Pa}
+\]</span></p>
+<p><span class="math display">\[
+V=\frac{0.781\times8.31\times294}{220000}=0.00867\ \mathrm{m^3}=8.67\ \mathrm{dm^3}
+\]</span></p>
+<p>For a volume in <code>cm³</code> or <code>dm³</code>，convert to <code>m³</code> before using <code>pV=nRT</code>：</p>
+<p><span class="math display">\[
+1\ \mathrm{dm^3}=1.00\times10^{-3}\ \mathrm{m^3}
+\]</span></p>
+</section>
+</section>
+<section id="calculations-of-product" class="level2">
+<h2 class="anchored" data-anchor-id="calculations-of-product">1.2.4 Calculations of product</h2>
+<section id="limiting-reactant-and-theoretical-yield" class="level3">
+<h3 class="anchored" data-anchor-id="limiting-reactant-and-theoretical-yield">Limiting reactant and theoretical yield</h3>
+<p>The <strong>limiting reactant</strong> is completely used up first，so it determines the maximum amount of product. Other reactants are in excess。</p>
+<p>To identify it，calculate the available moles of each reactant and compare them with the balanced-equation ratio. Use the limiting reactant to calculate the <strong>theoretical yield</strong>。</p>
+</section>
+<section id="percentage-yield" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-yield">Percentage yield</h3>
+<p>The actual yield is the amount of product obtained experimentally. The theoretical yield is the maximum amount predicted from stoichiometry：</p>
+<p><span class="math display">\[
+\text{percentage yield}=\frac{\text{actual yield}}{\text{theoretical yield}}\times100
+\]</span></p>
+<p>For example，if the actual yield is <code>4.8 g</code> and theoretical yield is <code>6.4 g</code>：</p>
+<p><span class="math display">\[
+\text{percentage yield}=\frac{4.8}{6.4}\times100=75\%
+\]</span></p>
+<p>Percentage yield may be less than <code>100%</code> because of incomplete reaction、side reactions、reversible reactions、product loss during transfer or purification，and measurement uncertainty。</p>
+<p>It should not normally exceed <code>100%</code>。A value above <code>100%</code> suggests wet or impure product，incorrect measurement，or an error in the calculation。</p>
+</section>
+<section id="atom-economy" class="level3">
+<h3 class="anchored" data-anchor-id="atom-economy">Atom economy</h3>
+<p>Atom economy measures how much of the reactant atoms become the desired product：</p>
+<p><span class="math display">\[
+\text{atom economy}=\frac{M_r(\text{desired product})}{\sum M_r(\text{all reactants})}\times100
+\]</span></p>
+<p>For the reduction of iron(III) oxide by carbon monoxide：</p>
+<p><span class="math display">\[
+\ce{Fe2O3 + 3CO -&gt; 2Fe + 3CO2}
+\]</span></p>
+<p><span class="math display">\[
+\text{atom economy}=\frac{2\times55.8}{159.6+(3\times28.0)}\times100=45.9\%
+\]</span></p>
+<p>High atom economy means less raw material is wasted and fewer unwanted by-products need to be separated or disposed of。It is an important factor in <strong>green chemistry</strong> and industrial process design。</p>
+</section>
+<section id="percentage-yield-vs-atom-economy" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-yield-vs-atom-economy">Percentage yield vs atom economy</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>What it measures</th>
+<th>Depends on</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Percentage yield</td>
+<td>How much product was actually obtained compared with the theoretical maximum</td>
+<td>Experimental conditions、losses、side reactions and purification</td>
+</tr>
+<tr class="even">
+<td>Atom economy</td>
+<td>The proportion of reactant atoms in the desired product</td>
+<td>The balanced equation and selected reaction pathway</td>
+</tr>
+</tbody>
+</table>
+<p>Atom economy is a theoretical property of a reaction；percentage yield is an experimental result。A reaction may have high atom economy but a low percentage yield if the process is difficult to carry out efficiently。</p>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="checklist">
+<ul class="task-list">
+<li><label><input type="checkbox"><code>n = m/Mᵣ</code>、<code>n = cV</code>、<code>n = V/Vₘ</code> 和 <code>pV=nRT</code> 用在正确情境。</label></li>
+<li><label><input type="checkbox"><code>cm³</code> to <code>dm³</code> divide by <code>1000</code>；<code>dm³</code> to <code>m³</code> divide by <code>1000</code>。</label></li>
+<li><label><input type="checkbox">Concentration units distinguish <code>g dm⁻³</code> and <code>mol dm⁻³</code>。</label></li>
+<li><label><input type="checkbox">Reacting mass calculations start with a balanced equation and use the mole ratio。</label></li>
+<li><label><input type="checkbox">Find the limiting reactant before calculating theoretical yield。</label></li>
+<li><label><input type="checkbox">Gas-volume ratio follows equation coefficients only at the same temperature and pressure。</label></li>
+<li><label><input type="checkbox">In <code>pV=nRT</code>，use <code>Pa</code>、<code>m³</code> and <code>K</code>。</label></li>
+<li><label><input type="checkbox">Percentage yield uses actual yield / theoretical yield；atom economy uses <code>Mᵣ</code> of desired product / all reactants。</label></li>
+<li><label><input type="checkbox">Explain industrial and environmental importance using waste、raw materials、energy and purification。</label></li>
+</ul>
+</div>
+</section>
+<section id="source-note" class="level2">
+<h2 class="anchored" data-anchor-id="source-note">Source note</h2>
+<p>本页面对应：<code>Note per Chapter/Note per Chapter/1.2 Amount of Substance.pdf.pdf</code>。页面中的 reacting-mass calculation diagrams 均从该 PDF 的 embedded images 独立提取，并转换为 RGB white-background PNG 后保存到 <code>assets/notes/amount-of-substance/</code>。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/1-1-formulae-equations.html" class="pagination-link" aria-label="1.1 Formulae and Equations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1.1 Formulae and Equations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="pagination-link" aria-label="3.1 Physical Chemistry Core Practicals">
+        <span class="nav-page-text">3.1 Physical Chemistry Core Practicals</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

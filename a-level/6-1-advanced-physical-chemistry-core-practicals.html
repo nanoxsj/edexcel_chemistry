@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6.1 Advanced Physical Chemistry Core Practicals – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/5-6-organic-synthesis.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html">Unit 6 · Advanced Practical Chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html">6.1 Advanced Physical Chemistry Core Practicals</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals - Complexes · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-3-transition-metal-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Transition Metal Reactions · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 6 · Advanced Practical Chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">6.1 Advanced Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#advanced-physical-chemistry-core-practicals" id="toc-advanced-physical-chemistry-core-practicals" class="nav-link active" data-scroll-target="#advanced-physical-chemistry-core-practicals">6.1 Advanced Physical Chemistry Core Practicals</a>
+  <ul class="collapse">
+  <li><a href="#practical-overview" id="toc-practical-overview" class="nav-link" data-scroll-target="#practical-overview">Practical overview</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#rates-of-reaction---titrimetric-method" id="toc-rates-of-reaction---titrimetric-method" class="nav-link" data-scroll-target="#rates-of-reaction---titrimetric-method">6.1.1 Rates of Reaction - Titrimetric Method</a>
+  <ul class="collapse">
+  <li><a href="#core-practical-9a-following-iodine-concentration" id="toc-core-practical-9a-following-iodine-concentration" class="nav-link" data-scroll-target="#core-practical-9a-following-iodine-concentration">Core Practical 9a: following iodine concentration</a></li>
+  <li><a href="#suggested-procedure" id="toc-suggested-procedure" class="nav-link" data-scroll-target="#suggested-procedure">Suggested procedure</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a></li>
+  <li><a href="#practical-control-and-evaluation" id="toc-practical-control-and-evaluation" class="nav-link" data-scroll-target="#practical-control-and-evaluation">Practical control and evaluation</a></li>
+  </ul></li>
+  <li><a href="#rates-of-reaction---clock-reaction" id="toc-rates-of-reaction---clock-reaction" class="nav-link" data-scroll-target="#rates-of-reaction---clock-reaction">6.1.2 Rates of Reaction - Clock Reaction</a>
+  <ul class="collapse">
+  <li><a href="#core-practical-9b-iodine-clock-reaction" id="toc-core-practical-9b-iodine-clock-reaction" class="nav-link" data-scroll-target="#core-practical-9b-iodine-clock-reaction">Core Practical 9b: iodine clock reaction</a></li>
+  <li><a href="#variables-and-procedure" id="toc-variables-and-procedure" class="nav-link" data-scroll-target="#variables-and-procedure">Variables and procedure</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  </ul></li>
+  <li><a href="#activation-energy" id="toc-activation-energy" class="nav-link" data-scroll-target="#activation-energy">6.1.3 Activation Energy</a>
+  <ul class="collapse">
+  <li><a href="#core-practical-10-finding-ea" id="toc-core-practical-10-finding-ea" class="nav-link" data-scroll-target="#core-practical-10-finding-ea">Core Practical 10: finding <code>Ea</code></a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#arrhenius-analysis" id="toc-arrhenius-analysis" class="nav-link" data-scroll-target="#arrhenius-analysis">Arrhenius analysis</a></li>
+  <li><a href="#evaluation-1" id="toc-evaluation-1" class="nav-link" data-scroll-target="#evaluation-1">Evaluation</a></li>
+  </ul></li>
+  <li><a href="#finding-ka-values" id="toc-finding-ka-values" class="nav-link" data-scroll-target="#finding-ka-values">6.1.4 Finding <code>Ka</code> Values</a>
+  <ul class="collapse">
+  <li><a href="#core-practical-11-weak-acid-titration" id="toc-core-practical-11-weak-acid-titration" class="nav-link" data-scroll-target="#core-practical-11-weak-acid-titration">Core Practical 11: weak-acid titration</a></li>
+  <li><a href="#method-and-graph" id="toc-method-and-graph" class="nav-link" data-scroll-target="#method-and-graph">Method and graph</a></li>
+  <li><a href="#practical-evaluation" id="toc-practical-evaluation" class="nav-link" data-scroll-target="#practical-evaluation">Practical evaluation</a></li>
+  </ul></li>
+  <li><a href="#electrochemical-cells" id="toc-electrochemical-cells" class="nav-link" data-scroll-target="#electrochemical-cells">6.1.5 Electrochemical Cells</a>
+  <ul class="collapse">
+  <li><a href="#core-practical-12-measuring-emf" id="toc-core-practical-12-measuring-emf" class="nav-link" data-scroll-target="#core-practical-12-measuring-emf">Core Practical 12: measuring EMF</a></li>
+  <li><a href="#measurements-and-calculations" id="toc-measurements-and-calculations" class="nav-link" data-scroll-target="#measurements-and-calculations">Measurements and calculations</a></li>
+  <li><a href="#evaluation-and-safety" id="toc-evaluation-and-safety" class="nav-link" data-scroll-target="#evaluation-and-safety">Evaluation and safety</a></li>
+  </ul></li>
+  <li><a href="#data-uncertainty-and-exam-technique" id="toc-data-uncertainty-and-exam-technique" class="nav-link" data-scroll-target="#data-uncertainty-and-exam-technique">Data, uncertainty and exam technique</a></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a></li>
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html">Unit 6 · Advanced Practical Chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html">6.1 Advanced Physical Chemistry Core Practicals</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">6.1 Advanced Physical Chemistry Core Practicals</h1>
+<p class="subtitle lead">Rates, activation energy, Ka and electrochemical cells</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="advanced-physical-chemistry-core-practicals" class="level1">
+<h1>6.1 Advanced Physical Chemistry Core Practicals</h1>
+<p>本页对应 <code>6.1 Advanced Physical Chemistry Core Practicals.pdf.pdf</code>，整理 Pearson Edexcel International Advanced Level Chemistry 的五个 advanced physical chemistry core practicals。专业词汇保留 English，重点放在 <strong>method、control variables、data processing、uncertainty、evaluation 和 exam wording</strong>。</p>
+<section id="practical-overview" class="level2">
+<h2 class="anchored" data-anchor-id="practical-overview">Practical overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Core Practical</th>
+<th>Main idea</th>
+<th>Main data treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9a · Titrimetric method</td>
+<td>Follow iodine concentration during a reaction</td>
+<td>Titre, concentration-time graph, reaction order</td>
+</tr>
+<tr class="even">
+<td>9b · Iodine clock reaction</td>
+<td>Use a sudden blue-black colour change as a timer</td>
+<td>Rate <code>∝ 1/t</code>, rate-concentration graph</td>
+</tr>
+<tr class="odd">
+<td>10 · Activation energy</td>
+<td>Compare rate constants at different temperatures</td>
+<td>Arrhenius plot, <code>gradient = -Ea/R</code></td>
+</tr>
+<tr class="even">
+<td>11 · Finding <code>Ka</code></td>
+<td>Titrate a weak acid and locate half-equivalence point</td>
+<td><code>pH = pKa</code>, <code>Ka = 10^-pKa</code></td>
+</tr>
+<tr class="odd">
+<td>12 · Electrochemical cells</td>
+<td>Measure the EMF of metal / metal-ion half-cells</td>
+<td><code>Ecell = Epositive - Enegative</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本页后，你应该能够：</p>
+<ul>
+<li>plan a valid practical and identify independent、dependent and control variables；</li>
+<li>select suitable apparatus、reagents、indicators and measurement intervals；</li>
+<li>process raw results into concentration、rate、<code>k</code>、<code>Ea</code>、<code>Ka</code> or <code>Ecell</code>；</li>
+<li>explain anomalous results、repeat measurements、uncertainty 和 improvements；</li>
+<li>write a conclusion using evidence from a graph or calculated value。</li>
+</ul>
+</section>
+<section id="rates-of-reaction---titrimetric-method" class="level2">
+<h2 class="anchored" data-anchor-id="rates-of-reaction---titrimetric-method">6.1.1 Rates of Reaction - Titrimetric Method</h2>
+<section id="core-practical-9a-following-iodine-concentration" class="level3">
+<h3 class="anchored" data-anchor-id="core-practical-9a-following-iodine-concentration">Core Practical 9a: following iodine concentration</h3>
+<p>Iodine reacts with propanone in acidic solution：</p>
+<p><span class="math display">\[
+\ce{CH3COCH3(aq) + I2(aq) -&gt; CH3COCH2I(aq) + H+(aq) + I-(aq)}
+\]</span></p>
+<p>在 experiment 中，propanone 和 sulfuric acid 用 large excess，因而它们的 concentration 在每一次取样期间近似 constant。通过在不同 time withdraw a fixed volume reaction mixture，再用 sodium thiosulfate titration 测量剩余 iodine concentration，可以研究 reaction rate。</p>
+<p>Titration reaction：</p>
+<p><span class="math display">\[
+\ce{2S2O3^{2-}(aq) + I2(aq) -&gt; 2I-(aq) + S4O6^{2-}(aq)}
+\]</span></p>
+<p>Starch 是 indicator；endpoint 附近的 blue-black colour disappears。加入 sodium hydrogencarbonate 可以使 withdrawn sample 中的 reaction stop，避免 titration 期间 iodine 继续消耗。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/titrimetric-results-table.png" class="concept-figure img-fluid figure-img" alt="Titration time and titre results for iodine reaction"></p>
+<figcaption>Titrimetric results table</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/zero-order-graph.png" class="concept-figure img-fluid figure-img" alt="Concentration of reactant plotted against time for a zero-order reaction"></p>
+<figcaption>Zero-order concentration-time graph</figcaption>
+</figure>
+</div>
+</section>
+<section id="suggested-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="suggested-procedure">Suggested procedure</h3>
+<ol type="1">
+<li>Mix measured volumes of aqueous propanone and sulfuric acid in a beaker。</li>
+<li>Add a measured volume of iodine solution and start the clock immediately。</li>
+<li>Using a pipette，withdraw a fixed volume at regular time intervals。</li>
+<li>Add sodium hydrogencarbonate to stop the reaction in the withdrawn portion。</li>
+<li>Titrate against standard sodium thiosulfate using starch；record the titre。</li>
+<li>Repeat the sampling and titration at least five times，including an early and a late time point。</li>
+</ol>
+</section>
+<section id="data-processing" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing">Data processing</h3>
+<ul>
+<li>titre <code>→</code> moles of <code>S2O3^2-</code>；</li>
+<li>use the stoichiometric ratio 2:1 to calculate moles of iodine；</li>
+<li>divide by the aliquot volume to obtain <code>[I2]</code>；</li>
+<li>plot <code>[I2]</code> against time and inspect linearity；</li>
+<li>a straight line with constant negative gradient is evidence for zero-order behaviour with respect to iodine。</li>
+</ul>
+</section>
+<section id="practical-control-and-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="practical-control-and-evaluation">Practical control and evaluation</h3>
+<ul>
+<li>use the same pipette、burette、aliquot volume and thiosulfate concentration throughout；</li>
+<li>record the time when sodium hydrogencarbonate is added，not only the time when the titration begins；</li>
+<li>keep the clock running continuously；</li>
+<li>rinse the pipette with reaction mixture and the burette with thiosulfate solution；</li>
+<li>read the meniscus at eye level and add titrant dropwise near the endpoint；</li>
+<li>repeat titres until concordant values are obtained；</li>
+<li>a delay between sampling and quenching makes the calculated iodine concentration too low。</li>
+</ul>
+</section>
+</section>
+<section id="rates-of-reaction---clock-reaction" class="level2">
+<h2 class="anchored" data-anchor-id="rates-of-reaction---clock-reaction">6.1.2 Rates of Reaction - Clock Reaction</h2>
+<section id="core-practical-9b-iodine-clock-reaction" class="level3">
+<h3 class="anchored" data-anchor-id="core-practical-9b-iodine-clock-reaction">Core Practical 9b: iodine clock reaction</h3>
+<p>The main redox reaction is：</p>
+<p><span class="math display">\[
+\ce{H2O2(aq) + 2I-(aq) + 2H+(aq) -&gt; I2(aq) + 2H2O(l)}
+\]</span></p>
+<p>Sodium thiosulfate removes iodine as it forms：</p>
+<p><span class="math display">\[
+\ce{2S2O3^{2-}(aq) + I2(aq) -&gt; 2I-(aq) + S4O6^{2-}(aq)}
+\]</span></p>
+<p>只要 thiosulfate remains，starch 不会呈现 blue-black。固定 amount of thiosulfate 被消耗完后，excess iodine suddenly forms the starch-iodine complex，出现 sharp colour change。因为到 endpoint 所产生的 iodine amount fixed，</p>
+<p><span class="math display">\[
+\text{rate} \propto \frac{1}{t}
+\]</span></p>
+<p>其中 <code>t</code> 是从 mixing 到 blue-black endpoint 的 time。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/clock-reaction-setup.png" class="concept-figure img-fluid figure-img" alt="Iodine clock reaction mixing and sudden blue-black endpoint"></p>
+<figcaption>Iodine clock reaction setup</figcaption>
+</figure>
+</div>
+</section>
+<section id="variables-and-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="variables-and-procedure">Variables and procedure</h3>
+<p>改变 potassium iodide concentration，同时用 water 补足体积，使 total volume、acid、hydrogen peroxide、thiosulfate 和 starch 的 amounts 保持 constant。可以使用以下 plan：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/clock-reaction-planning-table.png" class="concept-figure img-fluid figure-img" alt="Planned volume compositions for iodine clock reaction runs"></p>
+<figcaption>Iodine clock planning table</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Measure all solutions in separate measuring cylinders or pipettes。</li>
+<li>Add hydrogen peroxide to start the reaction and start the timer at the same moment。</li>
+<li>Mix rapidly and stop the timer when the sudden blue-black colour appears。</li>
+<li>Repeat each condition and calculate a mean time。</li>
+<li>Calculate <code>1/t</code> and plot rate against <code>[I-]</code> or <code>[KI]</code>。</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/clock-reaction-results-table.png" class="concept-figure img-fluid figure-img" alt="Specimen time and rate results for iodine clock reaction"></p>
+<figcaption>Iodine clock specimen results</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/clock-reaction-rate-graph.png" class="concept-figure img-fluid figure-img" alt="Rate plotted against potassium iodide concentration"></p>
+<figcaption>Rate-concentration graph for iodine clock reaction</figcaption>
+</figure>
+</div>
+</section>
+<section id="evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
+<ul>
+<li>use a thermostatically controlled water bath if temperature is a variable；</li>
+<li>use the same observer or a colorimeter to reduce endpoint subjectivity；</li>
+<li>start timing immediately after mixing and use consistent mixing；</li>
+<li>do not change total volume when changing one reactant concentration；</li>
+<li>a straight line through the origin for rate against concentration supports first-order dependence；</li>
+<li>scatter around the line may arise from human reaction time、incomplete mixing or uncertainty in measuring small volumes。</li>
+</ul>
+</section>
+</section>
+<section id="activation-energy" class="level2">
+<h2 class="anchored" data-anchor-id="activation-energy">6.1.3 Activation Energy</h2>
+<section id="core-practical-10-finding-ea" class="level3">
+<h3 class="anchored" data-anchor-id="core-practical-10-finding-ea">Core Practical 10: finding <code>Ea</code></h3>
+<p>The reaction used involves bromide and bromate(V) ions：</p>
+<p><span class="math display">\[
+\ce{BrO3^- + 5Br^- + 6H+ -&gt; 3Br2 + 3H2O}
+\]</span></p>
+<p>The bromine reacts with phenol：</p>
+<p><span class="math display">\[
+\ce{C6H5OH + 3Br2 -&gt; C6H2Br3OH + 3HBr}
+\]</span></p>
+<p>Methyl red / methyl orange can indicate the endpoint because bromine eventually bleaches the indicator. At a fixed composition，the same visible endpoint corresponds to approximately the same extent of reaction，so a shorter time means a larger rate constant。</p>
+</section>
+<section id="method" class="level3">
+<h3 class="anchored" data-anchor-id="method">Method</h3>
+<ol type="1">
+<li>Place a measured phenol solution and bromide / bromate solution in separate boiling tubes。</li>
+<li>Add indicator and equilibrate both tubes in a water bath at a measured temperature。</li>
+<li>Mix rapidly，start the stopwatch，and record the time for the indicator to disappear。</li>
+<li>Repeat at several temperatures，for example 310、335、360 and 385 K。</li>
+<li>Treat <code>k</code> as proportional to <code>1/t</code> when the same endpoint and concentrations are used。</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/activation-energy-results-table.png" class="concept-figure img-fluid figure-img" alt="Temperature time rate constant and ln k data for activation energy"></p>
+<figcaption>Activation-energy results table</figcaption>
+</figure>
+</div>
+</section>
+<section id="arrhenius-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="arrhenius-analysis">Arrhenius analysis</h3>
+<p>The Arrhenius equation is：</p>
+<p><span class="math display">\[
+k=Ae^{-E_a/(RT)}
+\]</span></p>
+<p>Taking natural logarithms：</p>
+<p><span class="math display">\[
+\ln k=-\frac{E_a}{R}\frac{1}{T}+\ln A
+\]</span></p>
+<p>Plot <code>ln k</code> on the y-axis against <code>1/T</code> on the x-axis：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/arrhenius-plot.png" class="concept-figure img-fluid figure-img" alt="Arrhenius plot of ln k against reciprocal temperature"></p>
+<figcaption>Arrhenius plot</figcaption>
+</figure>
+</div>
+<p><span class="math display">\[
+\text{gradient}=-\frac{E_a}{R}
+\]</span></p>
+<p>因此：</p>
+<p><span class="math display">\[
+E_a=-R\times\text{gradient}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/activation-energy-gradient.png" class="concept-figure img-fluid figure-img" alt="Gradient calculation from Arrhenius plot"></p>
+<figcaption>Activation-energy gradient calculation</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/activation-energy-calculation.png" class="concept-figure img-fluid figure-img" alt="Activation energy calculation from the Arrhenius gradient"></p>
+<figcaption>Activation-energy calculation</figcaption>
+</figure>
+</div>
+<p>Intercept 是 <code>ln A</code>；选取 graph 上的 point 并代入 equation 可计算 <code>A</code>：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/activation-energy-intercept.png" class="concept-figure img-fluid figure-img" alt="Choosing a point on Arrhenius plot to find ln A"></p>
+<figcaption>Activation-energy intercept</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/activation-energy-final-calculation.png" class="concept-figure img-fluid figure-img" alt="Calculation of pre-exponential factor from Arrhenius equation"></p>
+<figcaption>Activation-energy final calculation</figcaption>
+</figure>
+</div>
+</section>
+<section id="evaluation-1" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-1">Evaluation</h3>
+<ul>
+<li>use a water bath rather than direct flame to obtain more uniform temperature；</li>
+<li>measure the actual temperature of the reaction mixture，not only the bath temperature；</li>
+<li>allow both solutions to reach the target temperature before mixing；</li>
+<li>use a lid or boiling tube stopper where appropriate to reduce evaporation；</li>
+<li>use a temperature range large enough to produce a measurable change in <code>t</code>；</li>
+<li>keep concentrations、volumes、indicator amount and endpoint criterion constant；</li>
+<li>repeat each temperature and calculate a mean；</li>
+<li>a non-linear Arrhenius plot suggests temperature control problems，timing error or a change in mechanism。</li>
+</ul>
+</section>
+</section>
+<section id="finding-ka-values" class="level2">
+<h2 class="anchored" data-anchor-id="finding-ka-values">6.1.4 Finding <code>Ka</code> Values</h2>
+<section id="core-practical-11-weak-acid-titration" class="level3">
+<h3 class="anchored" data-anchor-id="core-practical-11-weak-acid-titration">Core Practical 11: weak-acid titration</h3>
+<p>For a weak monoprotic acid <code>HA</code>：</p>
+<p><span class="math display">\[
+\ce{HA(aq) &lt;=&gt; H+(aq) + A-(aq)}
+\]</span></p>
+<p><span class="math display">\[
+K_a=\frac{[H^+][A^-]}{[HA]}
+\]</span></p>
+<p>At the <strong>half-equivalence point</strong>，half of the original <code>HA</code> has been neutralised，so <code>[HA] = [A-]</code> and：</p>
+<p><span class="math display">\[
+K_a=[H^+],\qquad pK_a=pH
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/ka-expression.png" class="concept-figure img-fluid figure-img" alt="Ka expression and relationship between Ka and hydrogen ion concentration"></p>
+<figcaption>Ka expression</figcaption>
+</figure>
+</div>
+</section>
+<section id="method-and-graph" class="level3">
+<h3 class="anchored" data-anchor-id="method-and-graph">Method and graph</h3>
+<ol type="1">
+<li>Pipette a measured volume of weak acid into a beaker and add distilled water if needed。</li>
+<li>Calibrate the pH meter with suitable buffer solutions。</li>
+<li>Add standard alkali from a burette in small portions，stirring after each addition。</li>
+<li>Record pH and volume of alkali；use smaller additions near the steep section。</li>
+<li>Plot pH against volume of base added。</li>
+<li>Locate the equivalence point；the half-equivalence volume is <code>V/2</code>。</li>
+<li>Read the pH at <code>V/2</code> and calculate <code>pKa</code> and <code>Ka</code>。</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/ka-titration-curve.png" class="concept-figure img-fluid figure-img" alt="Weak acid titration curve showing equivalence and half-equivalence points"></p>
+<figcaption>Weak-acid titration curve and half-equivalence point</figcaption>
+</figure>
+</div>
+</section>
+<section id="practical-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="practical-evaluation">Practical evaluation</h3>
+<ul>
+<li>calibrate the pH meter before use and rinse the electrode with distilled water；</li>
+<li>remove drops from the outside of the burette tip and record the initial / final readings consistently；</li>
+<li>wait for the pH reading to stabilise after each addition；</li>
+<li>use a magnetic stirrer or consistent manual stirring；</li>
+<li>take closely spaced readings around the equivalence region；</li>
+<li>carbon dioxide absorption、poor calibration and overshooting the equivalence point can shift the curve；</li>
+<li>repeat the titration to obtain a concordant equivalence volume。</li>
+</ul>
+</section>
+</section>
+<section id="electrochemical-cells" class="level2">
+<h2 class="anchored" data-anchor-id="electrochemical-cells">6.1.5 Electrochemical Cells</h2>
+<section id="core-practical-12-measuring-emf" class="level3">
+<h3 class="anchored" data-anchor-id="core-practical-12-measuring-emf">Core Practical 12: measuring EMF</h3>
+<p>An electrochemical cell consists of two half-cells connected by an external circuit and a salt bridge. Typical equipment includes：</p>
+<ul>
+<li>two beakers and metal electrodes such as Zn、Cu、Fe or Ag；</li>
+<li>approximately <code>1.0 mol dm^-3</code> solutions containing the relevant metal ions；</li>
+<li>a salt bridge soaked in saturated <code>KNO3(aq)</code>；</li>
+<li>wires with crocodile clips；</li>
+<li>a high-resistance voltmeter。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/electrochemical-cell-setup.png" class="concept-figure img-fluid figure-img" alt="Electrochemical cell with zinc and copper half-cells salt bridge and high-resistance voltmeter"></p>
+<figcaption>Electrochemical cell setup</figcaption>
+</figure>
+</div>
+<p>The salt bridge completes the ionic circuit and maintains electrical neutrality；the high-resistance voltmeter measures potential difference while drawing negligible current。</p>
+</section>
+<section id="measurements-and-calculations" class="level3">
+<h3 class="anchored" data-anchor-id="measurements-and-calculations">Measurements and calculations</h3>
+<ol type="1">
+<li>Polish the metal electrodes and rinse them with distilled water。</li>
+<li>Place each electrode in its corresponding metal-ion solution。</li>
+<li>Connect the half-cells using the salt bridge and voltmeter。</li>
+<li>Record the sign and magnitude of the stable EMF。</li>
+<li>Repeat with different combinations of half-cells。</li>
+</ol>
+<p>For a spontaneous cell：</p>
+<p><span class="math display">\[
+E_{\mathrm{cell}}=E_{\mathrm{positive\ electrode}}-E_{\mathrm{negative\ electrode}}
+\]</span></p>
+<p>The more positive reduction potential is the <strong>positive electrode / cathode</strong>，where reduction occurs；the other is the <strong>negative electrode / anode</strong>，where oxidation occurs。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/advanced-physical-core-practicals/electrochemical-emf-table.png" class="concept-figure img-fluid figure-img" alt="Measured EMF values for combinations of metal half-cells"></p>
+<figcaption>Electrochemical EMF results table</figcaption>
+</figure>
+</div>
+</section>
+<section id="evaluation-and-safety" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-and-safety">Evaluation and safety</h3>
+<ul>
+<li>use clean electrodes with a reproducible surface area；</li>
+<li>use the same solution concentration and temperature for comparison；</li>
+<li>ensure the salt bridge makes good contact with both solutions but does not mix them excessively；</li>
+<li>do not use an ammeter or low-resistance circuit because current flow changes the measured potential；</li>
+<li>wait for a stable reading and repeat each cell combination；</li>
+<li>a contaminated electrode、different ion concentration、poor salt-bridge contact or liquid junction potential can cause anomalous EMF；</li>
+<li>wear eye protection and handle metal-ion solutions according to their hazard information。</li>
+</ul>
+</section>
+</section>
+<section id="data-uncertainty-and-exam-technique" class="level2">
+<h2 class="anchored" data-anchor-id="data-uncertainty-and-exam-technique">Data, uncertainty and exam technique</h2>
+<div class="study-card">
+<section id="turning-practical-work-into-marks" class="level3">
+<h3 class="anchored" data-anchor-id="turning-practical-work-into-marks">Turning practical work into marks</h3>
+<p>回答 practical question 时按以下顺序组织：</p>
+<ol type="1">
+<li><strong>Method</strong>：写 apparatus、reagent、measurement and endpoint；</li>
+<li><strong>Variables</strong>：明确 independent、dependent 和 control variables；</li>
+<li><strong>Data</strong>：列出 raw readings、units、repeat values 和 mean；</li>
+<li><strong>Processing</strong>：展示 one sample calculation，保持 significant figures；</li>
+<li><strong>Graph</strong>：label axes、units、scale、best-fit line and gradient triangle；</li>
+<li><strong>Conclusion</strong>：用 graph / calculation 的 evidence 回答题目；</li>
+<li><strong>Evaluation</strong>：指出具体 systematic / random error，并给出可执行 improvement。</li>
+</ol>
+</section>
+<section id="common-calculations" class="level3">
+<h3 class="anchored" data-anchor-id="common-calculations">Common calculations</h3>
+<ul>
+<li><code>rate = 1/t</code> only when the same fixed endpoint amount is used；</li>
+<li><code>gradient = -Ea/R</code> for an Arrhenius plot；</li>
+<li>at half-equivalence，<code>pH = pKa</code>；</li>
+<li><code>Ka = 10^-pKa</code>；</li>
+<li><code>Ecell = Epositive - Enegative</code>。</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="checklist">
+<ul class="task-list">
+<li><label><input type="checkbox">能写 Core Practical 9a 的 iodine / thiosulfate equations，并解释 quenching。</label></li>
+<li><label><input type="checkbox">能由 titre calculate iodine concentration，并画 concentration-time graph。</label></li>
+<li><label><input type="checkbox">能解释 iodine clock 的 sudden endpoint 及 <code>rate ∝ 1/t</code>。</label></li>
+<li><label><input type="checkbox">能设计 concentration table，保持 total volume 和 control variables constant。</label></li>
+<li><label><input type="checkbox">能用 Arrhenius equation、gradient 和 intercept calculate <code>Ea</code> 与 <code>A</code>。</label></li>
+<li><label><input type="checkbox">能解释 water bath、repeat readings、temperature equilibration 的重要性。</label></li>
+<li><label><input type="checkbox">能从 weak-acid titration curve 找 half-equivalence point，calculate <code>pKa</code> 和 <code>Ka</code>。</label></li>
+<li><label><input type="checkbox">能解释 pH-meter calibration、small volume increments 和 stable readings。</label></li>
+<li><label><input type="checkbox">能画 electrochemical cell，识别 anode、cathode、electron flow 和 salt bridge function。</label></li>
+<li><label><input type="checkbox">能用 <code>Ecell = Epositive - Enegative</code> 处理 EMF data。</label></li>
+<li><label><input type="checkbox">能写出明确的 uncertainty、error source、safety precaution 和 improvement。</label></li>
+</ul>
+</div>
+</section>
+<section id="source-note" class="level2">
+<h2 class="anchored" data-anchor-id="source-note">Source note</h2>
+<p>本页面对应：<code>Note per Chapter/Note per Chapter/6.1 Advanced Physical Chemistry Core Practicals.pdf.pdf</code>。页面中的 practical diagrams、tables 和 graphs 均从该 PDF 的内嵌图像独立提取并保存到 <code>assets/notes/advanced-physical-core-practicals/</code>。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/5-6-organic-synthesis.html" class="pagination-link" aria-label="5.6 Organic Synthesis · Topic 20">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">5.6 Organic Synthesis · Topic 20</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

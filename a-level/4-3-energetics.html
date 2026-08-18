@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4.3 Energetics · Topic 12B – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/4-4-chemical-equilibria.html" rel="next">
+<link href="../a-level/4-2-entropy.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-3-energetics.html">4.3 Energetics · Topic 12B</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals and their Chemistry · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#energetics-topic-12b" id="toc-energetics-topic-12b" class="nav-link active" data-scroll-target="#energetics-topic-12b">4.3 Energetics · Topic 12B</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">12.12 Key terms</a>
+  <ul class="collapse">
+  <li><a href="#lattice-energy" id="toc-lattice-energy" class="nav-link" data-scroll-target="#lattice-energy">Lattice energy</a></li>
+  <li><a href="#dissociation-convention" id="toc-dissociation-convention" class="nav-link" data-scroll-target="#dissociation-convention">Dissociation convention</a></li>
+  <li><a href="#standard-enthalpy-change-of-atomisation" id="toc-standard-enthalpy-change-of-atomisation" class="nav-link" data-scroll-target="#standard-enthalpy-change-of-atomisation">Standard enthalpy change of atomisation</a></li>
+  <li><a href="#electron-affinity" id="toc-electron-affinity" class="nav-link" data-scroll-target="#electron-affinity">Electron affinity</a></li>
+  </ul></li>
+  <li><a href="#born-haber-cycles" id="toc-born-haber-cycles" class="nav-link" data-scroll-target="#born-haber-cycles">12.13 Born-Haber cycles</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-born-haber-cycle" id="toc-what-is-a-born-haber-cycle" class="nav-link" data-scroll-target="#what-is-a-born-haber-cycle">What is a Born-Haber cycle?</a></li>
+  <li><a href="#steps-in-a-nacl-born-haber-cycle" id="toc-steps-in-a-nacl-born-haber-cycle" class="nav-link" data-scroll-target="#steps-in-a-nacl-born-haber-cycle">Steps in a NaCl Born-Haber cycle</a></li>
+  <li><a href="#born-haber-calculation-structure" id="toc-born-haber-calculation-structure" class="nav-link" data-scroll-target="#born-haber-calculation-structure">Born-Haber calculation structure</a></li>
+  <li><a href="#higher-ionic-charges-mgo" id="toc-higher-ionic-charges-mgo" class="nav-link" data-scroll-target="#higher-ionic-charges-mgo">Higher ionic charges: MgO</a></li>
+  </ul></li>
+  <li><a href="#polarisation-and-covalent-character" id="toc-polarisation-and-covalent-character" class="nav-link" data-scroll-target="#polarisation-and-covalent-character">12.14-12.15 Polarisation and covalent character</a>
+  <ul class="collapse">
+  <li><a href="#the-ionic-model-and-polarisation" id="toc-the-ionic-model-and-polarisation" class="nav-link" data-scroll-target="#the-ionic-model-and-polarisation">The ionic model and polarisation</a></li>
+  <li><a href="#factors-affecting-polarisation" id="toc-factors-affecting-polarisation" class="nav-link" data-scroll-target="#factors-affecting-polarisation">Factors affecting polarisation</a></li>
+  </ul></li>
+  <li><a href="#enthalpy-of-solution-and-hydration" id="toc-enthalpy-of-solution-and-hydration" class="nav-link" data-scroll-target="#enthalpy-of-solution-and-hydration">12.16-12.17 Enthalpy of solution and hydration</a>
+  <ul class="collapse">
+  <li><a href="#enthalpy-of-solution" id="toc-enthalpy-of-solution" class="nav-link" data-scroll-target="#enthalpy-of-solution">Enthalpy of solution</a></li>
+  <li><a href="#enthalpy-of-hydration" id="toc-enthalpy-of-hydration" class="nav-link" data-scroll-target="#enthalpy-of-hydration">Enthalpy of hydration</a></li>
+  <li><a href="#enthalpy-of-solution-cycle" id="toc-enthalpy-of-solution-cycle" class="nav-link" data-scroll-target="#enthalpy-of-solution-cycle">Enthalpy of solution cycle</a></li>
+  <li><a href="#kcl-energy-cycle" id="toc-kcl-energy-cycle" class="nav-link" data-scroll-target="#kcl-energy-cycle">KCl energy cycle</a></li>
+  <li><a href="#mgcl_2-and-stoichiometry" id="toc-mgcl_2-and-stoichiometry" class="nav-link" data-scroll-target="#mgcl_2-and-stoichiometry">MgCl<span class="math inline">\(_2\)</span> and stoichiometry</a></li>
+  </ul></li>
+  <li><a href="#ionic-charge-and-ionic-radius" id="toc-ionic-charge-and-ionic-radius" class="nav-link" data-scroll-target="#ionic-charge-and-ionic-radius">12.18 Ionic charge and ionic radius</a>
+  <ul class="collapse">
+  <li><a href="#lattice-energy-trends" id="toc-lattice-energy-trends" class="nav-link" data-scroll-target="#lattice-energy-trends">Lattice energy trends</a></li>
+  <li><a href="#hydration-enthalpy-trends" id="toc-hydration-enthalpy-trends" class="nav-link" data-scroll-target="#hydration-enthalpy-trends">Hydration enthalpy trends</a></li>
+  </ul></li>
+  <li><a href="#solubility-of-ionic-compounds" id="toc-solubility-of-ionic-compounds" class="nav-link" data-scroll-target="#solubility-of-ionic-compounds">12.19 Solubility of ionic compounds</a>
+  <ul class="collapse">
+  <li><a href="#predicting-solubility" id="toc-predicting-solubility" class="nav-link" data-scroll-target="#predicting-solubility">Predicting solubility</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a>
+  <ul class="collapse">
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-3-energetics.html">4.3 Energetics · Topic 12B</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">4.3 Energetics · Topic 12B</h1>
+<p class="subtitle lead">Lattice energy, Born-Haber cycles, hydration and solubility</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="energetics-topic-12b" class="level1">
+<h1>4.3 Energetics · Topic 12B</h1>
+<p>本页严格按 Pearson Edexcel International Advanced Level Chemistry specification 的 <strong>Topic 12B: Lattice energy</strong> 编排，内容来自项目内的 `4.3 Energetics.pdf.pdf`。解释采用中文，专业词汇保留 English，便于和 specification、Data Booklet 及 exam wording 对照。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本章后，你应该能够：</p>
+<ul>
+<li>define lattice energy、standard enthalpy change of atomisation、electron affinity、enthalpy of solution 和 enthalpy of hydration；</li>
+<li>construct Born-Haber cycle，并使用 Hess’ Law 计算 lattice energy；</li>
+<li>compare theoretical 与 experimental lattice energy，解释 covalent character 和 polarisation；</li>
+<li>explain ionic charge 与 ionic radius 对 lattice energy 和 hydration enthalpy 的影响；</li>
+<li>construct energy cycles / energy level diagrams 计算 enthalpy of solution 和未知 hydration enthalpy；</li>
+<li>use entropy and enthalpy of solution 判断 ionic compound 的 solubility；</li>
+<li>处理含有 stoichiometric coefficients 的 KCl、MgO、MgCl<span class="math inline">\(_2\)</span> 等 calculation。</li>
+</ul>
+</section>
+<section id="key-terms" class="level2">
+<h2 class="anchored" data-anchor-id="key-terms">12.12 Key terms</h2>
+<section id="lattice-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="lattice-energy">Lattice energy</h3>
+<p>Edexcel 对 <strong>lattice energy / lattice enthalpy</strong> 的定义是：</p>
+<p><strong>the enthalpy change when one mole of an ionic solid is formed from its gaseous ions under standard conditions.</strong></p>
+<p>Formation process 的 equation 例如：</p>
+<p><span class="math display">\[
+\ce{Na+(g) + Cl-(g) -&gt; NaCl(s)}
+\]</span></p>
+<p>Formation lattice energy 通常是 very large negative value，因为 oppositely charged gaseous ions 形成 ionic lattice 时，strong electrostatic attractions 释放大量 energy。</p>
+<p>Lattice energy 越 negative，通常表示 ionic lattice 中的 electrostatic attraction 越强、solid 越 stable。Lattice energy 不能通过 single direct experiment 直接测得，通常使用 Born-Haber cycle 间接求出。</p>
+</section>
+<section id="dissociation-convention" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="dissociation-convention">Dissociation convention</h3>
+<p>有些资料也把 lattice energy 写成 dissociation process：</p>
+<p><span class="math display">\[
+\ce{NaCl(s) -&gt; Na+(g) + Cl-(g)}
+\]</span></p>
+<p>此时 value 为 positive，且与 formation lattice energy 大小相等、符号相反。考试时必须根据题目给出的 definition 判断 sign。</p>
+</section>
+<section id="standard-enthalpy-change-of-atomisation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="standard-enthalpy-change-of-atomisation">Standard enthalpy change of atomisation</h3>
+<p><strong>Standard enthalpy change of atomisation</strong>, <span class="math inline">\(\Delta_{\mathrm{at}}H^\circ\)</span>，是：</p>
+<p><strong>the enthalpy change when one mole of gaseous atoms is formed from an element in its standard state.</strong></p>
+<p>该 process 总是需要 break bonds，因此为 endothermic、value 为 positive。</p>
+<p>Examples：</p>
+<p><span class="math display">\[
+\ce{Na(s) -&gt; Na(g)}
+\]</span></p>
+<p><span class="math display">\[
+\ce{\frac{1}{2}Cl2(g) -&gt; Cl(g)}
+\]</span></p>
+<p>注意：equation 必须生成 <strong>one mole of gaseous atoms</strong>。因此 chlorine 使用 <span class="math inline">\(\frac{1}{2}\ce{Cl2(g)}\)</span>，而不是 <span class="math inline">\(\ce{Cl2(g)}\)</span>。</p>
+</section>
+<section id="electron-affinity" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electron-affinity">Electron affinity</h3>
+<p><strong>First electron affinity</strong>, <span class="math inline">\(\Delta_{\mathrm{ea1}}H^\circ\)</span>，是 one mole gaseous atoms 各获得 one electron，形成 one mole gaseous <span class="math inline">\(1-\)</span> ions 的 enthalpy change：</p>
+<p><span class="math display">\[
+\ce{Cl(g) + e- -&gt; Cl-(g)}
+\]</span></p>
+<p>First electron affinity 通常是 exothermic，因为 electron 受到 positive nucleus attraction。</p>
+<p><strong>Second electron affinity</strong> 可能是 endothermic：</p>
+<p><span class="math display">\[
+\ce{O-(g) + e- -&gt; O^{2-}(g)}
+\]</span></p>
+<p>需要把 electron 加入已经带负电的 ion，必须克服 electron-electron repulsion，所以会吸收 energy。Born-Haber cycle 中必须使用正确的 electron affinity，并根据 stoichiometry 乘以对应 coefficient。</p>
+</section>
+</section>
+<section id="born-haber-cycles" class="level2">
+<h2 class="anchored" data-anchor-id="born-haber-cycles">12.13 Born-Haber cycles</h2>
+<section id="what-is-a-born-haber-cycle" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="what-is-a-born-haber-cycle">What is a Born-Haber cycle?</h3>
+<p>Born-Haber cycle 是 Hess’ Law 对 ionic compound 的具体应用。它把：</p>
+<ul>
+<li>elements in their standard states；</li>
+<li>gaseous atoms；</li>
+<li>gaseous ions；</li>
+<li>ionic solid</li>
+</ul>
+<p>连接成两个 routes。因为 Hess’ Law，direct route 和 indirect route 的 total enthalpy change 相同。</p>
+<p>绘图原则：</p>
+<ul>
+<li>endothermic change：energy level 向上；</li>
+<li>exothermic change：energy level 向下；</li>
+<li>gaseous ions 位于 cycle 顶部；</li>
+<li>ionic solid 通常位于底部；</li>
+<li>elements in standard states 是 formation route 的起点。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/born-haber-energy-direction.webp" class="concept-figure img-fluid figure-img" alt="Endothermic arrows up and exothermic arrows down in a Born Haber cycle"></p>
+<figcaption>Energy direction in a Born-Haber cycle</figcaption>
+</figure>
+</div>
+</section>
+<section id="steps-in-a-nacl-born-haber-cycle" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="steps-in-a-nacl-born-haber-cycle">Steps in a NaCl Born-Haber cycle</h3>
+<p>以 <span class="math inline">\(\ce{NaCl(s)}\)</span> 为例，indirect route 通常包括：</p>
+<ol type="1">
+<li>formation of elements in standard states；</li>
+<li>atomisation of sodium；</li>
+<li>atomisation of chlorine；</li>
+<li>first ionisation energy of sodium；</li>
+<li>first electron affinity of chlorine；</li>
+<li>formation lattice energy。</li>
+</ol>
+<p>关键 equations：</p>
+<p><span class="math display">\[
+\ce{Na(s) -&gt; Na(g)}
+\]</span></p>
+<p><span class="math display">\[
+\ce{\frac{1}{2}Cl2(g) -&gt; Cl(g)}
+\]</span></p>
+<p><span class="math display">\[
+\ce{Na(g) -&gt; Na+(g) + e-}
+\]</span></p>
+<p><span class="math display">\[
+\ce{Cl(g) + e- -&gt; Cl-(g)}
+\]</span></p>
+<p><span class="math display">\[
+\ce{Na+(g) + Cl-(g) -&gt; NaCl(s)}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/born-haber-nacl-cycle.webp" class="concept-figure img-fluid figure-img" alt="Completed Born Haber cycle for sodium chloride"></p>
+<figcaption>Completed Born-Haber cycle for NaCl</figcaption>
+</figure>
+</div>
+</section>
+<section id="born-haber-calculation-structure" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="born-haber-calculation-structure">Born-Haber calculation structure</h3>
+<p>令 <span class="math inline">\(\Delta H_{\mathrm{atomisation}}\)</span>、ionisation energies 和 electron affinities 的总和为 <span class="math inline">\(\Delta H_{\mathrm{gaseous\ ions}}\)</span>：</p>
+<p><span class="math display">\[
+\Delta H_f^\circ
+=\Delta H_{\mathrm{gaseous\ ions}}
++\Delta H_{\mathrm{latt}}^\circ
+\]</span></p>
+<p>因此：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt}}^\circ
+=\Delta H_f^\circ-\Delta H_{\mathrm{gaseous\ ions}}
+\]</span></p>
+<p>直接 route 和 indirect route 必须从同一个 starting point 出发，并在同一个 ending point 汇合。这样可以避免漏掉 <span class="math inline">\(\frac{1}{2}\)</span>、2 或其他 stoichiometric coefficient。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/born-haber-calculation-route.webp" class="concept-figure img-fluid figure-img" alt="Direct and indirect routes with Hess law calculation in a Born Haber cycle"></p>
+<figcaption>Direct and indirect routes in a Born-Haber cycle</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · lattice energy of KCl</span></p>
+<p>已知：</p>
+<p><span class="math display">\[
+\Delta H_f^\circ[\ce{KCl(s)}]=-437\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta_{\mathrm{at}}H^\circ[\ce{K}]=+90,\quad
+\Delta_{\mathrm{at}}H^\circ[\ce{Cl}]=+122
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{IE}_1[\ce{K}]=+418,\qquad
+\mathrm{EA}_1[\ce{Cl}]=-349
+\]</span></p>
+<div class="we-answer">
+<p>先求 gaseous ions route：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{gaseous\ ions}}
+=90+122+418-349
+=281\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>然后使用 Hess’ Law：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt}}^\circ
+=-437-281
+=-718\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><strong>Answer：</strong> <span class="math inline">\(\Delta H_{\mathrm{latt}}^\circ[\ce{KCl}]=-718\ \mathrm{kJ\,mol^{-1}}\)</span>。</p>
+</div>
+</div>
+<section id="higher-ionic-charges-mgo" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="higher-ionic-charges-mgo">Higher ionic charges: MgO</h3>
+<p>对于 <span class="math inline">\(\ce{MgO}\)</span>，cycle 中必须包括：</p>
+<ul>
+<li><span class="math inline">\(\mathrm{IE}_1[\ce{Mg}]\)</span> 和 <span class="math inline">\(\mathrm{IE}_2[\ce{Mg}]\)</span>；</li>
+<li><span class="math inline">\(\Delta_{\mathrm{ea1}}H^\circ[\ce{O}]\)</span> 和 <span class="math inline">\(\Delta_{\mathrm{ea2}}H^\circ[\ce{O}]\)</span>；</li>
+<li>one mole <span class="math inline">\(\ce{O2(g)}\)</span> 形成 two moles gaseous O atoms，因此需要正确处理 atomisation coefficient。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/born-haber-mgo-cycle.webp" class="concept-figure img-fluid figure-img" alt="Born Haber cycle for magnesium oxide"></p>
+<figcaption>Born-Haber cycle for MgO</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · lattice energy of MgO</span></p>
+<p>已知：</p>
+<p><span class="math display">\[
+\Delta H_f^\circ[\ce{MgO(s)}]=-602
+\]</span></p>
+<p><span class="math display">\[
+\Delta_{\mathrm{at}}H^\circ[\ce{Mg}]=148,\quad
+\Delta_{\mathrm{at}}H^\circ[\ce{O}]=248
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{IE}_1=736,\quad \mathrm{IE}_2=1450,\quad
+\mathrm{EA}_1=-142,\quad \mathrm{EA}_2=+770
+\]</span></p>
+<div class="we-answer">
+<p><span class="math display">\[
+\Delta H_{\mathrm{gaseous\ ions}}
+=148+248+736+1450-142+770
+=3210\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt}}^\circ
+=-602-3210
+=-3812\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><strong>Answer：</strong> <span class="math inline">\(\Delta H_{\mathrm{latt}}^\circ[\ce{MgO}]=-3812\ \mathrm{kJ\,mol^{-1}}\)</span>。</p>
+</div>
+</div>
+</section>
+<section id="polarisation-and-covalent-character" class="level2">
+<h2 class="anchored" data-anchor-id="polarisation-and-covalent-character">12.14-12.15 Polarisation and covalent character</h2>
+<section id="the-ionic-model-and-polarisation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-ionic-model-and-polarisation">The ionic model and polarisation</h3>
+<p>Theoretical lattice energy 通常假设 perfect ionic model：ions 是 spherical，electron transfer 完全且 irreversible，attractions 纯粹来自 electrostatic forces。</p>
+<p>如果 experimental lattice energy 与 theoretical value 有明显 difference，说明 ionic bond 中存在一定 <strong>covalent character</strong>。原因是 cation 会吸引并 distort anion 的 electron density，这个过程叫 <strong>polarisation</strong>。</p>
+<ul>
+<li><strong>Polarising power</strong>：cation 使 anion 发生 distortion 的能力；</li>
+<li><strong>Polarisability</strong>：anion 被 distortion 的容易程度。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/polarisation-covalent-character.webp" class="concept-figure img-fluid figure-img" alt="Polarisation of an anion leading to covalent character"></p>
+<figcaption>Polarisation introduces covalent character</figcaption>
+</figure>
+</div>
+</section>
+<section id="factors-affecting-polarisation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="factors-affecting-polarisation">Factors affecting polarisation</h3>
+<p>Cation 的 polarising power 增加，当：</p>
+<ul>
+<li>cation ionic radius 更小；</li>
+<li>cation charge 更大；</li>
+<li>charge density 更高。</li>
+</ul>
+<p>Anion 的 polarisability 增加，当：</p>
+<ul>
+<li>anion ionic radius 更大；</li>
+<li>outer electron cloud 更容易被 distort。</li>
+</ul>
+<p>因此 <span class="math inline">\(\ce{Li+}\)</span> 比 <span class="math inline">\(\ce{K+}\)</span> 更 polarising，<span class="math inline">\(\ce{Mg^{2+}}\)</span> 比 <span class="math inline">\(\ce{Na+}\)</span> 更 polarising；<span class="math inline">\(\ce{Br-}\)</span> 比 <span class="math inline">\(\ce{Cl-}\)</span> 更 polarisable。</p>
+<p>一个 rough approximation 是：</p>
+<p><span class="math display">\[
+\text{charge density}\propto\frac{\text{charge}}{r^2}
+\]</span></p>
+<p>实际比较时还要使用题目给出的 data 和 experimental / theoretical lattice energy。</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/charge-density-comparison.webp" class="concept-figure img-fluid figure-img" alt="Comparison of charge density and covalent character for NaCl and MgCl2"></p>
+<figcaption>Charge-density and covalent-character comparison</figcaption>
+</figure>
+</div>
+</section>
+<section id="enthalpy-of-solution-and-hydration" class="level2">
+<h2 class="anchored" data-anchor-id="enthalpy-of-solution-and-hydration">12.16-12.17 Enthalpy of solution and hydration</h2>
+<section id="enthalpy-of-solution" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="enthalpy-of-solution">Enthalpy of solution</h3>
+<p><strong>Standard enthalpy change of solution</strong>, <span class="math inline">\(\Delta_{\mathrm{sol}}H^\circ\)</span>，是：</p>
+<p><strong>the enthalpy change when one mole of an ionic substance dissolves in sufficient water to form an infinitely dilute solution.</strong></p>
+<p>例如：</p>
+<p><span class="math display">\[
+\ce{KCl(s) -&gt; KCl(aq)}
+\]</span></p>
+<p>或写成 ions：</p>
+<p><span class="math display">\[
+\ce{KCl(s) -&gt; K+(aq) + Cl-(aq)}
+\]</span></p>
+<p><span class="math inline">\(\Delta_{\mathrm{sol}}H^\circ\)</span> 可以是 positive 或 negative。</p>
+</section>
+<section id="enthalpy-of-hydration" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="enthalpy-of-hydration">Enthalpy of hydration</h3>
+<p><strong>Standard enthalpy change of hydration</strong>, <span class="math inline">\(\Delta_{\mathrm{hyd}}H^\circ\)</span>，是：</p>
+<p><strong>the enthalpy change when one mole of a specified gaseous ion dissolves in sufficient water to form an infinitely dilute solution.</strong></p>
+<p>例如：</p>
+<p><span class="math display">\[
+\ce{Mg^{2+}(g) -&gt; Mg^{2+}(aq)}
+\]</span></p>
+<p>Hydration 过程中，water molecules 与 ion 形成 ion-dipole attractions，因此 hydration enthalpies 通常是 exothermic。</p>
+<p>Water 是 polar molecule：oxygen 端带 <span class="math inline">\(\delta-\)</span>，hydrogen 端带 <span class="math inline">\(\delta+\)</span>。因此：</p>
+<ul>
+<li>cation 吸引 water 的 oxygen；</li>
+<li>anion 吸引 water 的 hydrogen。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/hydrated-ions.webp" class="concept-figure img-fluid figure-img" alt="Hydration of potassium and chloride ions by polar water molecules"></p>
+<figcaption>Hydrated ions and ion-dipole attractions</figcaption>
+</figure>
+</div>
+</section>
+<section id="enthalpy-of-solution-cycle" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="enthalpy-of-solution-cycle">Enthalpy of solution cycle</h3>
+<p>从 ionic solid 到 aqueous ions 有两条 route：</p>
+<ul>
+<li>indirect route：lattice 分解，再 hydration；</li>
+<li>direct route：solid 直接 dissolve 成 aqueous ions。</li>
+</ul>
+<p>因此：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{sol}}^\circ
+=\Delta H_{\mathrm{latt,diss}}^\circ
++\sum\Delta H_{\mathrm{hyd}}^\circ
+\]</span></p>
+<p>如果使用 formation lattice energy：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt,diss}}^\circ
+=-\Delta H_{\mathrm{latt,form}}^\circ
+\]</span></p>
+<p>每个 ion 都有自己的 hydration enthalpy，且必须按 stoichiometric coefficient 相加。</p>
+</section>
+<section id="kcl-energy-cycle" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="kcl-energy-cycle">KCl energy cycle</h3>
+<p>KCl 的 solution cycle 可用来求 unknown <span class="math inline">\(\Delta_{\mathrm{hyd}}H^\circ[\ce{Cl-}]\)</span>：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{hyd}}^\circ[\ce{K+}]
++\Delta H_{\mathrm{hyd}}^\circ[\ce{Cl-}]
+=\Delta H_{\mathrm{latt}}^\circ[\ce{KCl}]
++\Delta H_{\mathrm{sol}}^\circ[\ce{KCl}]
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/solution-cycle-kcl.webp" class="concept-figure img-fluid figure-img" alt="Energy cycle for solution and hydration enthalpies of potassium chloride"></p>
+<figcaption>Energy cycle for KCl hydration enthalpy</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · hydration enthalpy of chloride ion</span></p>
+<p>已知：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt}}^\circ[\ce{KCl}]=-711,\quad
+\Delta H_{\mathrm{sol}}^\circ[\ce{KCl}]=+26
+\]</span></p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{hyd}}^\circ[\ce{K+}]=-322
+\quad \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<div class="we-answer">
+<p><span class="math display">\[
+\Delta H_{\mathrm{hyd}}^\circ[\ce{Cl-}]
+=\Delta H_{\mathrm{latt}}^\circ+\Delta H_{\mathrm{sol}}^\circ
+-\Delta H_{\mathrm{hyd}}^\circ[\ce{K+}]
+\]</span></p>
+<p><span class="math display">\[
+=(-711)+(+26)-(-322)
+=-363\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><strong>Answer：</strong> <span class="math inline">\(\Delta H_{\mathrm{hyd}}^\circ[\ce{Cl-}]=-363\ \mathrm{kJ\,mol^{-1}}\)</span>。</p>
+</div>
+</div>
+<section id="mgcl_2-and-stoichiometry" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="mgcl_2-and-stoichiometry">MgCl<span class="math inline">\(_2\)</span> and stoichiometry</h3>
+<p>对于 <span class="math inline">\(\ce{MgCl2}\)</span>，solution cycle 中有 two moles <span class="math inline">\(\ce{Cl-}\)</span>，所以：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{hyd}}^\circ[\ce{Mg^{2+}}]
++2\Delta H_{\mathrm{hyd}}^\circ[\ce{Cl-}]
+=\Delta H_{\mathrm{latt}}^\circ[\ce{MgCl2}]
++\Delta H_{\mathrm{sol}}^\circ[\ce{MgCl2}]
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/solution-cycle-mgcl2.webp" class="concept-figure img-fluid figure-img" alt="Energy cycle for magnesium chloride hydration enthalpy"></p>
+<figcaption>Energy cycle for MgCl2 hydration enthalpy</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · hydration enthalpy of magnesium ion</span></p>
+<p>Given：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{latt}}^\circ[\ce{MgCl2}]=-2592,\quad
+\Delta H_{\mathrm{sol}}^\circ[\ce{MgCl2}]=-55
+\]</span></p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{hyd}}^\circ[\ce{Cl-}]=-363
+\quad \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<div class="we-answer">
+<p><span class="math display">\[
+\begin{aligned}
+\Delta H_{\mathrm{hyd}}^\circ[\ce{Mg^{2+}}]
+&amp;=(-2592)+(-55)-2(-363)\\
+&amp;=-1921\ \mathrm{kJ\,mol^{-1}}
+\end{aligned}
+\]</span></p>
+<p>关键是不要漏掉 <span class="math inline">\(\ce{Cl-}\)</span> 的 coefficient 2。</p>
+</div>
+</div>
+</section>
+<section id="ionic-charge-and-ionic-radius" class="level2">
+<h2 class="anchored" data-anchor-id="ionic-charge-and-ionic-radius">12.18 Ionic charge and ionic radius</h2>
+<section id="lattice-energy-trends" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="lattice-energy-trends">Lattice energy trends</h3>
+<p>Lattice energy 受 ionic charge 和 ionic radius 两个主要因素影响。</p>
+<p><strong>Ionic radius 越大：</strong></p>
+<ul>
+<li>ion centres 距离更远；</li>
+<li>charge density 更低；</li>
+<li>electrostatic attraction 更弱；</li>
+<li>lattice energy less exothermic。</li>
+</ul>
+<p>例如，<span class="math inline">\(\ce{CsF}\)</span> 的 lattice energy 比 <span class="math inline">\(\ce{KF}\)</span> less exothermic，因为 <span class="math inline">\(\ce{Cs+}\)</span> radius 比 <span class="math inline">\(\ce{K+}\)</span> 大。</p>
+<p><strong>Ionic charge 越大：</strong></p>
+<ul>
+<li>charge density 更高；</li>
+<li>electrostatic attraction 更强；</li>
+<li>lattice energy more exothermic。</li>
+</ul>
+<p>因此 <span class="math inline">\(\ce{CaO}\)</span> 的 lattice energy 比 <span class="math inline">\(\ce{KCl}\)</span> more exothermic；<span class="math inline">\(\ce{Ca^{2+}}\)</span> 和 <span class="math inline">\(\ce{O^{2-}}\)</span> 的 charges 更高，且 ions 更小。</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/energetics/lattice-energy-radius-chart.webp" class="concept-figure img-fluid figure-img" alt="Lattice energy trends with ionic radius and charge"></p>
+<figcaption>Lattice energy becomes less exothermic as ionic radius increases</figcaption>
+</figure>
+</div>
+<section id="hydration-enthalpy-trends" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="hydration-enthalpy-trends">Hydration enthalpy trends</h3>
+<p>Hydration enthalpy 通常是 exothermic，因为 ion 与 polar water molecules 形成 attractions。</p>
+<p>Charge density 越高，ion 对 water molecules 的 attraction 越强，hydration enthalpy 越 negative。Charge density 在以下情况下更高：</p>
+<ul>
+<li>ionic radius 更小；</li>
+<li>ionic charge 更大。</li>
+</ul>
+<p>因此：</p>
+<ul>
+<li><span class="math inline">\(\ce{F-}\)</span> 的 hydration enthalpy 比 <span class="math inline">\(\ce{Cl-}\)</span> more negative；</li>
+<li><span class="math inline">\(\ce{Mg^{2+}}\)</span> 的 hydration enthalpy 比 <span class="math inline">\(\ce{Ba^{2+}}\)</span> more negative。</li>
+</ul>
+</section>
+</section>
+<section id="solubility-of-ionic-compounds" class="level2">
+<h2 class="anchored" data-anchor-id="solubility-of-ionic-compounds">12.19 Solubility of ionic compounds</h2>
+<section id="predicting-solubility" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="predicting-solubility">Predicting solubility</h3>
+<p>Ionic compound dissolving 时需要同时考虑：</p>
+<ol type="1">
+<li>breaking the ionic lattice：endothermic，增加 system particles 的 disorder；</li>
+<li>hydrating ions：exothermic，但 water molecules around ions 会变得更 ordered。</li>
+</ol>
+<p>因此 solubility 不能只由 lattice energy 或 <span class="math inline">\(\Delta H_{\mathrm{sol}}\)</span> 单独决定。需要考虑：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=\Delta S_{\mathrm{system}}
++\Delta S_{\mathrm{surroundings}}
+\]</span></p>
+<p>又因为：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}
+=-\frac{\Delta H_{\mathrm{sol}}}{T}
+\]</span></p>
+<p>所以 solubility 与三个因素有关：</p>
+<ul>
+<li><span class="math inline">\(\Delta S_{\mathrm{system}}\)</span>；</li>
+<li><span class="math inline">\(\Delta H_{\mathrm{sol}}\)</span>；</li>
+<li>temperature <span class="math inline">\(T\)</span>。</li>
+</ul>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · solubility of ammonium nitrate</span></p>
+<p>对于：</p>
+<p><span class="math display">\[
+\ce{NH4NO3(s) -&gt; NH4+(aq) + NO3-(aq)}
+\]</span></p>
+<p>在 <span class="math inline">\(298\ \mathrm{K}\)</span>：</p>
+<p><span class="math display">\[
+\Delta H_{\mathrm{sol}}=+25.8\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{system}}=+108.7\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<div class="we-answer">
+<p>先计算 surroundings：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}
+=-\frac{25800}{298}
+=-86.6\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>然后：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=108.7-86.6
+=+22.1\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>因为 <span class="math inline">\(\Delta S_{\mathrm{total}}&gt;0\)</span>，dissolving 在 <span class="math inline">\(298\ \mathrm{K}\)</span> 下 thermodynamically spontaneous。若 activation energy 也较低，则可以观察到 ammonium nitrate soluble。</p>
+</div>
+</div>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="study-card">
+<ul class="checklist">
+<li>
+<label><input type="checkbox"> 我能准确写出 lattice energy 的 formation definition 和 equation。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能定义 atomisation enthalpy、first / second electron affinity、solution enthalpy 和 hydration enthalpy。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能画 Born-Haber cycle，并区分 upward endothermic arrow 与 downward exothermic arrow。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 Hess’ Law 计算 KCl、MgO 等 ionic solids 的 lattice energy。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能根据 experimental / theoretical lattice energy 解释 polarisation 和 covalent character。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 ionic charge 和 ionic radius 解释 lattice energy / hydration enthalpy trends。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能画 solution energy cycle 并计算 unknown hydration enthalpy。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能在 MgCl2 calculation 中正确处理 two moles of chloride ions。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能结合 entropy、enthalpy of solution 和 temperature 判断 solubility。</label>
+</li>
+</ul>
+</div>
+<section id="source-note" class="level3">
+<h3 class="anchored" data-anchor-id="source-note">Source note</h3>
+<p>本页章节素材来自项目内的 `Note per Chapter/Note per Chapter/4.3 Energetics.pdf.pdf`；考纲校对来自 `International-A-Level-Chemistry-Spec.pdf` 的 <strong>Topic 12B: Lattice energy</strong>。图像已从 PDF 内嵌对象独立提取并存放在 `assets/notes/energetics/`。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/4-2-entropy.html" class="pagination-link" aria-label="4.2 Entropy · Topic 12A">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.2 Entropy · Topic 12A</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/4-4-chemical-equilibria.html" class="pagination-link" aria-label="4.4 Chemical Equilibria · Topic 13">
+        <span class="nav-page-text">4.4 Chemical Equilibria · Topic 13</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4.5 Acid-base Equilibria · Topic 14 – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/4-6-organic-chemistry-chirality.html" rel="next">
+<link href="../a-level/4-4-chemical-equilibria.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-5-acid-base-equilibria.html">4.5 Acid-base Equilibria · Topic 14</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals and their Chemistry · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#acid-base-equilibria-topic-14" id="toc-acid-base-equilibria-topic-14" class="nav-link active" data-scroll-target="#acid-base-equilibria-topic-14">4.5 Acid-base Equilibria · Topic 14</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#brønsted-lowry-acid-and-base-theory" id="toc-brønsted-lowry-acid-and-base-theory" class="nav-link" data-scroll-target="#brønsted-lowry-acid-and-base-theory">14.1 Brønsted-Lowry acid and base theory</a>
+  <ul class="collapse">
+  <li><a href="#proton-transfer" id="toc-proton-transfer" class="nav-link" data-scroll-target="#proton-transfer">Proton transfer</a></li>
+  <li><a href="#conjugate-acid-base-pairs" id="toc-conjugate-acid-base-pairs" class="nav-link" data-scroll-target="#conjugate-acid-base-pairs">Conjugate acid-base pairs</a></li>
+  <li><a href="#strong-and-weak-acids" id="toc-strong-and-weak-acids" class="nav-link" data-scroll-target="#strong-and-weak-acids">Strong and weak acids</a></li>
+  </ul></li>
+  <li><a href="#ph" id="toc-ph" class="nav-link" data-scroll-target="#ph">14.3-14.5 pH</a>
+  <ul class="collapse">
+  <li><a href="#ph-definition" id="toc-ph-definition" class="nav-link" data-scroll-target="#ph-definition">pH definition</a></li>
+  <li><a href="#dilution-and-ph" id="toc-dilution-and-ph" class="nav-link" data-scroll-target="#dilution-and-ph">Dilution and pH</a></li>
+  </ul></li>
+  <li><a href="#acid-strength-and-k_a" id="toc-acid-strength-and-k_a" class="nav-link" data-scroll-target="#acid-strength-and-k_a">14.6-14.9 Acid strength and <span class="math inline">\(K_a\)</span></a>
+  <ul class="collapse">
+  <li><a href="#acid-dissociation-constant" id="toc-acid-dissociation-constant" class="nav-link" data-scroll-target="#acid-dissociation-constant">Acid dissociation constant</a></li>
+  <li><a href="#comparing-acid-strength" id="toc-comparing-acid-strength" class="nav-link" data-scroll-target="#comparing-acid-strength">Comparing acid strength</a></li>
+  <li><a href="#required-assumption-for-weak-acid-ph-calculations" id="toc-required-assumption-for-weak-acid-ph-calculations" class="nav-link" data-scroll-target="#required-assumption-for-weak-acid-ph-calculations">Required assumption for weak-acid pH calculations</a></li>
+  <li><a href="#strong-acid-ph" id="toc-strong-acid-ph" class="nav-link" data-scroll-target="#strong-acid-ph">Strong-acid pH</a></li>
+  <li><a href="#weak-acid-ph" id="toc-weak-acid-ph" class="nav-link" data-scroll-target="#weak-acid-ph">Weak-acid pH</a></li>
+  </ul></li>
+  <li><a href="#ionic-product-of-water" id="toc-ionic-product-of-water" class="nav-link" data-scroll-target="#ionic-product-of-water">14.10-14.12 Ionic product of water</a>
+  <ul class="collapse">
+  <li><a href="#k_w-and-pk_w" id="toc-k_w-and-pk_w" class="nav-link" data-scroll-target="#k_w-and-pk_w"><span class="math inline">\(K_w\)</span> and p<span class="math inline">\(K_w\)</span></a></li>
+  <li><a href="#acidic-neutral-and-alkaline-solutions" id="toc-acidic-neutral-and-alkaline-solutions" class="nav-link" data-scroll-target="#acidic-neutral-and-alkaline-solutions">Acidic, neutral and alkaline solutions</a></li>
+  </ul></li>
+  <li><a href="#analysing-ph-data" id="toc-analysing-ph-data" class="nav-link" data-scroll-target="#analysing-ph-data">14.13 Analysing pH data</a>
+  <ul class="collapse">
+  <li><a href="#acids-bases-and-salts" id="toc-acids-bases-and-salts" class="nav-link" data-scroll-target="#acids-bases-and-salts">Acids, bases and salts</a></li>
+  <li><a href="#dilution-of-strong-and-weak-acids" id="toc-dilution-of-strong-and-weak-acids" class="nav-link" data-scroll-target="#dilution-of-strong-and-weak-acids">Dilution of strong and weak acids</a></li>
+  </ul></li>
+  <li><a href="#titration-curves-and-indicators" id="toc-titration-curves-and-indicators" class="nav-link" data-scroll-target="#titration-curves-and-indicators">14.15-14.16 Titration curves and indicators</a>
+  <ul class="collapse">
+  <li><a href="#reading-a-titration-curve" id="toc-reading-a-titration-curve" class="nav-link" data-scroll-target="#reading-a-titration-curve">Reading a titration curve</a></li>
+  <li><a href="#four-titration-combinations" id="toc-four-titration-combinations" class="nav-link" data-scroll-target="#four-titration-combinations">Four titration combinations</a></li>
+  <li><a href="#selecting-an-indicator" id="toc-selecting-an-indicator" class="nav-link" data-scroll-target="#selecting-an-indicator">Selecting an indicator</a></li>
+  <li><a href="#weak-acid-strong-base-curve" id="toc-weak-acid-strong-base-curve" class="nav-link" data-scroll-target="#weak-acid-strong-base-curve">Weak acid-strong base curve</a></li>
+  </ul></li>
+  <li><a href="#buffer-solutions" id="toc-buffer-solutions" class="nav-link" data-scroll-target="#buffer-solutions">14.17-14.18 Buffer solutions</a>
+  <ul class="collapse">
+  <li><a href="#definition-and-composition" id="toc-definition-and-composition" class="nav-link" data-scroll-target="#definition-and-composition">Definition and composition</a></li>
+  <li><a href="#buffer-action-when-acid-is-added" id="toc-buffer-action-when-acid-is-added" class="nav-link" data-scroll-target="#buffer-action-when-acid-is-added">Buffer action when acid is added</a></li>
+  <li><a href="#buffer-action-when-alkali-is-added" id="toc-buffer-action-when-alkali-is-added" class="nav-link" data-scroll-target="#buffer-action-when-alkali-is-added">Buffer action when alkali is added</a></li>
+  </ul></li>
+  <li><a href="#buffer-calculations" id="toc-buffer-calculations" class="nav-link" data-scroll-target="#buffer-calculations">14.19-14.20 Buffer calculations</a>
+  <ul class="collapse">
+  <li><a href="#henderson-hasselbalch-equation" id="toc-henderson-hasselbalch-equation" class="nav-link" data-scroll-target="#henderson-hasselbalch-equation">Henderson-Hasselbalch equation</a></li>
+  </ul></li>
+  <li><a href="#applications-and-core-practical-11" id="toc-applications-and-core-practical-11" class="nav-link" data-scroll-target="#applications-and-core-practical-11">14.21-14.23 Applications and Core Practical 11</a>
+  <ul class="collapse">
+  <li><a href="#buffers-in-blood-and-food" id="toc-buffers-in-blood-and-food" class="nav-link" data-scroll-target="#buffers-in-blood-and-food">Buffers in blood and food</a></li>
+  <li><a href="#core-practical-11-finding-k_a" id="toc-core-practical-11-finding-k_a" class="nav-link" data-scroll-target="#core-practical-11-finding-k_a">Core Practical 11: finding <span class="math inline">\(K_a\)</span></a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a>
+  <ul class="collapse">
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-5-acid-base-equilibria.html">4.5 Acid-base Equilibria · Topic 14</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">4.5 Acid-base Equilibria · Topic 14</h1>
+<p class="subtitle lead">pH, Ka, Kw, titration curves and buffer solutions</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="acid-base-equilibria-topic-14" class="level1">
+<h1>4.5 Acid-base Equilibria · Topic 14</h1>
+<p>本页严格按 Pearson Edexcel International Advanced Level Chemistry specification 的 <strong>Topic 14: Acid-base Equilibria</strong> 编排，内容来自项目内的 `4.5 Acid-base Equilibria.pdf.pdf`。解释采用中文，专业词汇保留 English，便于和 specification、Data Booklet 及 exam wording 对照。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本章后，你应该能够：</p>
+<ul>
+<li>define Brønsted-Lowry acid、base 和 conjugate acid-base pairs；</li>
+<li>calculate pH from <span class="math inline">\([\ce{H+}]\)</span>，并由 pH 求 <span class="math inline">\([\ce{H+}]\)</span>；</li>
+<li>distinguish strong acids / bases from weak acids / bases；</li>
+<li>write <span class="math inline">\(K_a\)</span>、p<span class="math inline">\(K_a\)</span>、<span class="math inline">\(K_w\)</span> 和 p<span class="math inline">\(K_w\)</span> expressions；</li>
+<li>calculate pH of strong acids、weak acids 和 strong bases；</li>
+<li>analyse pH data for acids、bases、salts 和 dilution；</li>
+<li>draw and interpret strong / weak acid-base titration curves；</li>
+<li>choose a suitable indicator from its transition range；</li>
+<li>explain buffer action and calculate buffer pH；</li>
+<li>calculate concentrations required to prepare a buffer of a given pH；</li>
+<li>apply buffer chemistry to blood and food；</li>
+<li>complete Core Practical 11: finding the <span class="math inline">\(K_a\)</span> value for a weak acid。</li>
+</ul>
+</section>
+<section id="brønsted-lowry-acid-and-base-theory" class="level2">
+<h2 class="anchored" data-anchor-id="brønsted-lowry-acid-and-base-theory">14.1 Brønsted-Lowry acid and base theory</h2>
+<section id="proton-transfer" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="proton-transfer">Proton transfer</h3>
+<p><strong>Brønsted-Lowry acid</strong> 是 proton donor；<strong>Brønsted-Lowry base</strong> 是 proton acceptor。Acid-base reaction 的本质是 proton transfer。</p>
+<p>Examples：</p>
+<p><span class="math display">\[
+\ce{HCl(aq) -&gt; H+(aq) + Cl-(aq)}
+\]</span></p>
+<p><span class="math inline">\(\ce{HCl}\)</span> donate a proton，因此是 acid。</p>
+<p><span class="math display">\[
+\ce{OH-(aq) + H+(aq) -&gt; H2O(l)}
+\]</span></p>
+<p><span class="math inline">\(\ce{OH-}\)</span> accept a proton，因此是 base。</p>
+<p>这个 definition 适用于 aqueous solution 以外的许多 proton-transfer reaction。</p>
+</section>
+<section id="conjugate-acid-base-pairs" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="conjugate-acid-base-pairs">Conjugate acid-base pairs</h3>
+<p>Conjugate acid-base pair 是相差 exactly one proton 的两个 species。以 ethanoic acid 在 water 中的 ionisation 为例：</p>
+<p><span class="math display">\[
+\ce{CH3COOH(aq) + H2O(l) &lt;=&gt; CH3COO-(aq) + H3O+(aq)}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\ce{CH3COOH/CH3COO-}\)</span> 是 conjugate acid-base pair；</li>
+<li><span class="math inline">\(\ce{H2O/H3O+}\)</span> 是 conjugate base-acid pair。</li>
+</ul>
+<p>Reactant acid 失去 proton 后形成 conjugate base；reactant base 获得 proton 后形成 conjugate acid。</p>
+</section>
+<section id="strong-and-weak-acids" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="strong-and-weak-acids">Strong and weak acids</h3>
+<p><strong>Strong acid</strong> 在 aqueous solution 中 almost completely dissociates，equilibrium position strongly favours ions：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/strong-acid-dissociation.webp" class="concept-figure img-fluid figure-img" alt="Almost complete dissociation of a strong acid"></p>
+<figcaption>Almost complete dissociation of a strong acid</figcaption>
+</figure>
+</div>
+<p><strong>Weak acid</strong> 只 partially dissociates，建立 equilibrium，solution 中仍有较多 undissociated acid molecules：</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/weak-acid-dissociation.webp" class="concept-figure img-fluid figure-img" alt="Partial dissociation of a weak acid"></p>
+<figcaption>Partial dissociation of a weak acid</figcaption>
+</figure>
+</div>
+<p>Strong / weak 描述的是 degree of dissociation，不是 solution 的 concentration。Dilute strong acid 仍然是 strong acid；concentrated weak acid 仍然是 weak acid。</p>
+</section>
+</section>
+<section id="ph" class="level2">
+<h2 class="anchored" data-anchor-id="ph">14.3-14.5 pH</h2>
+<section id="ph-definition" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="ph-definition">pH definition</h3>
+<p><span class="math display">\[
+\mathrm{pH}=-\log_{10}[\ce{H+}]
+\]</span></p>
+<p>其中 <span class="math inline">\([\ce{H+}]\)</span> 的单位为 <span class="math inline">\(\mathrm{mol\,dm^{-3}}\)</span>。Rearrange 可得：</p>
+<p><span class="math display">\[
+[\ce{H+}]=10^{-\mathrm{pH}}
+\]</span></p>
+<p>pH scale 是 base-10 logarithmic scale，因此 pH 每增加 1，<span class="math inline">\([\ce{H+}]\)</span> 就减少 10 倍。pH 通常写到 2 decimal places。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/ph-scale-table.webp" class="concept-figure img-fluid figure-img" alt="Relationship between pH and hydrogen ion concentration"></p>
+<figcaption>pH and hydrogen-ion concentration table</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · pH and hydrogen concentration</span></p>
+<ol type="1">
+<li>Find pH when <span class="math inline">\([\ce{H+}]=1.60\times10^{-4}\ \mathrm{mol\,dm^{-3}}\)</span>。</li>
+<li>Find <span class="math inline">\([\ce{H+}]\)</span> when pH <span class="math inline">\(=3.10\)</span>。</li>
+</ol>
+<div class="we-answer">
+<p><span class="math display">\[
+\mathrm{pH}=-\log(1.60\times10^{-4})=3.80
+\]</span></p>
+<p><span class="math display">\[
+[\ce{H+}]=10^{-3.10}=7.94\times10^{-4}\ \mathrm{mol\,dm^{-3}}
+\]</span></p>
+</div>
+</div>
+<section id="dilution-and-ph" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="dilution-and-ph">Dilution and pH</h3>
+<p>如果 strong acid 的 concentration 被 dilution 100 倍，<span class="math inline">\([\ce{H+}]\)</span> 减少 <span class="math inline">\(10^2\)</span> 倍，因此 pH 增加 2。</p>
+<p>Example：10.0 cm<span class="math inline">\(^3\)</span> pH 1.0 acid 加入 990.0 cm<span class="math inline">\(^3\)</span> water，total volume 变成 1000.0 cm<span class="math inline">\(^3\)</span>，concentration dilution factor 为 100，final pH 约为 3.0。</p>
+<p>但当 strong acid 极度 dilute 时，不能再忽略 water 的 self-ionisation；pH 不会无限增加到 alkaline value，而会接近 pH 7。</p>
+</section>
+</section>
+<section id="acid-strength-and-k_a" class="level2">
+<h2 class="anchored" data-anchor-id="acid-strength-and-k_a">14.6-14.9 Acid strength and <span class="math inline">\(K_a\)</span></h2>
+<section id="acid-dissociation-constant" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="acid-dissociation-constant">Acid dissociation constant</h3>
+<p>对于 weak monoprotic acid：</p>
+<p><span class="math display">\[
+\ce{HA(aq) &lt;=&gt; H+(aq) + A-(aq)}
+\]</span></p>
+<p><span class="math display">\[
+K_a=\frac{[\ce{H+}][\ce{A-}]}{[\ce{HA}]}
+\]</span></p>
+<p><span class="math inline">\(K_a\)</span> 越大，acid dissociation extent 越大，acid 越 strong。<span class="math inline">\(K_a\)</span> 越小，acid 越 weak。</p>
+<p><span class="math display">\[
+\mathrm{p}K_a=-\log_{10}K_a
+\]</span></p>
+<p>p<span class="math inline">\(K_a\)</span> 越小，acid 越 strong。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/ka-expression.webp" class="concept-figure img-fluid figure-img" alt="Ka expression for a weak acid"></p>
+<figcaption>Acid dissociation constant expression</figcaption>
+</figure>
+</div>
+</section>
+<section id="comparing-acid-strength" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="comparing-acid-strength">Comparing acid strength</h3>
+<p>比较 equimolar acid solutions 时，pH 越低，说明 <span class="math inline">\([\ce{H+}]\)</span> 越大，acid 相对越 strong。比较 <span class="math inline">\(K_a\)</span> 或 p<span class="math inline">\(K_a\)</span> 时：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Acid</th>
+<th style="text-align: right;"><span class="math inline">\(K_a\)</span> / <span class="math inline">\(\mathrm{mol\,dm^{-3}}\)</span></th>
+<th style="text-align: right;">p<span class="math inline">\(K_a\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>methanoic acid</td>
+<td style="text-align: right;"><span class="math inline">\(4.77\times10^{-4}\)</span></td>
+<td style="text-align: right;">3.32</td>
+</tr>
+<tr class="even">
+<td>ethanoic acid</td>
+<td style="text-align: right;"><span class="math inline">\(1.74\times10^{-5}\)</span></td>
+<td style="text-align: right;">4.76</td>
+</tr>
+<tr class="odd">
+<td>benzoic acid</td>
+<td style="text-align: right;"><span class="math inline">\(6.46\times10^{-5}\)</span></td>
+<td style="text-align: right;">4.19</td>
+</tr>
+<tr class="even">
+<td>carbonic acid</td>
+<td style="text-align: right;"><span class="math inline">\(4.30\times10^{-7}\)</span></td>
+<td style="text-align: right;">6.36</td>
+</tr>
+</tbody>
+</table>
+<p>因此 methanoic acid 比 ethanoic acid strong，carbonic acid 最 weak。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/ka-values-table.webp" class="concept-figure img-fluid figure-img" alt="Table of Ka values for weak acids"></p>
+<figcaption>Selected Ka values</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/pka-values-table.webp" class="concept-figure img-fluid figure-img" alt="Table of pKa values for weak acids"></p>
+<figcaption>Selected pKa values</figcaption>
+</figure>
+</div>
+</section>
+<section id="required-assumption-for-weak-acid-ph-calculations" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="required-assumption-for-weak-acid-ph-calculations">Required assumption for weak-acid pH calculations</h3>
+<p>计算 weak acid pH 时，通常使用两个 assumptions：</p>
+<ol type="1">
+<li>每个 <span class="math inline">\(\ce{HA}\)</span> dissociate 会形成 one <span class="math inline">\(\ce{H+}\)</span> 和 one <span class="math inline">\(\ce{A-}\)</span>，所以 <span class="math inline">\([\ce{H+}]=[\ce{A-}]\)</span>；</li>
+<li>weak acid 的 degree of dissociation 很小，因此 equilibrium <span class="math inline">\([\ce{HA}]\)</span> 近似等于 initial <span class="math inline">\([\ce{HA}]\)</span>。</li>
+</ol>
+<p>Specification 明确说明不要求 solve quadratic equations。</p>
+</section>
+<section id="strong-acid-ph" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="strong-acid-ph">Strong-acid pH</h3>
+<p>Strong acid almost completely ionises：</p>
+<p><span class="math display">\[
+\ce{HA(aq) -&gt; H+(aq) + A-(aq)}
+\]</span></p>
+<p>对于 monoprotic strong acid：</p>
+<p><span class="math display">\[
+[\ce{H+}]\approx[\ce{HA}]_{\mathrm{initial}}
+\]</span></p>
+<p>例如 <span class="math inline">\(0.0100\ \mathrm{mol\,dm^{-3}}\)</span> <span class="math inline">\(\ce{HCl}\)</span>：</p>
+<p><span class="math display">\[
+\mathrm{pH}=-\log(0.0100)=2.00
+\]</span></p>
+<p>Diprotic acids 要谨慎处理。<span class="math inline">\(\ce{H2SO4}\)</span> 的 first ionisation nearly complete，但 second ionisation 建立 equilibrium，因此不能简单地把 <span class="math inline">\([\ce{H+}]\)</span> 直接设为 <span class="math inline">\(2[\ce{H2SO4}]\)</span>。</p>
+</section>
+<section id="weak-acid-ph" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="weak-acid-ph">Weak-acid pH</h3>
+<p>由 <span class="math inline">\(K_a\)</span> expression 和 <span class="math inline">\([\ce{H+}]=[\ce{A-}]\)</span>：</p>
+<p><span class="math display">\[
+K_a=\frac{[\ce{H+}]^2}{[\ce{HA}]}
+\]</span></p>
+<p>因此：</p>
+<p><span class="math display">\[
+[\ce{H+}]=\sqrt{K_a[\ce{HA}]}
+\]</span></p>
+<p>随后使用 <span class="math inline">\(\mathrm{pH}=-\log[\ce{H+}]\)</span>。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · pH of ethanoic acid</span></p>
+<p>Calculate the pH of <span class="math inline">\(0.100\ \mathrm{mol\,dm^{-3}}\)</span> ethanoic acid at <span class="math inline">\(298\ \mathrm{K}\)</span>，given <span class="math inline">\(K_a=1.74\times10^{-5}\ \mathrm{mol\,dm^{-3}}\)</span>。</p>
+<div class="we-answer">
+<p><span class="math display">\[
+[\ce{H+}]
+=\sqrt{(1.74\times10^{-5})(0.100)}
+=1.32\times10^{-3}\ \mathrm{mol\,dm^{-3}}
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{pH}=-\log(1.32\times10^{-3})=2.88
+\]</span></p>
+<p><strong>Answer：</strong> pH <span class="math inline">\(=2.88\)</span>。</p>
+</div>
+</div>
+</section>
+<section id="ionic-product-of-water" class="level2">
+<h2 class="anchored" data-anchor-id="ionic-product-of-water">14.10-14.12 Ionic product of water</h2>
+<section id="k_w-and-pk_w" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="k_w-and-pk_w"><span class="math inline">\(K_w\)</span> and p<span class="math inline">\(K_w\)</span></h3>
+<p>Water self-ionisation：</p>
+<p><span class="math display">\[
+\ce{H2O(l) &lt;=&gt; H+(aq) + OH-(aq)}
+\]</span></p>
+<p>由于 pure water 的 concentration 近似 constant，ionic product 为：</p>
+<p><span class="math display">\[
+K_w=[\ce{H+}][\ce{OH-}]
+\]</span></p>
+<p>在 <span class="math inline">\(298\ \mathrm{K}\)</span>：</p>
+<p><span class="math display">\[
+K_w=1.00\times10^{-14}\ \mathrm{mol^2\,dm^{-6}}
+\]</span></p>
+<p>并且：</p>
+<p><span class="math display">\[
+\mathrm{p}K_w=-\log K_w
+\]</span></p>
+<p>在 <span class="math inline">\(298\ \mathrm{K}\)</span>，p<span class="math inline">\(K_w=14.00\)</span>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/kw-expression.webp" class="concept-figure img-fluid figure-img" alt="Kw expression derived from water ionisation"></p>
+<figcaption>Ionic product expression for water</figcaption>
+</figure>
+</div>
+</section>
+<section id="acidic-neutral-and-alkaline-solutions" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="acidic-neutral-and-alkaline-solutions">Acidic, neutral and alkaline solutions</h3>
+<p>在 <span class="math inline">\(298\ \mathrm{K}\)</span>：</p>
+<ul>
+<li>acidic：<span class="math inline">\([\ce{H+}]&gt;[\ce{OH-}]\)</span>，pH <span class="math inline">\(&lt;7\)</span>；</li>
+<li>neutral：<span class="math inline">\([\ce{H+}]=[\ce{OH-}]\)</span>，pH <span class="math inline">\(=7\)</span>；</li>
+<li>alkaline：<span class="math inline">\([\ce{H+}]&lt;[\ce{OH-}]\)</span>，pH <span class="math inline">\(&gt;7\)</span>。</li>
+</ul>
+<p>已知其中一个 ion concentration 时，可用：</p>
+<p><span class="math display">\[
+[\ce{OH-}]=\frac{K_w}{[\ce{H+}]}
+\qquad
+[\ce{H+}]=\frac{K_w}{[\ce{OH-}]}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/kw-solution-table.webp" class="concept-figure img-fluid figure-img" alt="Hydrogen and hydroxide concentrations for acidic neutral and alkaline solutions"></p>
+<figcaption>Kw table for solution type</figcaption>
+</figure>
+</div>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · pH of a strong base</span></p>
+<p>Calculate pH of <span class="math inline">\(0.150\ \mathrm{mol\,dm^{-3}}\)</span> <span class="math inline">\(\ce{NaOH}\)</span>。</p>
+<div class="we-answer">
+<p><span class="math inline">\(\ce{NaOH}\)</span> 是 strong base：</p>
+<p><span class="math display">\[
+[\ce{OH-}]=0.150\ \mathrm{mol\,dm^{-3}}
+\]</span></p>
+<p><span class="math display">\[
+[\ce{H+}]
+=\frac{1.00\times10^{-14}}{0.150}
+=6.67\times10^{-14}
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{pH}=-\log(6.67\times10^{-14})=13.18
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="analysing-ph-data" class="level2">
+<h2 class="anchored" data-anchor-id="analysing-ph-data">14.13 Analysing pH data</h2>
+<section id="acids-bases-and-salts" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="acids-bases-and-salts">Acids, bases and salts</h3>
+<p>在相同 temperature 下比较 equimolar solutions：</p>
+<ul>
+<li>acid solution 的 pH 越低，acid 越 strong；</li>
+<li>base solution 的 pH 越高，base 越 strong；</li>
+<li>salt 的 pH 取决于 parent acid 与 parent base 的 strength。</li>
+</ul>
+<p>Examples：</p>
+<ul>
+<li><span class="math inline">\(\ce{NaCl}\)</span>、<span class="math inline">\(\ce{KNO3}\)</span>：strong acid + strong base，approximately neutral；</li>
+<li><span class="math inline">\(\ce{CH3COONa}\)</span>：weak acid + strong base，alkaline；</li>
+<li><span class="math inline">\(\ce{NH4Cl}\)</span>：strong acid + weak base，acidic；</li>
+<li><span class="math inline">\(\ce{CH3COONH4}\)</span>：weak acid + weak base，若 relative strengths 相近可接近 neutral。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/acid-ph-table.webp" class="concept-figure img-fluid figure-img" alt="pH values of equimolar acid solutions"></p>
+<figcaption>pH values of equimolar acids</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/base-ph-table.webp" class="concept-figure img-fluid figure-img" alt="pH values of equimolar base solutions"></p>
+<figcaption>pH values of equimolar bases</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/salt-ph-table.webp" class="concept-figure img-fluid figure-img" alt="pH values of equimolar salt solutions"></p>
+<figcaption>pH values of equimolar salts</figcaption>
+</figure>
+</div>
+</section>
+<section id="dilution-of-strong-and-weak-acids" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="dilution-of-strong-and-weak-acids">Dilution of strong and weak acids</h3>
+<p>Strong acid：concentration 每减少 factor 10，pH 通常增加 1 unit；但极度 dilute 时 water contribution 不能忽略。</p>
+<p>Weak acid：dilution 会增加 degree of dissociation，但 <span class="math inline">\([\ce{H+}]\)</span> 的变化不像 strong acid 那样直接，因此 pH 变化通常小于相同 factor 的 strong acid。</p>
+</section>
+</section>
+<section id="titration-curves-and-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="titration-curves-and-indicators">14.15-14.16 Titration curves and indicators</h2>
+<section id="reading-a-titration-curve" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="reading-a-titration-curve">Reading a titration curve</h3>
+<p>Titration curve 是 pH against volume of acid / base added 的 graph。可以读出：</p>
+<ul>
+<li>initial pH；</li>
+<li>equivalence point 的 pH；</li>
+<li>equivalence volume；</li>
+<li>steep vertical section 的 pH range；</li>
+<li>buffer region（如果存在）。</li>
+</ul>
+<p>Equivalence point 是 stoichiometric amounts 完全 neutralised 的 point，位于 steep inflection 的 midpoint，不一定 pH 7。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/strong-acid-titration-curve.webp" class="concept-figure img-fluid figure-img" alt="Strong acid strong base titration curve"></p>
+<figcaption>Strong-acid strong-base titration curve</figcaption>
+</figure>
+</div>
+</section>
+<section id="four-titration-combinations" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="four-titration-combinations">Four titration combinations</h3>
+<p>需要掌握四种 combinations：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Acid</th>
+<th>Base</th>
+<th>Equivalence-point trend</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>strong acid</td>
+<td>strong base</td>
+<td>around pH 7</td>
+</tr>
+<tr class="even">
+<td>strong acid</td>
+<td>weak base</td>
+<td>below pH 7</td>
+</tr>
+<tr class="odd">
+<td>weak acid</td>
+<td>strong base</td>
+<td>above pH 7</td>
+</tr>
+<tr class="even">
+<td>weak acid</td>
+<td>weak base</td>
+<td>no large vertical section，indicator selection difficult</td>
+</tr>
+</tbody>
+</table>
+<p>Starting pH 和 equivalence-point pH 可以帮助识别 acid / base 的 relative strength。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/four-titration-curves.webp" class="concept-figure img-fluid figure-img" alt="Four combinations of acid base titration curves"></p>
+<figcaption>Four acid-base titration curves</figcaption>
+</figure>
+</div>
+</section>
+<section id="selecting-an-indicator" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="selecting-an-indicator">Selecting an indicator</h3>
+<p>Indicator 本身是 weak acid：</p>
+<p><span class="math display">\[
+\ce{HIn &lt;=&gt; H+ + In-}
+\]</span></p>
+<p>两种 forms 有不同 colours。Indicator 的 transition range 应落在 titration curve 的 steep vertical section 内。</p>
+<p>例如 methyl orange 的 p<span class="math inline">\(K_{\mathrm{In}}\)</span> 约为 3.7，transition range 较低；weak acid-strong base titration 的 equivalence region 在 pH 8-10，因此应选择 transition range 较高的 phenolphthalein。</p>
+<p>Indicator 的 colour change endpoint 应尽量接近 equivalence point。</p>
+</section>
+<section id="weak-acid-strong-base-curve" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="weak-acid-strong-base-curve">Weak acid-strong base curve</h3>
+<p>以 <span class="math inline">\(\ce{CH3COOH}\)</span> titrated with <span class="math inline">\(\ce{NaOH}\)</span> 为例：</p>
+<ul>
+<li>initial pH 约为 3；</li>
+<li>形成 <span class="math inline">\(\ce{CH3COO-}\)</span> 后出现 buffer region；</li>
+<li>half-equivalence point：<span class="math inline">\([\ce{CH3COOH}]=[\ce{CH3COO-}]\)</span>；</li>
+<li>half-equivalence point 的 pH = p<span class="math inline">\(K_a\)</span>；</li>
+<li>equivalence point pH <span class="math inline">\(&gt;7\)</span>，因为 ethanoate ion hydrolysis 使 solution alkaline。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/acidbase/weak-acid-buffer-curve.webp" class="concept-figure img-fluid figure-img" alt="Weak acid strong base titration curve showing buffer region and half equivalence point"></p>
+<figcaption>Weak-acid strong-base titration curve with buffer region</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="buffer-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="buffer-solutions">14.17-14.18 Buffer solutions</h2>
+<section id="definition-and-composition" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="definition-and-composition">Definition and composition</h3>
+<p><strong>Buffer solution</strong> 是能够 resist pH changes 的 solution，即加入 small amounts of acid 或 alkali 后 pH 只发生 small change。</p>
+<p>Buffer 可以由以下组合构成：</p>
+<ul>
+<li>weak acid + its conjugate base；</li>
+<li>weak base + its conjugate acid。</li>
+</ul>
+<p>常见 acidic buffer 是 ethanoic acid / sodium ethanoate：</p>
+<p><span class="math display">\[
+\ce{CH3COOH(aq) &lt;=&gt; H+(aq) + CH3COO-(aq)}
+\]</span></p>
+<p><span class="math inline">\(\ce{CH3COOH}\)</span> 是 weak acid；<span class="math inline">\(\ce{CH3COONa}\)</span> 完全 dissociates，提供 relatively high concentration of <span class="math inline">\(\ce{CH3COO-}\)</span>。</p>
+</section>
+<section id="buffer-action-when-acid-is-added" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="buffer-action-when-acid-is-added">Buffer action when acid is added</h3>
+<p>加入 <span class="math inline">\(\ce{H+}\)</span> 时：</p>
+<p><span class="math display">\[
+\ce{CH3COO-(aq) + H+(aq) &lt;=&gt; CH3COOH(aq)}
+\]</span></p>
+<p>Conjugate base consumes added <span class="math inline">\(\ce{H+}\)</span>，equilibrium shifts left。由于 acid 和 conjugate base 都有 large reserve supply，它们的 concentrations 变化比例较小，所以 pH 只小幅下降。</p>
+</section>
+<section id="buffer-action-when-alkali-is-added" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="buffer-action-when-alkali-is-added">Buffer action when alkali is added</h3>
+<p>加入 <span class="math inline">\(\ce{OH-}\)</span> 时：</p>
+<p><span class="math display">\[
+\ce{OH-(aq) + H+(aq) -&gt; H2O(l)}
+\]</span></p>
+<p><span class="math inline">\([\ce{H+}]\)</span> 被消耗后，equilibrium shifts right：</p>
+<p><span class="math display">\[
+\ce{CH3COOH(aq) &lt;=&gt; H+(aq) + CH3COO-(aq)}
+\]</span></p>
+<p>Weak acid dissociates to replace much of the removed <span class="math inline">\(\ce{H+}\)</span>，因此 pH 只小幅上升。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · identifying a buffer</span></p>
+<p>Which mixture forms a buffer with pH below 7？</p>
+<ul>
+<li><span class="math inline">\(\ce{NaOH}\)</span> and excess <span class="math inline">\(\ce{HCl}\)</span></li>
+<li><span class="math inline">\(\ce{NaOH}\)</span> and excess <span class="math inline">\(\ce{CH3COOH}\)</span></li>
+<li>excess <span class="math inline">\(\ce{NaOH}\)</span> and <span class="math inline">\(\ce{HCl}\)</span></li>
+<li>excess <span class="math inline">\(\ce{NaOH}\)</span> and <span class="math inline">\(\ce{CH3COOH}\)</span></li>
+</ul>
+<div class="we-answer">
+<p>Correct answer：<span class="math inline">\(\ce{NaOH}\)</span> and excess <span class="math inline">\(\ce{CH3COOH}\)</span>。</p>
+<p>Strong base partially neutralises excess weak acid，留下 weak acid 和 its conjugate base <span class="math inline">\(\ce{CH3COO-}\)</span>，形成 acidic buffer。</p>
+</div>
+</div>
+</section>
+<section id="buffer-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="buffer-calculations">14.19-14.20 Buffer calculations</h2>
+<section id="henderson-hasselbalch-equation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="henderson-hasselbalch-equation">Henderson-Hasselbalch equation</h3>
+<p>由：</p>
+<p><span class="math display">\[
+K_a=\frac{[\ce{H+}][\text{base}]}{[\text{acid}]}
+\]</span></p>
+<p>可得：</p>
+<p><span class="math display">\[
+[\ce{H+}]
+=K_a\frac{[\text{acid}]}{[\text{base}]}
+\]</span></p>
+<p>取 negative logarithm：</p>
+<p><span class="math display">\[
+\mathrm{pH}
+=\mathrm{p}K_a+\log_{10}\left(\frac{[\text{base}]}{[\text{acid}]}\right)
+\]</span></p>
+<p>这里的 base 指 conjugate base（例如 ethanoate），不是 necessarily <span class="math inline">\(\ce{OH-}\)</span>。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · pH of a buffer</span></p>
+<p>Buffer 含 <span class="math inline">\(0.305\ \mathrm{mol\,dm^{-3}}\)</span> ethanoic acid 和 <span class="math inline">\(0.520\ \mathrm{mol\,dm^{-3}}\)</span> sodium ethanoate，<span class="math inline">\(K_a=1.74\times10^{-5}\)</span>。</p>
+<div class="we-answer">
+<p><span class="math display">\[
+[\ce{H+}]
+=K_a\frac{[\text{acid}]}{[\text{base}]}
+=(1.74\times10^{-5})\frac{0.305}{0.520}
+=1.02\times10^{-5}
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{pH}=-\log(1.02\times10^{-5})=4.99
+\]</span></p>
+<p>也可使用：</p>
+<p><span class="math display">\[
+\mathrm{pH}=\mathrm{p}K_a+\log\frac{0.520}{0.305}
+\]</span></p>
+</div>
+</div>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · preparing a buffer of pH 5.00</span></p>
+<p>想用 ethanoic acid / ethanoate buffer 制备 pH <span class="math inline">\(=5.00\)</span> solution。已知 <span class="math inline">\(K_a=1.74\times10^{-5}\)</span>。</p>
+<div class="we-answer">
+<p>目标：</p>
+<p><span class="math display">\[
+[\ce{H+}]=10^{-5.00}=1.00\times10^{-5}
+\]</span></p>
+<p>由：</p>
+<p><span class="math display">\[
+[\ce{H+}]
+=K_a\frac{[\text{acid}]}{[\text{base}]}
+\]</span></p>
+<p>得到：</p>
+<p><span class="math display">\[
+\frac{[\text{acid}]}{[\text{base}]}
+=\frac{1.00\times10^{-5}}{1.74\times10^{-5}}
+=0.575
+\]</span></p>
+<p>因此可以 mix equal volumes of <span class="math inline">\(0.575\ \mathrm{mol\,dm^{-3}}\)</span> ethanoic acid and <span class="math inline">\(1.00\ \mathrm{mol\,dm^{-3}}\)</span> sodium ethanoate。混合后 concentrations 会同时减半，但 ratio 仍为 0.575，pH 仍约为 5.00。</p>
+</div>
+</div>
+</section>
+<section id="applications-and-core-practical-11" class="level2">
+<h2 class="anchored" data-anchor-id="applications-and-core-practical-11">14.21-14.23 Applications and Core Practical 11</h2>
+<section id="buffers-in-blood-and-food" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="buffers-in-blood-and-food">Buffers in blood and food</h3>
+<p>Blood 中的 carbon dioxide / hydrogencarbonate system：</p>
+<p><span class="math display">\[
+\ce{CO2(g) + H2O(l) &lt;=&gt; H+(aq) + HCO3-(aq)}
+\]</span></p>
+<p>Blood buffer 帮助维持 pH 约在 7.35-7.45：</p>
+<ul>
+<li>加入 <span class="math inline">\(\ce{H+}\)</span>：equilibrium shifts left，消耗 added <span class="math inline">\(\ce{H+}\)</span>；</li>
+<li>移除 <span class="math inline">\(\ce{H+}\)</span>：equilibrium shifts right，补充 <span class="math inline">\(\ce{H+}\)</span>。</li>
+</ul>
+<p>Food 的 buffer capacity 是抵抗 pH change 的能力。Food 中 proteins / amino acids 同时具有 acidic 和 basic properties，因此 protein-rich food 往往具有较高 buffer capacity。</p>
+</section>
+<section id="core-practical-11-finding-k_a" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="core-practical-11-finding-k_a">Core Practical 11: finding <span class="math inline">\(K_a\)</span></h3>
+<p>用 weak acid-strong base titration curve 求 weak acid 的 <span class="math inline">\(K_a\)</span>：</p>
+<ol type="1">
+<li>用 pH meter 记录不同 added-volume 下的 pH；</li>
+<li>plot pH against volume of strong base；</li>
+<li>找到 equivalence point 和 half-equivalence point；</li>
+<li>在 half-equivalence point 读取 pH；</li>
+<li>使用 <span class="math inline">\(\mathrm{pH}=\mathrm{p}K_a\)</span>；</li>
+<li>计算 <span class="math inline">\(K_a=10^{-\mathrm{p}K_a}\)</span>。</li>
+</ol>
+<p>在 half-equivalence point，weak acid 和 conjugate base 的 concentrations 相等，这是 Henderson-Hasselbalch equation 简化为 pH = p<span class="math inline">\(K_a\)</span> 的原因。</p>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="study-card">
+<ul class="checklist">
+<li>
+<label><input type="checkbox"> 我能定义 Brønsted-Lowry acid、base 和 conjugate acid-base pairs。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能使用 pH <span class="math inline">\(=-\log[\ce{H+}]\)</span> 和 <span class="math inline">\([\ce{H+}]=10^{-\mathrm{pH}}\)</span>。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能区分 strong / weak acid，并解释 degree of dissociation。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能写出 <span class="math inline">\(K_a\)</span>、p<span class="math inline">\(K_a\)</span>、<span class="math inline">\(K_w\)</span> 和 p<span class="math inline">\(K_w\)</span> expressions。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能计算 strong acid、weak acid 和 strong base 的 pH。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能分析 equimolar acid / base / salt pH data 和 dilution data。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能识别四种 acid-base titration curves，并选择合适 indicator。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能解释 buffer 在加入 <span class="math inline">\(\ce{H+}\)</span> 或 <span class="math inline">\(\ce{OH-}\)</span> 时如何 resist pH change。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能使用 Henderson-Hasselbalch equation 计算 buffer pH 和配制比例。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 Core Practical 11 的 half-equivalence point 求 <span class="math inline">\(K_a\)</span>。</label>
+</li>
+</ul>
+</div>
+<section id="source-note" class="level3">
+<h3 class="anchored" data-anchor-id="source-note">Source note</h3>
+<p>本页章节素材来自项目内的 `Note per Chapter/Note per Chapter/4.5 Acid-base Equilibria.pdf.pdf`；考纲校对来自 `International-A-Level-Chemistry-Spec.pdf` 的 <strong>Topic 14: Acid-base Equilibria</strong>。图像已从 PDF 内嵌对象独立提取并存放在 `assets/notes/acidbase/`。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/4-4-chemical-equilibria.html" class="pagination-link" aria-label="4.4 Chemical Equilibria · Topic 13">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.4 Chemical Equilibria · Topic 13</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/4-6-organic-chemistry-chirality.html" class="pagination-link" aria-label="4.6 Organic Chemistry Chirality · Topic 15A">
+        <span class="nav-page-text">4.6 Organic Chemistry Chirality · Topic 15A</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

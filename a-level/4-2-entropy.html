@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4.2 Entropy · Topic 12A – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/4-3-energetics.html" rel="next">
+<link href="../a-level/4-1-kinetics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-2-entropy.html">4.2 Entropy · Topic 12A</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals and their Chemistry · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#entropy-topic-12a" id="toc-entropy-topic-12a" class="nav-link active" data-scroll-target="#entropy-topic-12a">4.2 Entropy · Topic 12A</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#entropy-and-the-driving-force-for-change" id="toc-entropy-and-the-driving-force-for-change" class="nav-link" data-scroll-target="#entropy-and-the-driving-force-for-change">12.1 Entropy and the driving force for change</a>
+  <ul class="collapse">
+  <li><a href="#why-can-endothermic-reactions-occur" id="toc-why-can-endothermic-reactions-occur" class="nav-link" data-scroll-target="#why-can-endothermic-reactions-occur">Why can endothermic reactions occur?</a></li>
+  <li><a href="#definition-of-entropy" id="toc-definition-of-entropy" class="nav-link" data-scroll-target="#definition-of-entropy">Definition of entropy</a></li>
+  <li><a href="#boltzmann-relationship" id="toc-boltzmann-relationship" class="nav-link" data-scroll-target="#boltzmann-relationship">Boltzmann relationship</a></li>
+  <li><a href="#dispersal-of-particles-and-energy" id="toc-dispersal-of-particles-and-energy" class="nav-link" data-scroll-target="#dispersal-of-particles-and-energy">Dispersal of particles and energy</a></li>
+  </ul></li>
+  <li><a href="#entropy-temperature-and-physical-state" id="toc-entropy-temperature-and-physical-state" class="nav-link" data-scroll-target="#entropy-temperature-and-physical-state">12.2 Entropy, temperature and physical state</a>
+  <ul class="collapse">
+  <li><a href="#third-law-and-changes-of-state" id="toc-third-law-and-changes-of-state" class="nav-link" data-scroll-target="#third-law-and-changes-of-state">Third Law and changes of state</a></li>
+  <li><a href="#spontaneous-spreading-of-a-gas" id="toc-spontaneous-spreading-of-a-gas" class="nav-link" data-scroll-target="#spontaneous-spreading-of-a-gas">Spontaneous spreading of a gas</a></li>
+  </ul></li>
+  <li><a href="#predicting-entropy-changes" id="toc-predicting-entropy-changes" class="nav-link" data-scroll-target="#predicting-entropy-changes">12.3 Predicting entropy changes</a>
+  <ul class="collapse">
+  <li><a href="#changes-of-state-and-gas-formation" id="toc-changes-of-state-and-gas-formation" class="nav-link" data-scroll-target="#changes-of-state-and-gas-formation">Changes of state and gas formation</a></li>
+  <li><a href="#dissolving-an-ionic-solid" id="toc-dissolving-an-ionic-solid" class="nav-link" data-scroll-target="#dissolving-an-ionic-solid">Dissolving an ionic solid</a></li>
+  <li><a href="#reactions-between-solids-and-gas-evolution" id="toc-reactions-between-solids-and-gas-evolution" class="nav-link" data-scroll-target="#reactions-between-solids-and-gas-evolution">Reactions between solids and gas evolution</a></li>
+  </ul></li>
+  <li><a href="#total-entropy-change" id="toc-total-entropy-change" class="nav-link" data-scroll-target="#total-entropy-change">12.4 Total entropy change</a>
+  <ul class="collapse">
+  <li><a href="#system-and-surroundings" id="toc-system-and-surroundings" class="nav-link" data-scroll-target="#system-and-surroundings">System and surroundings</a></li>
+  <li><a href="#entropy-change-of-the-system" id="toc-entropy-change-of-the-system" class="nav-link" data-scroll-target="#entropy-change-of-the-system">Entropy change of the system</a></li>
+  <li><a href="#entropy-change-of-the-surroundings" id="toc-entropy-change-of-the-surroundings" class="nav-link" data-scroll-target="#entropy-change-of-the-surroundings">Entropy change of the surroundings</a></li>
+  </ul></li>
+  <li><a href="#feasibility-and-temperature" id="toc-feasibility-and-temperature" class="nav-link" data-scroll-target="#feasibility-and-temperature">12.5 Feasibility and temperature</a>
+  <ul class="collapse">
+  <li><a href="#feasibility-from-delta-s_mathrmtotal" id="toc-feasibility-from-delta-s_mathrmtotal" class="nav-link" data-scroll-target="#feasibility-from-delta-s_mathrmtotal">Feasibility from <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span></a></li>
+  <li><a href="#temperature-effect" id="toc-temperature-effect" class="nav-link" data-scroll-target="#temperature-effect">Temperature effect</a></li>
+  </ul></li>
+  <li><a href="#gibbs-free-energy-extension" id="toc-gibbs-free-energy-extension" class="nav-link" data-scroll-target="#gibbs-free-energy-extension">12.6 Gibbs free energy extension</a>
+  <ul class="collapse">
+  <li><a href="#gibbs-equation" id="toc-gibbs-equation" class="nav-link" data-scroll-target="#gibbs-equation">Gibbs equation</a></li>
+  <li><a href="#sign-summary" id="toc-sign-summary" class="nav-link" data-scroll-target="#sign-summary">Sign summary</a></li>
+  </ul></li>
+  <li><a href="#thermodynamic-and-kinetic-stability" id="toc-thermodynamic-and-kinetic-stability" class="nav-link" data-scroll-target="#thermodynamic-and-kinetic-stability">12.7 Thermodynamic and kinetic stability</a>
+  <ul class="collapse">
+  <li><a href="#two-different-meanings-of-stable" id="toc-two-different-meanings-of-stable" class="nav-link" data-scroll-target="#two-different-meanings-of-stable">Two different meanings of stable</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a>
+  <ul class="collapse">
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/4-1-kinetics.html">Unit 4 · Rates, equilibria and further organic chemistry</a></li><li class="breadcrumb-item"><a href="../a-level/4-2-entropy.html">4.2 Entropy · Topic 12A</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">4.2 Entropy · Topic 12A</h1>
+<p class="subtitle lead">Entropy changes, feasibility, Gibbs free energy and stability</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="entropy-topic-12a" class="level1">
+<h1>4.2 Entropy · Topic 12A</h1>
+<p>本页严格按 Pearson Edexcel International Advanced Level Chemistry specification 的 <strong>Topic 12A: Entropy</strong> 编排，内容来自项目内的 `4.2 Entropy.pdf.pdf`。解释采用中文，专业词汇保留 English，便于和 specification、Data Booklet 及 exam wording 对照。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本章后，你应该能够：</p>
+<ul>
+<li>explain why enthalpy change alone cannot predict whether a reaction occurs；</li>
+<li>define entropy as disorder and the random dispersal of particles and energy quanta；</li>
+<li>explain how entropy changes with temperature and physical state，并应用 Third Law；</li>
+<li>predict entropy changes for changes of state、dissolving、gas formation 和 mole changes；</li>
+<li>calculate <span class="math inline">\(\Delta S_{\mathrm{system}}\)</span>、<span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span> 和 <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span>；</li>
+<li>use the sign of <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> 判断 reaction feasibility；</li>
+<li>calculate the temperature at which an endothermic reaction becomes feasible；</li>
+<li>distinguish thermodynamic stability from kinetic stability；</li>
+<li>use Gibbs free energy as an optional extension to connect <span class="math inline">\(\Delta H\)</span>、<span class="math inline">\(\Delta S\)</span> and temperature。</li>
+</ul>
+</section>
+<section id="entropy-and-the-driving-force-for-change" class="level2">
+<h2 class="anchored" data-anchor-id="entropy-and-the-driving-force-for-change">12.1 Entropy and the driving force for change</h2>
+<section id="why-can-endothermic-reactions-occur" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="why-can-endothermic-reactions-occur">Why can endothermic reactions occur?</h3>
+<p>很多 everyday reactions 是 exothermic，但 <strong>enthalpy change <span class="math inline">\(\Delta H\)</span> alone 不能决定 reaction 是否发生</strong>。有些 endothermic reaction 仍然可以在合适条件下 spontaneous，因为 reaction 的 driving force 还包括 entropy change。</p>
+<p>例如，在 endothermic reaction 中，products 的 energy 可能高于 reactants。此时不能只根据“energy 增加”判断 reaction 不会发生；必须同时考虑 system 和 surroundings 的 entropy。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/endothermic-energy-profile.webp" class="concept-figure img-fluid figure-img" alt="Endothermic reaction profile with positive enthalpy change"></p>
+<figcaption>Endothermic energy profile</figcaption>
+</figure>
+</div>
+</section>
+<section id="definition-of-entropy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="definition-of-entropy">Definition of entropy</h3>
+<p><strong>Entropy, <span class="math inline">\(S\)</span>,</strong> 可以理解为 system 中 particles 及其 energy quanta 的 possible arrangements 数量，也就是 system 的 disorder 或 randomness 的 measure。</p>
+<p>更准确地说，entropy 关注两种 random dispersal：</p>
+<ul>
+<li>molecules / ions 在空间中的 random dispersal；</li>
+<li>energy quanta 在 particles 之间的 random dispersal。</li>
+</ul>
+<p>当 particles 的 arrangements 数量增加，entropy 增大。通常，energy 越分散、particles 越自由移动，system 的 entropy 越高。</p>
+</section>
+<section id="boltzmann-relationship" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="boltzmann-relationship">Boltzmann relationship</h3>
+<p>如果 system 有 <span class="math inline">\(W\)</span> 种 possible arrangements：</p>
+<p><span class="math display">\[
+S=k\ln W
+\]</span></p>
+<p><span class="math inline">\(k\)</span> 是 Boltzmann constant。在本课程中，重点是理解：<span class="math inline">\(W\)</span> 越大，<span class="math inline">\(S\)</span> 越大；不要求用该 equation 进行复杂 calculation。</p>
+</section>
+<section id="dispersal-of-particles-and-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="dispersal-of-particles-and-energy">Dispersal of particles and energy</h3>
+<p>固体中的 particles 通常被限制在 regular lattice 中，只能在固定位置附近 vibrate；liquid 中 particles 仍然较近，但可以相互移动；gas 中 particles 之间距离很远，可以在整个 container 中自由移动。因此同一 substance 通常满足：</p>
+<p><span class="math display">\[
+S_{\mathrm{solid}}&lt;S_{\mathrm{liquid}}&lt;S_{\mathrm{gas}}
+\]</span></p>
+<p>当 temperature 升高时，particles 的 motion 增强，energy 可以用更多方式分配，因此 entropy 通常增加。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/solid-liquid-disorder.webp" class="concept-figure img-fluid figure-img" alt="Ordered solid changing to disordered liquid"></p>
+<figcaption>Disorder increases when a solid melts</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="entropy-temperature-and-physical-state" class="level2">
+<h2 class="anchored" data-anchor-id="entropy-temperature-and-physical-state">12.2 Entropy, temperature and physical state</h2>
+<section id="third-law-and-changes-of-state" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="third-law-and-changes-of-state">Third Law and changes of state</h3>
+<p>Edexcel specification 要求理解以下趋势：</p>
+<ul>
+<li>temperature 升高，entropy 增大；</li>
+<li>solid <span class="math inline">\(\rightarrow\)</span> liquid，entropy 增大；</li>
+<li>liquid <span class="math inline">\(\rightarrow\)</span> gas，entropy 显著增大；</li>
+<li>gas <span class="math inline">\(\rightarrow\)</span> liquid 或 liquid <span class="math inline">\(\rightarrow\)</span> solid，entropy 减小；</li>
+<li>perfect crystal 在 <span class="math inline">\(0\ \mathrm{K}\)</span> 时 entropy 为 zero。</li>
+</ul>
+<p>在 melting 时，regular lattice 被破坏，particles 可以 rotate、slide 和 move past one another；在 boiling 时，particles 进一步分散到整个 volume 中。因此 boiling 对 entropy 的影响通常比 melting 更大。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/entropy-temperature-states.webp" class="concept-figure img-fluid figure-img" alt="Entropy versus temperature for solid liquid and gas"></p>
+<figcaption>Entropy increases with temperature and changes of state</figcaption>
+</figure>
+</div>
+</section>
+<section id="spontaneous-spreading-of-a-gas" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="spontaneous-spreading-of-a-gas">Spontaneous spreading of a gas</h3>
+<p>将两个 gas jars 之间的 barrier 移除后，gas molecules 会自发 spread throughout the available room。没有人为地把 molecules 推向每个位置，但 system 会从较少的 arrangements 走向更多的 arrangements。</p>
+<p>这说明 natural direction of change 通常指向 <strong>increasing total entropy</strong>。这里的 spontaneous 只表示 thermodynamically feasible，并不表示 reaction 一定 fast。</p>
+</section>
+</section>
+<section id="predicting-entropy-changes" class="level2">
+<h2 class="anchored" data-anchor-id="predicting-entropy-changes">12.3 Predicting entropy changes</h2>
+<section id="changes-of-state-and-gas-formation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="changes-of-state-and-gas-formation">Changes of state and gas formation</h3>
+<p>判断 <span class="math inline">\(\Delta S_{\mathrm{system}}\)</span> 时，先比较 reactants 与 products 的 physical states 和 particles 的自由程度：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Change</th>
+<th style="text-align: right;">Expected <span class="math inline">\(\Delta S_{\mathrm{system}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>solid <span class="math inline">\(\rightarrow\)</span> liquid</td>
+<td style="text-align: right;">positive</td>
+</tr>
+<tr class="even">
+<td>liquid <span class="math inline">\(\rightarrow\)</span> gas</td>
+<td style="text-align: right;">strongly positive</td>
+</tr>
+<tr class="odd">
+<td>gas <span class="math inline">\(\rightarrow\)</span> liquid</td>
+<td style="text-align: right;">negative</td>
+</tr>
+<tr class="even">
+<td>liquid <span class="math inline">\(\rightarrow\)</span> solid</td>
+<td style="text-align: right;">negative</td>
+</tr>
+<tr class="odd">
+<td>formation of a gas from solids or liquids</td>
+<td style="text-align: right;">usually positive</td>
+</tr>
+<tr class="even">
+<td>reduction in gaseous moles</td>
+<td style="text-align: right;">usually negative</td>
+</tr>
+</tbody>
+</table>
+<p>例如：</p>
+<p><span class="math display">\[
+\ce{CaCO3(s) -&gt; CaO(s) + CO2(g)}
+\]</span></p>
+<p>reaction 生成 gas molecule，system 的 disorder 增加，因此 <span class="math inline">\(\Delta S_{\mathrm{system}}&gt;0\)</span>。</p>
+</section>
+<section id="dissolving-an-ionic-solid" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="dissolving-an-ionic-solid">Dissolving an ionic solid</h3>
+<p>Dissolving solid ammonium nitrate 时，ionic lattice 中的 ordered ions 被分散到 solution 中，particles 的 possible arrangements 增加，因此 entropy 往往增加：</p>
+<p><span class="math display">\[
+\ce{NH4NO3(s) -&gt; NH4+(aq) + NO3-(aq)}
+\]</span></p>
+<p>但 dissolving 的 enthalpy 和 entropy 不能只凭“solid 变成 aqueous ions”机械判断。过程中同时发生：</p>
+<ol type="1">
+<li>breaking attractions in the ionic lattice：吸收 energy，并增加 disorder；</li>
+<li>forming interactions between ions and solvent molecules：释放 energy，也可能使 solvent molecules 更有序。</li>
+</ol>
+<p>因此 dissolving 可以是 endothermic 或 exothermic，必须结合 data 判断。</p>
+</section>
+<section id="reactions-between-solids-and-gas-evolution" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="reactions-between-solids-and-gas-evolution">Reactions between solids and gas evolution</h3>
+<p>两个 solids 反应时，starting system 的 disorder 通常较低。如果 products 中出现 liquid 或 gas，particles 的 movement 和 possible arrangements 增加，<span class="math inline">\(\Delta S_{\mathrm{system}}\)</span> 往往为 positive。</p>
+<p>例如：</p>
+<p><span class="math display">\[
+\ce{2NH4Cl(s) + Ba(OH)2.8H2O(s) -&gt; BaCl2.2H2O(s) + 2NH3(g) + H2O(l)}
+\]</span></p>
+<p>该 reaction 生成 ammonia gas 和 liquid water，因此 system 的 entropy 增加。反应虽然可以是 endothermic，但 feasibility 仍要看 <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span>。</p>
+</section>
+</section>
+<section id="total-entropy-change" class="level2">
+<h2 class="anchored" data-anchor-id="total-entropy-change">12.4 Total entropy change</h2>
+<section id="system-and-surroundings" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="system-and-surroundings">System and surroundings</h3>
+<p>reaction 的 entropy change 不能只看 system。若 reaction 是 exothermic，released energy 会传入 surroundings，使 surroundings 的 energy quanta 有更多 ways to be arranged，从而可能产生较大的 positive entropy change。</p>
+<p>Total entropy change 为：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}
+=\Delta S_{\mathrm{system}}+\Delta S_{\mathrm{surroundings}}
+\]</span></p>
+<p>在 constant pressure 下，若 <span class="math inline">\(\Delta S_{\mathrm{total}}&gt;0\)</span>，reaction 在该条件下 thermodynamically feasible / spontaneous。</p>
+</section>
+<section id="entropy-change-of-the-system" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="entropy-change-of-the-system">Entropy change of the system</h3>
+<p>使用 Data Booklet 中的 standard molar entropies <span class="math inline">\(S^\circ\)</span>：</p>
+<p><span class="math display">\[
+\Delta S^\circ_{\mathrm{system}}
+=\sum S^\circ_{\mathrm{products}}
+-\sum S^\circ_{\mathrm{reactants}}
+\]</span></p>
+<p>每个 <span class="math inline">\(S^\circ\)</span> 必须乘以 balanced equation 中对应的 stoichiometric coefficient。Entropy 的单位通常为 <span class="math inline">\(\mathrm{J\,K^{-1}\,mol^{-1}}\)</span>，不是 enthalpy 常用的 <span class="math inline">\(\mathrm{kJ\,mol^{-1}}\)</span>。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · <span class="math inline">\(\Delta S_{\mathrm{system}}\)</span></span></p>
+<p>Calculate <span class="math inline">\(\Delta S^\circ_{\mathrm{system}}\)</span> for：</p>
+<p><span class="math display">\[
+\ce{2Mg(s) + O2(g) -&gt; 2MgO(s)}
+\]</span></p>
+<p>Given：</p>
+<p><span class="math display">\[
+S^\circ[\ce{Mg(s)}]=32.60,\quad
+S^\circ[\ce{O2(g)}]=205.0,\quad
+S^\circ[\ce{MgO(s)}]=38.20
+\]</span></p>
+<div class="we-answer">
+<p><span class="math display">\[
+\begin{aligned}
+\Delta S^\circ_{\mathrm{system}}
+&amp;=(2\times38.20)-(2\times32.60+205.0)\\
+&amp;=-193.8\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\end{aligned}
+\]</span></p>
+<p><strong>Answer：</strong> <span class="math inline">\(\Delta S^\circ_{\mathrm{system}}=-193.8\ \mathrm{J\,K^{-1}\,mol^{-1}}\)</span>。</p>
+</div>
+</div>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · total entropy change</span></p>
+<p>For the formation of one mole of sodium chloride：</p>
+<p><span class="math display">\[
+\Delta S^\circ_{\mathrm{system}}=-90.1\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta S^\circ_{\mathrm{surroundings}}=+137.9\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<div class="we-answer">
+<p><span class="math display">\[
+\Delta S^\circ_{\mathrm{total}}
+=-90.1+137.9
+=+47.8\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>因为 <span class="math inline">\(\Delta S^\circ_{\mathrm{total}}&gt;0\)</span>，该 reaction 在这些 conditions 下 thermodynamically feasible。</p>
+</div>
+</div>
+<section id="entropy-change-of-the-surroundings" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="entropy-change-of-the-surroundings">Entropy change of the surroundings</h3>
+<p>Surroundings 的 entropy change 使用：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}=-\frac{\Delta H}{T}
+\]</span></p>
+<p>其中 <span class="math inline">\(T\)</span> 为 kelvin，且 <span class="math inline">\(\Delta H\)</span> 必须换算成 <span class="math inline">\(\mathrm{J\,mol^{-1}}\)</span>。因此：</p>
+<ul>
+<li>exothermic reaction：<span class="math inline">\(\Delta H&lt;0\)</span>，所以 <span class="math inline">\(\Delta S_{\mathrm{surroundings}}&gt;0\)</span>；</li>
+<li>endothermic reaction：<span class="math inline">\(\Delta H&gt;0\)</span>，所以 <span class="math inline">\(\Delta S_{\mathrm{surroundings}}&lt;0\)</span>。</li>
+</ul>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · <span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span></span></p>
+<p>对于 reaction：</p>
+<p><span class="math display">\[
+\ce{Al2O3(s) + 3C(s) -&gt; 2Al(s) + 3CO(g)}
+\]</span></p>
+<p>若 <span class="math inline">\(\Delta H=+1336\ \mathrm{kJ\,mol^{-1}}\)</span>，<span class="math inline">\(T=298\ \mathrm{K}\)</span>，求 <span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span>。</p>
+<div class="we-answer">
+<p>先换算：</p>
+<p><span class="math display">\[\Delta H=+1336\,000\ \mathrm{J\,mol^{-1}}\]</span></p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{surroundings}}
+= -\frac{1336000}{298}
+= -4483\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>Endothermic reaction 从 surroundings 吸收 energy，所以 surroundings entropy 为 negative。</p>
+</div>
+</div>
+</section>
+<section id="feasibility-and-temperature" class="level2">
+<h2 class="anchored" data-anchor-id="feasibility-and-temperature">12.5 Feasibility and temperature</h2>
+<section id="feasibility-from-delta-s_mathrmtotal" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="feasibility-from-delta-s_mathrmtotal">Feasibility from <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span></h3>
+<p>Reaction 在给定 conditions 下 feasible 的条件是：</p>
+<p><span class="math display">\[
+\Delta S_{\mathrm{total}}&gt;0
+\]</span></p>
+<p>常见 sign combinations：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 36%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(\Delta S_{\mathrm{system}}\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span></th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">positive</td>
+<td style="text-align: right;">positive</td>
+<td>通常 feasible</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">negative</td>
+<td style="text-align: right;">positive</td>
+<td>surroundings 的 positive contribution 必须更大</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">positive</td>
+<td style="text-align: right;">negative</td>
+<td>system 的 positive contribution 必须更大</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">negative</td>
+<td style="text-align: right;">negative</td>
+<td>不 feasible</td>
+</tr>
+</tbody>
+</table>
+<p>注意：feasible / spontaneous 不代表 reaction fast。Reaction 可能 thermodynamically feasible，但由于 activation energy 很高而 kinetically slow。</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/exothermic-feasibility-map.webp" class="concept-figure img-fluid figure-img" alt="Feasibility of exothermic reactions using Gibbs free energy signs"></p>
+<figcaption>Exothermic reaction feasibility map</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/endothermic-feasibility-map.webp" class="concept-figure img-fluid figure-img" alt="Feasibility of endothermic reactions using Gibbs free energy signs"></p>
+<figcaption>Endothermic reaction feasibility map</figcaption>
+</figure>
+</div>
+<section id="temperature-effect" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="temperature-effect">Temperature effect</h3>
+<p>Temperature 越高，<span class="math inline">\(\left|\Delta S_{\mathrm{surroundings}}\right|=\left|\Delta H/T\right|\)</span> 越小。因此：</p>
+<ul>
+<li>exothermic reaction 的 positive <span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span> contribution 会减弱；</li>
+<li>endothermic reaction 的 negative <span class="math inline">\(\Delta S_{\mathrm{surroundings}}\)</span> contribution 也会减弱。</li>
+</ul>
+<p>对于 <span class="math inline">\(\Delta H&gt;0\)</span> 且 <span class="math inline">\(\Delta S_{\mathrm{system}}&gt;0\)</span> 的 reaction，低温时可能不 feasible，但 temperature 足够高时，system 的 positive entropy contribution 可以占优势。</p>
+</section>
+<div class="worked-example">
+<p><span class="we-tag">Worked example · feasibility temperature</span></p>
+<p>某 reaction 的 <span class="math inline">\(\Delta H=+1336\ \mathrm{kJ\,mol^{-1}}\)</span>，<span class="math inline">\(\Delta S_{\mathrm{system}}=+581\ \mathrm{J\,K^{-1}\,mol^{-1}}\)</span>。求 reaction 刚好变为 feasible 的 temperature。</p>
+<div class="we-answer">
+<p>临界点取 <span class="math inline">\(\Delta S_{\mathrm{total}}=0\)</span>，等价于：</p>
+<p><span class="math display">\[
+\Delta G=0,\qquad T=\frac{\Delta H}{\Delta S_{\mathrm{system}}}
+\]</span></p>
+<p>将 <span class="math inline">\(\Delta H\)</span> 换为 joules：</p>
+<p><span class="math display">\[
+T=\frac{1336000}{581}=2299\ \mathrm{K}
+\]</span></p>
+<p>所以 temperature 高于约 <span class="math inline">\(2299\ \mathrm{K}\)</span> 时，reaction 才 thermodynamically feasible。</p>
+</div>
+</div>
+</section>
+<section id="gibbs-free-energy-extension" class="level2">
+<h2 class="anchored" data-anchor-id="gibbs-free-energy-extension">12.6 Gibbs free energy extension</h2>
+<section id="gibbs-equation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="gibbs-equation">Gibbs equation</h3>
+<p>Specification 允许在答案中使用 Gibbs free energy，但不是 Topic 12A 的唯一 required route：</p>
+<p><span class="math display">\[
+\Delta G=\Delta H-T\Delta S_{\mathrm{system}}
+\]</span></p>
+<p>使用 Gibbs equation 时，<span class="math inline">\(\Delta H\)</span> 和 <span class="math inline">\(T\Delta S\)</span> 必须使用相同 energy units。若 <span class="math inline">\(\Delta H\)</span> 用 <span class="math inline">\(\mathrm{kJ\,mol^{-1}}\)</span>，则 <span class="math inline">\(\Delta S\)</span> 要从 <span class="math inline">\(\mathrm{J\,K^{-1}\,mol^{-1}}\)</span> 换成 <span class="math inline">\(\mathrm{kJ\,K^{-1}\,mol^{-1}}\)</span>。</p>
+<p><span class="math display">\[
+\Delta G\leq0\quad\Longrightarrow\quad \text{feasible}
+\]</span></p>
+<p>Gibbs approach 与 <span class="math inline">\(\Delta S_{\mathrm{total}}&gt;0\)</span> 的判断一致，但 exam 中优先使用题目要求的 expression。</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/gibbs-equation-terms.webp" class="concept-figure img-fluid figure-img" alt="Gibbs free energy equation with enthalpy and entropy terms"></p>
+<figcaption>Gibbs equation terms</figcaption>
+</figure>
+</div>
+<section id="sign-summary" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="sign-summary">Sign summary</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(\Delta H\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\Delta S_{\mathrm{system}}\)</span></th>
+<th>Feasibility trend</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">negative</td>
+<td style="text-align: right;">positive</td>
+<td>always feasible at any temperature</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">positive</td>
+<td style="text-align: right;">negative</td>
+<td>never feasible at any temperature</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">negative</td>
+<td style="text-align: right;">negative</td>
+<td>usually feasible at low temperature</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">positive</td>
+<td style="text-align: right;">positive</td>
+<td>usually feasible at high temperature</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/entropy/gibbs-sign-summary.webp" class="concept-figure img-fluid figure-img" alt="Summary table of enthalpy entropy and spontaneity"></p>
+<figcaption>Summary table for Gibbs free energy signs</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="thermodynamic-and-kinetic-stability" class="level2">
+<h2 class="anchored" data-anchor-id="thermodynamic-and-kinetic-stability">12.7 Thermodynamic and kinetic stability</h2>
+<section id="two-different-meanings-of-stable" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="two-different-meanings-of-stable">Two different meanings of stable</h3>
+<p><strong>Thermodynamic stability</strong> 取决于 reaction 是否 spontaneous / feasible，主要由 <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> 或 <span class="math inline">\(\Delta G\)</span> 判断。</p>
+<p><strong>Kinetic stability</strong> 取决于 reaction rate 和 activation energy。一个 substance 可能 thermodynamically unstable，但因为 activation energy 很高，在 room temperature 下仍然长时间不发生明显变化。</p>
+<p>例如 hydrogen peroxide 的 decomposition：</p>
+<p><span class="math display">\[
+\ce{H2O2(l) -&gt; H2O(l) + 1/2O2(g)}
+\]</span></p>
+<p>在 thermodynamic 上可以发生，但在 room temperature 下 reaction 很慢。加入 manganese dioxide，提供 lower activation energy 的 alternative pathway，decomposition rate 显著增加。</p>
+<p>因此：</p>
+<ul>
+<li>thermodynamics 告诉我们 reaction <strong>能不能发生</strong>；</li>
+<li>kinetics 告诉我们 reaction <strong>发生得有多快</strong>。</li>
+</ul>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<div class="study-card">
+<ul class="checklist">
+<li>
+<label><input type="checkbox"> 我能用 disorder 和 random dispersal of energy quanta 定义 entropy。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能解释 temperature、solid/liquid/gas 和 perfect crystal at 0 K 对 entropy 的影响。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能预测 changes of state、dissolving 和 gas formation 的 <span class="math inline">\(\Delta S_{\mathrm{system}}\)</span> sign。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 <span class="math inline">\(\Delta S^\circ_{\mathrm{system}}=\sum S^\circ_{\mathrm{products}}-\sum S^\circ_{\mathrm{reactants}}\)</span> 计算 system entropy change。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能用 <span class="math inline">\(\Delta S_{\mathrm{surroundings}}=-\Delta H/T\)</span> 计算 surroundings entropy change，并正确换算 units。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能计算 <span class="math inline">\(\Delta S_{\mathrm{total}}\)</span> 并判断 feasibility。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能解释 temperature 如何改变 feasibility，并求 threshold temperature。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能在需要时使用 Gibbs equation <span class="math inline">\(\Delta G=\Delta H-T\Delta S\)</span>。</label>
+</li>
+<li>
+<label><input type="checkbox"> 我能区分 thermodynamic stability 与 kinetic stability。</label>
+</li>
+</ul>
+</div>
+<section id="source-note" class="level3">
+<h3 class="anchored" data-anchor-id="source-note">Source note</h3>
+<p>本页章节素材来自项目内的 `Note per Chapter/Note per Chapter/4.2 Entropy.pdf.pdf`；考纲校对来自 `International-A-Level-Chemistry-Spec.pdf` 的 <strong>Topic 12A: Entropy</strong>。图像已从 PDF 内嵌对象独立提取并存放在 `assets/notes/entropy/`。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/4-1-kinetics.html" class="pagination-link" aria-label="4.1 Kinetics · Topic 11">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.1 Kinetics · Topic 11</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/4-3-energetics.html" class="pagination-link" aria-label="4.3 Energetics · Topic 12B">
+        <span class="nav-page-text">4.3 Energetics · Topic 12B</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

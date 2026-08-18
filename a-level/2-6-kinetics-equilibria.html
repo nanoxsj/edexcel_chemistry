@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2.6 Introduction to Kinetics - Equilibria – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/3-1-physical-chemistry-core-practicals.html" rel="next">
+<link href="../a-level/2-5-group-7.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/2-1-energetics.html">Unit 2 · Energetics</a></li><li class="breadcrumb-item"><a href="../a-level/2-6-kinetics-equilibria.html">2.6 Introduction to Kinetics - Equilibria</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 1 · Formulae, Structure and Bonding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-1-formulae-equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Formulae and Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-2-amount-of-substance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Amount of Substance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-3-atomic-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Atomic Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-4-electrons-ions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Electrons - Ions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-5-the-periodic-table.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 The Periodic Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-6-ionic-metallic-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 Ionic - Metallic Bonding - Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-7-covalent-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 Covalent Bonding - Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-8-introductory-organic-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 Introductory Organic Chemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-9-alkanes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.9 Alkanes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-10-alkenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.10 Alkenes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 2 · Energetics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-1-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Energetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-2-intermolecular-forces.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Intermolecular Forces</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-3-redox-chemistry-acid-base-titrations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Redox Chemistry - Acid-Base Titrations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-4-groups-1-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Groups 1 - 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-5-group-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Group 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-6-kinetics-equilibria.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2.6 Introduction to Kinetics - Equilibria</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 3 · Physical Chemistry Core Practicals</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-2-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals - Complexes · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-3-transition-metal-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Transition Metal Reactions · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 6 · Advanced Practical Chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Advanced Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-2-advanced-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Advanced Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-kinetics---equilibria" id="toc-introduction-to-kinetics---equilibria" class="nav-link active" data-scroll-target="#introduction-to-kinetics---equilibria">2.6 Introduction to Kinetics - Equilibria</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#collision-theory" id="toc-collision-theory" class="nav-link" data-scroll-target="#collision-theory">2.6.1 Collision theory</a>
+  <ul class="collapse">
+  <li><a href="#successful-collisions" id="toc-successful-collisions" class="nav-link" data-scroll-target="#successful-collisions">Successful collisions</a></li>
+  <li><a href="#collision-frequency" id="toc-collision-frequency" class="nav-link" data-scroll-target="#collision-frequency">Collision frequency</a></li>
+  <li><a href="#activation-energy-and-energy-profiles" id="toc-activation-energy-and-energy-profiles" class="nav-link" data-scroll-target="#activation-energy-and-energy-profiles">Activation energy and energy profiles</a></li>
+  </ul></li>
+  <li><a href="#rates-of-reaction" id="toc-rates-of-reaction" class="nav-link" data-scroll-target="#rates-of-reaction">2.6.2 Rates of reaction</a>
+  <ul class="collapse">
+  <li><a href="#definition-and-units" id="toc-definition-and-units" class="nav-link" data-scroll-target="#definition-and-units">Definition and units</a></li>
+  <li><a href="#rate-from-a-tangent" id="toc-rate-from-a-tangent" class="nav-link" data-scroll-target="#rate-from-a-tangent">Rate from a tangent</a></li>
+  <li><a href="#measuring-rate-experimentally" id="toc-measuring-rate-experimentally" class="nav-link" data-scroll-target="#measuring-rate-experimentally">Measuring rate experimentally</a></li>
+  <li><a href="#concentration-and-rate" id="toc-concentration-and-rate" class="nav-link" data-scroll-target="#concentration-and-rate">Concentration and rate</a></li>
+  </ul></li>
+  <li><a href="#maxwell-boltzmann-distributions" id="toc-maxwell-boltzmann-distributions" class="nav-link" data-scroll-target="#maxwell-boltzmann-distributions">2.6.3 Maxwell-Boltzmann distributions</a>
+  <ul class="collapse">
+  <li><a href="#energy-distribution" id="toc-energy-distribution" class="nav-link" data-scroll-target="#energy-distribution">Energy distribution</a></li>
+  <li><a href="#effect-of-temperature" id="toc-effect-of-temperature" class="nav-link" data-scroll-target="#effect-of-temperature">Effect of temperature</a></li>
+  </ul></li>
+  <li><a href="#catalysts-and-energy" id="toc-catalysts-and-energy" class="nav-link" data-scroll-target="#catalysts-and-energy">2.6.4 Catalysts and energy</a>
+  <ul class="collapse">
+  <li><a href="#alternative-pathway" id="toc-alternative-pathway" class="nav-link" data-scroll-target="#alternative-pathway">Alternative pathway</a></li>
+  <li><a href="#catalyst-and-maxwell-boltzmann-distribution" id="toc-catalyst-and-maxwell-boltzmann-distribution" class="nav-link" data-scroll-target="#catalyst-and-maxwell-boltzmann-distribution">Catalyst and Maxwell-Boltzmann distribution</a></li>
+  </ul></li>
+  <li><a href="#dynamic-equilibrium-in-reversible-reactions" id="toc-dynamic-equilibrium-in-reversible-reactions" class="nav-link" data-scroll-target="#dynamic-equilibrium-in-reversible-reactions">2.6.5 Dynamic equilibrium in reversible reactions</a>
+  <ul class="collapse">
+  <li><a href="#reversible-reactions" id="toc-reversible-reactions" class="nav-link" data-scroll-target="#reversible-reactions">Reversible reactions</a></li>
+  <li><a href="#dynamic-equilibrium" id="toc-dynamic-equilibrium" class="nav-link" data-scroll-target="#dynamic-equilibrium">Dynamic equilibrium</a></li>
+  <li><a href="#closed-and-open-systems" id="toc-closed-and-open-systems" class="nav-link" data-scroll-target="#closed-and-open-systems">Closed and open systems</a></li>
+  </ul></li>
+  <li><a href="#le-chateliers-principle" id="toc-le-chateliers-principle" class="nav-link" data-scroll-target="#le-chateliers-principle">2.6.6 Le Chatelier’s principle</a>
+  <ul class="collapse">
+  <li><a href="#position-of-equilibrium" id="toc-position-of-equilibrium" class="nav-link" data-scroll-target="#position-of-equilibrium">Position of equilibrium</a></li>
+  <li><a href="#concentration" id="toc-concentration" class="nav-link" data-scroll-target="#concentration">Concentration</a></li>
+  <li><a href="#pressure" id="toc-pressure" class="nav-link" data-scroll-target="#pressure">Pressure</a></li>
+  <li><a href="#temperature" id="toc-temperature" class="nav-link" data-scroll-target="#temperature">Temperature</a></li>
+  </ul></li>
+  <li><a href="#industrial-compromises" id="toc-industrial-compromises" class="nav-link" data-scroll-target="#industrial-compromises">2.6.7 Industrial compromises</a>
+  <ul class="collapse">
+  <li><a href="#haber-process" id="toc-haber-process" class="nav-link" data-scroll-target="#haber-process">Haber process</a></li>
+  <li><a href="#how-to-evaluate-an-industrial-compromise" id="toc-how-to-evaluate-an-industrial-compromise" class="nav-link" data-scroll-target="#how-to-evaluate-an-industrial-compromise">How to evaluate an industrial compromise</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a></li>
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/2-1-energetics.html">Unit 2 · Energetics</a></li><li class="breadcrumb-item"><a href="../a-level/2-6-kinetics-equilibria.html">2.6 Introduction to Kinetics - Equilibria</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2.6 Introduction to Kinetics - Equilibria</h1>
+<p class="subtitle lead">Collision theory, rates, Maxwell-Boltzmann, catalysts and equilibrium</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction-to-kinetics---equilibria" class="level1">
+<h1>2.6 Introduction to Kinetics - Equilibria</h1>
+<p>本页对应 <code>2.6 Introduction to Kinetics - Equilibria.pdf.pdf</code>。内容从 collision theory 和 rate measurements 延伸到 Maxwell-Boltzmann distributions、catalysts、dynamic equilibrium、Le Chatelier’s principle 及 industrial compromises。专业词汇保留 English。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<ul>
+<li>explain successful collisions using collision frequency、orientation and activation energy；</li>
+<li>calculate reaction rate and determine rate from a tangent to a curve；</li>
+<li>compare rate-measurement methods including mass、gas volume、concentration and disappearing cross；</li>
+<li>interpret Maxwell-Boltzmann distributions and catalyst effects；</li>
+<li>define dynamic equilibrium in a closed system；</li>
+<li>predict equilibrium shifts using Le Chatelier’s principle；</li>
+<li>evaluate the yield-rate compromise in an industrial process。</li>
+</ul>
+</section>
+<section id="collision-theory" class="level2">
+<h2 class="anchored" data-anchor-id="collision-theory">2.6.1 Collision theory</h2>
+<section id="successful-collisions" class="level3">
+<h3 class="anchored" data-anchor-id="successful-collisions">Successful collisions</h3>
+<p>Reactant particles must collide before bonds can break and new bonds can form。A <strong>successful / effective collision</strong> requires both：</p>
+<ol type="1">
+<li>correct orientation；</li>
+<li>collision energy at least equal to activation energy, <code>Eₐ</code>。</li>
+</ol>
+<p>Wrong orientation or insufficient energy gives an unsuccessful collision，particles simply bounce apart。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/successful-collision.png" class="concept-figure img-fluid figure-img" alt="Particles with incorrect orientation or insufficient energy compared with a successful collision"></p>
+<figcaption>Successful and unsuccessful collisions</figcaption>
+</figure>
+</div>
+</section>
+<section id="collision-frequency" class="level3">
+<h3 class="anchored" data-anchor-id="collision-frequency">Collision frequency</h3>
+<p><strong>Collision frequency</strong> 是 collisions per unit time。它可以通过以下方式增加：</p>
+<ul>
+<li>increase concentration：more particles in the same volume；</li>
+<li>increase pressure of gases：same particles in smaller volume；</li>
+<li>increase temperature：particles move faster and collide more often；</li>
+<li>increase surface area of a solid：more particles exposed for collision。</li>
+</ul>
+<p>提高 collision frequency 通常提高 rate，但 temperature 还有 another important effect：it increases the proportion of particles with energy <code>≥ Eₐ</code>。</p>
+</section>
+<section id="activation-energy-and-energy-profiles" class="level3">
+<h3 class="anchored" data-anchor-id="activation-energy-and-energy-profiles">Activation energy and energy profiles</h3>
+<p><strong>Activation energy</strong> 是 reactants reaching the transition state 所需的 minimum energy。Energy profile 中：</p>
+<ul>
+<li>exothermic reaction：products lower in energy than reactants；</li>
+<li>endothermic reaction：products higher in energy than reactants；</li>
+<li><code>Eₐ</code> is measured from reactants to the peak；</li>
+<li>catalyst changes <code>Eₐ</code>，but does not change <code>ΔH</code>。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/exothermic-profile.png" class="concept-figure img-fluid figure-img" alt="Exothermic reaction profile with products lower than reactants and activation energy"></p>
+<figcaption>Exothermic reaction profile</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/endothermic-profile.png" class="concept-figure img-fluid figure-img" alt="Endothermic reaction profile with products higher than reactants and activation energy"></p>
+<figcaption>Endothermic reaction profile</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="rates-of-reaction" class="level2">
+<h2 class="anchored" data-anchor-id="rates-of-reaction">2.6.2 Rates of reaction</h2>
+<section id="definition-and-units" class="level3">
+<h3 class="anchored" data-anchor-id="definition-and-units">Definition and units</h3>
+<p>Rate 是 reactant amount decrease 或 product amount increase per unit time：</p>
+<p><span class="math display">\[
+\text{rate}=\frac{\text{change in amount or concentration}}{\text{time}}
+\]</span></p>
+<p>常用 units：<code>mol dm⁻³ s⁻¹</code>、<code>g s⁻¹</code>、<code>cm³ s⁻¹</code>。若 graph 的 gradient 为正但表示 reactant consumption，需要写 rate as a positive magnitude，或明确使用 negative gradient。</p>
+<p>对于 concentration-time graph：</p>
+<p><span class="math display">\[
+\text{rate}=\frac{\Delta[\text{product}]}{\Delta t}
+\qquad\text{or}\qquad
+\text{rate}=-\frac{\Delta[\text{reactant}]}{\Delta t}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/rate-graphs.png" class="concept-figure img-fluid figure-img" alt="Reactant concentration decreases and product concentration increases with time"></p>
+<figcaption>Reactant and product rate graphs</figcaption>
+</figure>
+</div>
+</section>
+<section id="rate-from-a-tangent" class="level3">
+<h3 class="anchored" data-anchor-id="rate-from-a-tangent">Rate from a tangent</h3>
+<p>For a curved graph，instantaneous rate at a particular time is the gradient of the tangent at that point：</p>
+<p><span class="math display">\[
+\text{rate}=\frac{\Delta y}{\Delta x}
+\]</span></p>
+<p>画 tangent 时应让 triangle 足够大，并尽量 intersect gridlines，减少 reading uncertainty。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/gas-volume-curve.png" class="concept-figure img-fluid figure-img" alt="Gas volume produced rises and eventually becomes constant with time"></p>
+<figcaption>Gas volume curve</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/tangent-rate.png" class="concept-figure img-fluid figure-img" alt="Large tangent triangle drawn on a gas volume against time graph"></p>
+<figcaption>Tangent used to calculate rate</figcaption>
+</figure>
+</div>
+<p>若在 <code>20 s</code> tangent 中 <code>ΔV=24 cm³</code>，<code>Δt=40 s</code>：</p>
+<p><span class="math display">\[
+\text{rate}=\frac{24}{40}=0.60\ \mathrm{cm^3\ s^{-1}}
+\]</span></p>
+</section>
+<section id="measuring-rate-experimentally" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-rate-experimentally">Measuring rate experimentally</h3>
+<p>选择 method 取决于 reaction 是否产生 visible / measurable change：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Measured property</th>
+<th>Suitable example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mass loss</td>
+<td>mass decreases as gas escapes</td>
+<td><code>CaCO₃ + HCl</code> produces <code>CO₂</code></td>
+</tr>
+<tr class="even">
+<td>gas volume</td>
+<td>volume collected per unit time</td>
+<td><code>Mg + HCl</code> produces <code>H₂</code></td>
+</tr>
+<tr class="odd">
+<td>concentration change</td>
+<td>samples analysed over time</td>
+<td>titration / colorimetry；reaction may need quenching</td>
+</tr>
+<tr class="even">
+<td>disappearing cross</td>
+<td>time for precipitate to obscure cross</td>
+<td>sodium thiosulfate + hydrochloric acid</td>
+</tr>
+</tbody>
+</table>
+<section id="mass-loss" class="level4">
+<h4 class="anchored" data-anchor-id="mass-loss">Mass loss</h4>
+<p>Gas must escape，and its mass must be large enough for the balance to resolve。<code>CO₂</code> is easier to measure than <code>H₂</code> because <code>CO₂</code> has much higher molar mass。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/mass-loss-curve.png" class="concept-figure img-fluid figure-img" alt="Mass decreases with time as a gas escapes from a reaction vessel"></p>
+<figcaption>Mass loss against time</figcaption>
+</figure>
+</div>
+</section>
+<section id="gas-volume" class="level4">
+<h4 class="anchored" data-anchor-id="gas-volume">Gas volume</h4>
+<p>Use a gas syringe or collect gas over water if the gas is not significantly water soluble。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/gas-syringe-apparatus.png" class="concept-figure img-fluid figure-img" alt="Conical flask connected to a gas syringe for measuring gas volume"></p>
+<figcaption>Gas syringe apparatus</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/water-displacement-apparatus.png" class="concept-figure img-fluid figure-img" alt="Gas collected by water displacement in an inverted graduated cylinder"></p>
+<figcaption>Water displacement apparatus</figcaption>
+</figure>
+</div>
+</section>
+<section id="disappearing-cross" class="level4">
+<h4 class="anchored" data-anchor-id="disappearing-cross">Disappearing cross</h4>
+<p>Sodium thiosulfate reacts with hydrochloric acid to form sulfur precipitate：</p>
+<p><span class="math display">\[
+\ce{S2O3^{2-} + 2H+ -&gt; SO2 + S + H2O}
+\]</span></p>
+<p>The cross becomes invisible as sulfur forms。The measured <code>1/time</code> can be used as a relative rate，but this method usually generates only one data point per run and has a subjective endpoint。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/disappearing-cross.png" class="concept-figure img-fluid figure-img" alt="Sodium thiosulfate solution becomes opaque as sulfur precipitate forms and hides a cross"></p>
+<figcaption>Disappearing cross experiment</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="concentration-and-rate" class="level3">
+<h3 class="anchored" data-anchor-id="concentration-and-rate">Concentration and rate</h3>
+<p>Increasing reactant concentration increases collision frequency and usually increases initial rate。The final volume of gas may remain the same if the limiting reactant amount is unchanged；it is the <strong>gradient</strong>, not necessarily the final value, that changes。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/concentration-rate-graph.png" class="concept-figure img-fluid figure-img" alt="Gas volume against time curves showing greater initial gradients at higher acid concentration"></p>
+<figcaption>Rate curves at different concentrations</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="maxwell-boltzmann-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="maxwell-boltzmann-distributions">2.6.3 Maxwell-Boltzmann distributions</h2>
+<section id="energy-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="energy-distribution">Energy distribution</h3>
+<p>A Maxwell-Boltzmann distribution shows the distribution of molecular energies in a sample at a particular temperature。Most particles have intermediate energy；few have very low or very high energy。</p>
+<p>The area under the curve represents total number of particles。Area to the right of <code>Eₐ</code> represents particles able to make effective collisions。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/maxwell-boltzmann.png" class="concept-figure img-fluid figure-img" alt="Maxwell-Boltzmann distribution showing particles with energy equal to or greater than activation energy"></p>
+<figcaption>Maxwell-Boltzmann distribution</figcaption>
+</figure>
+</div>
+</section>
+<section id="effect-of-temperature" class="level3">
+<h3 class="anchored" data-anchor-id="effect-of-temperature">Effect of temperature</h3>
+<p>Increasing temperature causes：</p>
+<ul>
+<li>particles to have greater mean kinetic energy；</li>
+<li>more frequent collisions；</li>
+<li>a broader distribution；</li>
+<li>lower peak height；</li>
+<li>peak shifted to higher energy；</li>
+<li>much larger proportion with energy <code>≥ Eₐ</code>。</li>
+</ul>
+<p>The increase in the proportion above <code>Eₐ</code> has a greater effect on rate than the increase in collision frequency alone。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/maxwell-boltzmann-temperature.png" class="concept-figure img-fluid figure-img" alt="Higher temperature broadens and shifts the Maxwell-Boltzmann distribution and increases area above activation energy"></p>
+<figcaption>Maxwell-Boltzmann effect of temperature</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="catalysts-and-energy" class="level2">
+<h2 class="anchored" data-anchor-id="catalysts-and-energy">2.6.4 Catalysts and energy</h2>
+<section id="alternative-pathway" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-pathway">Alternative pathway</h3>
+<p>A <strong>catalyst</strong> increases rate by providing an alternative reaction pathway with lower activation energy。It is chemically unchanged overall and does not alter equilibrium position or equilibrium constant。</p>
+<p>Types：</p>
+<ul>
+<li><strong>homogeneous catalyst</strong>：same phase as reactants；</li>
+<li><strong>heterogeneous catalyst</strong>：different phase from reactants，common in industry。</li>
+</ul>
+<p>Advantages include faster production、lower operating temperature / energy costs and sometimes improved atom economy。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/catalyst-energy-profile.png" class="concept-figure img-fluid figure-img" alt="Catalyst provides an alternative reaction pathway with lower activation energy"></p>
+<figcaption>Catalysed and uncatalysed energy profiles</figcaption>
+</figure>
+</div>
+</section>
+<section id="catalyst-and-maxwell-boltzmann-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="catalyst-and-maxwell-boltzmann-distribution">Catalyst and Maxwell-Boltzmann distribution</h3>
+<p>At the same temperature，a catalyst does not change molecular energy distribution。It moves the <code>Eₐ</code> line to a lower value，so a larger area under the curve represents successful collisions。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/catalyst-maxwell-boltzmann.png" class="concept-figure img-fluid figure-img" alt="Lower activation energy in a catalysed reaction gives a larger proportion of successful particles"></p>
+<figcaption>Catalyst effect on Maxwell-Boltzmann distribution</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="dynamic-equilibrium-in-reversible-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="dynamic-equilibrium-in-reversible-reactions">2.6.5 Dynamic equilibrium in reversible reactions</h2>
+<section id="reversible-reactions" class="level3">
+<h3 class="anchored" data-anchor-id="reversible-reactions">Reversible reactions</h3>
+<p>In a reversible reaction，products can react to reform reactants。Use two opposing half arrows：</p>
+<p><span class="math display">\[
+\ce{CuSO4.5H2O(s) &lt;=&gt; CuSO4(s) + 5H2O(l)}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/reversible-reaction.png" class="concept-figure img-fluid figure-img" alt="Forward and backward reactions between hydrated and anhydrous copper(II) sulfate"></p>
+<figcaption>Forward and backward reactions</figcaption>
+</figure>
+</div>
+</section>
+<section id="dynamic-equilibrium" class="level3">
+<h3 class="anchored" data-anchor-id="dynamic-equilibrium">Dynamic equilibrium</h3>
+<p>Dynamic equilibrium is reached when：</p>
+<ul>
+<li>forward and backward reactions continue；</li>
+<li>rates of forward and backward reactions are equal；</li>
+<li>concentrations remain constant；</li>
+<li>system is closed so reactants / products cannot escape。</li>
+</ul>
+<p>“Constant concentration” does not mean reactant and product concentrations are equal。There may be much more of one species than another。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/equilibrium-particles.png" class="concept-figure img-fluid figure-img" alt="Particle-level snapshot of hydrogen iodine dynamic equilibrium"></p>
+<figcaption>Particles at dynamic equilibrium</figcaption>
+</figure>
+</div>
+<p>Equilibrium can be approached from either reactants or products；the final equilibrium composition is the same if temperature and other conditions are the same。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/equilibrium-concentration-graph.png" class="concept-figure img-fluid figure-img" alt="Reactant and product concentrations become constant when dynamic equilibrium is reached"></p>
+<figcaption>Concentration changes until equilibrium</figcaption>
+</figure>
+</div>
+</section>
+<section id="closed-and-open-systems" class="level3">
+<h3 class="anchored" data-anchor-id="closed-and-open-systems">Closed and open systems</h3>
+<p>In a closed system，matter cannot escape：</p>
+<p><span class="math display">\[
+\ce{CaCO3(s) &lt;=&gt; CaO(s) + CO2(g)}
+\]</span></p>
+<p>In an open system，<code>CO₂</code> escapes，so the reverse reaction cannot restore the carbonate and decomposition may continue to completion。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/open-closed-equilibrium.png" class="concept-figure img-fluid figure-img" alt="Closed calcium carbonate equilibrium compared with open system where carbon dioxide escapes"></p>
+<figcaption>Open and closed equilibrium systems</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="le-chateliers-principle" class="level2">
+<h2 class="anchored" data-anchor-id="le-chateliers-principle">2.6.6 Le Chatelier’s principle</h2>
+<section id="position-of-equilibrium" class="level3">
+<h3 class="anchored" data-anchor-id="position-of-equilibrium">Position of equilibrium</h3>
+<p>Equilibrium position describes the relative amounts of reactants and products。A shift right means more products are formed；a shift left means more reactants are formed。</p>
+<p><strong>Le Chatelier’s principle</strong>：when a change is made to a system at dynamic equilibrium，the position shifts to oppose the change。</p>
+</section>
+<section id="concentration" class="level3">
+<h3 class="anchored" data-anchor-id="concentration">Concentration</h3>
+<ul>
+<li>increase a reactant → equilibrium shifts right to use it；</li>
+<li>remove a reactant → equilibrium shifts left to replace it；</li>
+<li>increase a product → equilibrium shifts left；</li>
+<li>remove a product → equilibrium shifts right。</li>
+</ul>
+<p>Adding water to an equilibrium containing only aqueous ions usually dilutes all species equally，so there may be no change in the ratio and no observable equilibrium shift。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/concentration-le-chatelier.png" class="concept-figure img-fluid figure-img" alt="Le Chatelier table showing equilibrium shifts after concentration changes"></p>
+<figcaption>Concentration changes and equilibrium shifts</figcaption>
+</figure>
+</div>
+</section>
+<section id="pressure" class="level3">
+<h3 class="anchored" data-anchor-id="pressure">Pressure</h3>
+<p>Pressure changes only affect equilibria involving gases。For a pressure increase，equilibrium shifts to the side with fewer moles of gas；for a pressure decrease，it shifts to the side with more moles of gas。</p>
+<p>Examples：</p>
+<p><span class="math display">\[
+\ce{N2O4(g) &lt;=&gt; 2NO2(g)}
+\]</span></p>
+<p>Increasing pressure shifts left because there is one mole of gas on the left and two on the right。</p>
+<p><span class="math display">\[
+\ce{CaCO3(s) &lt;=&gt; CaO(s) + CO2(g)}
+\]</span></p>
+<p>Increasing pressure shifts left because the left has no gaseous particles。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/pressure-le-chatelier.png" class="concept-figure img-fluid figure-img" alt="Le Chatelier table showing pressure shifts toward fewer or more gas molecules"></p>
+<figcaption>Pressure changes and equilibrium shifts</figcaption>
+</figure>
+</div>
+</section>
+<section id="temperature" class="level3">
+<h3 class="anchored" data-anchor-id="temperature">Temperature</h3>
+<p>Treat heat as a reactant in the endothermic direction and a product in the exothermic direction：</p>
+<ul>
+<li>increase temperature → shift in endothermic direction；</li>
+<li>decrease temperature → shift in exothermic direction。</li>
+</ul>
+<p>For：</p>
+<p><span class="math display">\[
+\ce{H2(g) + CO2(g) &lt;=&gt; H2O(g) + CO(g)}\qquad \Delta H=+41.2\ \mathrm{kJ\ mol^{-1}}
+\]</span></p>
+<p>Increasing temperature shifts right because the forward direction is endothermic。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/temperature-le-chatelier.png" class="concept-figure img-fluid figure-img" alt="Le Chatelier table showing temperature shifts toward endothermic or exothermic direction"></p>
+<figcaption>Temperature changes and equilibrium shifts</figcaption>
+</figure>
+</div>
+<p>A catalyst speeds up both forward and backward reactions equally；it does <strong>not</strong> change equilibrium position or equilibrium yield。</p>
+</section>
+</section>
+<section id="industrial-compromises" class="level2">
+<h2 class="anchored" data-anchor-id="industrial-compromises">2.6.7 Industrial compromises</h2>
+<section id="haber-process" class="level3">
+<h3 class="anchored" data-anchor-id="haber-process">Haber process</h3>
+<p>The Haber process is：</p>
+<p><span class="math display">\[
+\ce{N2(g) + 3H2(g) &lt;=&gt; 2NH3(g)}\qquad \Delta H&lt;0
+\]</span></p>
+<p>The forward reaction is exothermic and has fewer gas moles on the product side。</p>
+<ul>
+<li>higher pressure increases ammonia yield but requires expensive, energy-intensive equipment；</li>
+<li>lower temperature gives higher equilibrium yield but rate becomes too slow；</li>
+<li>higher temperature increases rate but lowers equilibrium yield；</li>
+<li>catalyst increases rate without changing equilibrium yield。</li>
+</ul>
+<p>Industry uses a compromise around <code>450 °C</code> and <code>20 MPa</code> (<code>200 atm</code>) with an iron catalyst：acceptable yield and rate while controlling energy、financial and safety costs。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-6-kinetics-equilibria/haber-yield-graph.png" class="concept-figure img-fluid figure-img" alt="Ammonia yield changes with pressure at several temperatures in the Haber process"></p>
+<figcaption>Haber process yield under different conditions</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-to-evaluate-an-industrial-compromise" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-evaluate-an-industrial-compromise">How to evaluate an industrial compromise</h3>
+<p>Discuss both chemical and practical factors：</p>
+<ul>
+<li>equilibrium yield；</li>
+<li>reaction rate and production per unit time；</li>
+<li>energy cost；</li>
+<li>equipment and pressure cost；</li>
+<li>environmental impact；</li>
+<li>health and safety；</li>
+<li>profit and market demand。</li>
+</ul>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">我能用 correct orientation、collision energy 和 <code>Eₐ</code> 判断 successful collision。</label></li>
+<li><label><input type="checkbox">我能从 curve 的 tangent gradient 计算 instantaneous rate。</label></li>
+<li><label><input type="checkbox">我能比较 mass loss、gas volume、concentration 和 disappearing-cross methods。</label></li>
+<li><label><input type="checkbox">我能解释 temperature / catalyst 对 Maxwell-Boltzmann distribution and rate 的 effect。</label></li>
+<li><label><input type="checkbox">我能定义 dynamic equilibrium 并强调 closed system、equal rates、constant concentrations。</label></li>
+<li><label><input type="checkbox">我能用 concentration、pressure、temperature 的 change 预测 equilibrium shift。</label></li>
+<li><label><input type="checkbox">我能解释 Haber process 中 yield-rate compromise。</label></li>
+</ul>
+</section>
+<section id="source-note" class="level2">
+<h2 class="anchored" data-anchor-id="source-note">Source note</h2>
+<p>本页内容来自项目内的 <code>Note per Chapter/Note per Chapter/2.6 Introduction to Kinetics - Equilibria.pdf.pdf</code>。PDF 中的 collision diagrams、rate graphs、apparatus、Maxwell-Boltzmann distributions、equilibrium diagrams 和 Haber graph 已独立提取并统一处理为 white-background PNG，存放在 <code>assets/notes/2-6-kinetics-equilibria/</code>。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/2-5-group-7.html" class="pagination-link" aria-label="2.5 Group 7">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.5 Group 7</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="pagination-link" aria-label="3.1 Physical Chemistry Core Practicals">
+        <span class="nav-page-text">3.1 Physical Chemistry Core Practicals</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

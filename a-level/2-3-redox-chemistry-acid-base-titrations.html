@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2.3 Redox Chemistry - Acid-Base Titrations – Edexcel International A Level Chemistry</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/3-1-physical-chemistry-core-practicals.html" rel="next">
+<link href="../a-level/2-2-intermolecular-forces.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/2-1-energetics.html">Unit 2 · Energetics</a></li><li class="breadcrumb-item"><a href="../a-level/2-3-redox-chemistry-acid-base-titrations.html">2.3 Redox Chemistry - Acid-Base Titrations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Edexcel International A Level Chemistry</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 1 · Formulae, Structure and Bonding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-1-formulae-equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Formulae and Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-2-amount-of-substance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Amount of Substance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-3-atomic-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Atomic Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-4-electrons-ions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Electrons - Ions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-5-the-periodic-table.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 The Periodic Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-6-ionic-metallic-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 Ionic - Metallic Bonding - Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-7-covalent-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 Covalent Bonding - Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-8-introductory-organic-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 Introductory Organic Chemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-9-alkanes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.9 Alkanes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/1-10-alkenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.10 Alkenes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 2 · Energetics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-1-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Energetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-2-intermolecular-forces.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Intermolecular Forces</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/2-3-redox-chemistry-acid-base-titrations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2.3 Redox Chemistry - Acid-Base Titrations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 3 · Physical Chemistry Core Practicals</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/3-2-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 4 · Rates, equilibria and further organic chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-1-kinetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Kinetics · Topic 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-2-entropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Entropy · Topic 12A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-3-energetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Energetics · Topic 12B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-4-chemical-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Chemical Equilibria · Topic 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-5-acid-base-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Acid-base Equilibria · Topic 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-6-organic-chemistry-chirality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Organic Chemistry Chirality · Topic 15A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-7-organic-chemistry-carbonyls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Organic Chemistry Carbonyls · Topic 15B</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-8-organic-chemistry-carboxylic-acids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.8 Organic Chemistry Carboxylic Acids · Topic 15C / 15D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/4-9-organic-analytical-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.9 Organic Analytical Techniques · Topic 15E</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-1-redox-equilibria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Redox Equilibria · Topic 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-2-transition-metals-chemistry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Transition Metals - Complexes · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-3-transition-metal-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Transition Metal Reactions · Topic 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-4-organic-chemistry-arenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Organic Chemistry Arenes · Topic 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-5-organic-chemistry-nitrogen-compounds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Organic Chemistry Nitrogen Compounds · Topic 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/5-6-organic-synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Organic Synthesis · Topic 20</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unit 6 · Advanced Practical Chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-1-advanced-physical-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Advanced Physical Chemistry Core Practicals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/6-2-advanced-inorganic-organic-chemistry-core-practicals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Advanced Inorganic - Organic Chemistry Core Practicals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#redox-chemistry---acid-base-titrations" id="toc-redox-chemistry---acid-base-titrations" class="nav-link active" data-scroll-target="#redox-chemistry---acid-base-titrations">2.3 Redox Chemistry - Acid-Base Titrations</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#oxidation-numbers" id="toc-oxidation-numbers" class="nav-link" data-scroll-target="#oxidation-numbers">2.3.1 Oxidation numbers</a>
+  <ul class="collapse">
+  <li><a href="#oxidation-and-reduction-definitions" id="toc-oxidation-and-reduction-definitions" class="nav-link" data-scroll-target="#oxidation-and-reduction-definitions">Oxidation and reduction definitions</a></li>
+  <li><a href="#meaning-of-oxidation-number" id="toc-meaning-of-oxidation-number" class="nav-link" data-scroll-target="#meaning-of-oxidation-number">Meaning of oxidation number</a></li>
+  <li><a href="#rules-for-assigning-oxidation-numbers" id="toc-rules-for-assigning-oxidation-numbers" class="nav-link" data-scroll-target="#rules-for-assigning-oxidation-numbers">Rules for assigning oxidation numbers</a></li>
+  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples">Worked examples</a></li>
+  <li><a href="#stock-notation" id="toc-stock-notation" class="nav-link" data-scroll-target="#stock-notation">Stock notation</a></li>
+  </ul></li>
+  <li><a href="#oxidation-reduction-and-redox-agents" id="toc-oxidation-reduction-and-redox-agents" class="nav-link" data-scroll-target="#oxidation-reduction-and-redox-agents">2.3.2 Oxidation, reduction and redox agents</a>
+  <ul class="collapse">
+  <li><a href="#identify-the-changes" id="toc-identify-the-changes" class="nav-link" data-scroll-target="#identify-the-changes">Identify the changes</a></li>
+  <li><a href="#oxidising-and-reducing-agents" id="toc-oxidising-and-reducing-agents" class="nav-link" data-scroll-target="#oxidising-and-reducing-agents">Oxidising and reducing agents</a></li>
+  </ul></li>
+  <li><a href="#disproportionation-reactions" id="toc-disproportionation-reactions" class="nav-link" data-scroll-target="#disproportionation-reactions">2.3.3 Disproportionation reactions</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#balancing-disproportionation-in-alkaline-solution" id="toc-balancing-disproportionation-in-alkaline-solution" class="nav-link" data-scroll-target="#balancing-disproportionation-in-alkaline-solution">Balancing disproportionation in alkaline solution</a></li>
+  </ul></li>
+  <li><a href="#ionic-equations" id="toc-ionic-equations" class="nav-link" data-scroll-target="#ionic-equations">2.3.4 Ionic equations</a>
+  <ul class="collapse">
+  <li><a href="#half-equations" id="toc-half-equations" class="nav-link" data-scroll-target="#half-equations">Half equations</a></li>
+  <li><a href="#worked-example-dichromate-and-ironii" id="toc-worked-example-dichromate-and-ironii" class="nav-link" data-scroll-target="#worked-example-dichromate-and-ironii">Worked example: dichromate and iron(II)</a></li>
+  <li><a href="#oxidation-number-method" id="toc-oxidation-number-method" class="nav-link" data-scroll-target="#oxidation-number-method">Oxidation-number method</a></li>
+  </ul></li>
+  <li><a href="#acid-base-titrations-with-indicators" id="toc-acid-base-titrations-with-indicators" class="nav-link" data-scroll-target="#acid-base-titrations-with-indicators">2.3.5 Acid-base titrations with indicators</a>
+  <ul class="collapse">
+  <li><a href="#purpose-of-an-acid-base-titration" id="toc-purpose-of-an-acid-base-titration" class="nav-link" data-scroll-target="#purpose-of-an-acid-base-titration">Purpose of an acid-base titration</a></li>
+  <li><a href="#indicator-selection" id="toc-indicator-selection" class="nav-link" data-scroll-target="#indicator-selection">Indicator selection</a></li>
+  <li><a href="#concentration-equations" id="toc-concentration-equations" class="nav-link" data-scroll-target="#concentration-equations">Concentration equations</a></li>
+  <li><a href="#worked-example-sodium-carbonate-and-hydrochloric-acid" id="toc-worked-example-sodium-carbonate-and-hydrochloric-acid" class="nav-link" data-scroll-target="#worked-example-sodium-carbonate-and-hydrochloric-acid">Worked example: sodium carbonate and hydrochloric acid</a></li>
+  <li><a href="#titration-calculation-checklist" id="toc-titration-calculation-checklist" class="nav-link" data-scroll-target="#titration-calculation-checklist">Titration calculation checklist</a></li>
+  </ul></li>
+  <li><a href="#exam-checklist" id="toc-exam-checklist" class="nav-link" data-scroll-target="#exam-checklist">Exam checklist</a></li>
+  <li><a href="#source-note" id="toc-source-note" class="nav-link" data-scroll-target="#source-note">Source note</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/2-1-energetics.html">Unit 2 · Energetics</a></li><li class="breadcrumb-item"><a href="../a-level/2-3-redox-chemistry-acid-base-titrations.html">2.3 Redox Chemistry - Acid-Base Titrations</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2.3 Redox Chemistry - Acid-Base Titrations</h1>
+<p class="subtitle lead">Oxidation numbers, ionic equations, disproportionation and titration calculations</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="redox-chemistry---acid-base-titrations" class="level1">
+<h1>2.3 Redox Chemistry - Acid-Base Titrations</h1>
+<p>本页对应 <code>2.3 Redox Chemistry - Acid-Base Titrations.pdf.pdf</code>。内容覆盖 oxidation numbers、redox agents、disproportionation、ionic equations，以及 acid-base titration indicators 和 concentration calculations。专业词汇保留 English。</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>学完本页后，你应该能够：</p>
+<ul>
+<li>assign oxidation numbers using a consistent set of rules；</li>
+<li>identify oxidation、reduction、oxidising agents and reducing agents；</li>
+<li>balance redox reactions using oxidation-number changes or half equations；</li>
+<li>recognise and balance disproportionation reactions；</li>
+<li>construct ionic equations in acidic conditions；</li>
+<li>choose an acid-base indicator and calculate unknown concentration from titration data。</li>
+</ul>
+</section>
+<section id="oxidation-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="oxidation-numbers">2.3.1 Oxidation numbers</h2>
+<section id="oxidation-and-reduction-definitions" class="level3">
+<h3 class="anchored" data-anchor-id="oxidation-and-reduction-definitions">Oxidation and reduction definitions</h3>
+<p>Oxidation / reduction 可以用不同 language 表示：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Oxidation</th>
+<th>Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>addition of oxygen</td>
+<td>loss of oxygen</td>
+</tr>
+<tr class="even">
+<td>loss of hydrogen</td>
+<td>addition of hydrogen</td>
+</tr>
+<tr class="odd">
+<td>loss of electrons</td>
+<td>gain of electrons</td>
+</tr>
+<tr class="even">
+<td>increase in oxidation number</td>
+<td>decrease in oxidation number</td>
+</tr>
+</tbody>
+</table>
+<p>最适合 redox equations 的 definition 是 electron transfer：</p>
+<ul>
+<li>oxidation = <strong>loss of electrons</strong>；</li>
+<li>reduction = <strong>gain of electrons</strong>。</li>
+</ul>
+<p>记忆法：<strong>OIL RIG</strong> = Oxidation Is Loss，Reduction Is Gain。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/oxidation-reduction-definitions.png" class="concept-figure img-fluid figure-img" alt="Table comparing oxidation and reduction by oxygen hydrogen and electron transfer"></p>
+<figcaption>Definitions of oxidation and reduction</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/oil-rig-memory-aid.png" class="concept-figure img-fluid figure-img" alt="OIL RIG memory aid for oxidation loss and reduction gain of electrons"></p>
+<figcaption>OIL RIG memory aid</figcaption>
+</figure>
+</div>
+</section>
+<section id="meaning-of-oxidation-number" class="level3">
+<h3 class="anchored" data-anchor-id="meaning-of-oxidation-number">Meaning of oxidation number</h3>
+<p><strong>Oxidation number</strong> 是 the charge that would exist on an atom if all bonding were treated as completely ionic。它是 a bookkeeping tool，不一定等于 real ionic charge。</p>
+<p>Oxidation numbers 用来：</p>
+<ul>
+<li>decide whether oxidation or reduction has occurred；</li>
+<li>identify which species has been oxidised / reduced；</li>
+<li>identify oxidising and reducing agents；</li>
+<li>construct half equations and balance redox equations；</li>
+<li>name compounds containing elements with variable oxidation numbers。</li>
+</ul>
+</section>
+<section id="rules-for-assigning-oxidation-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="rules-for-assigning-oxidation-numbers">Rules for assigning oxidation numbers</h3>
+<ol type="1">
+<li>An uncombined element has oxidation number <code>0</code>：<code>Na(s)</code>、<code>O₂(g)</code>、<code>Cl₂(g)</code>。</li>
+<li>A monoatomic ion has oxidation number equal to its charge：<code>Mg²⁺ = +2</code>，<code>Cl⁻ = -1</code>。</li>
+<li>Group 1 metals are usually <code>+1</code>，Group 2 metals are usually <code>+2</code>。</li>
+<li>Fluorine is <code>-1</code> in its compounds。</li>
+<li>Hydrogen is usually <code>+1</code>，but is <code>-1</code> in metal hydrides such as <code>NaH</code>。</li>
+<li>Oxygen is usually <code>-2</code>，but is <code>-1</code> in peroxides such as <code>H₂O₂</code> and positive in <code>OF₂</code>。</li>
+<li>The sum of oxidation numbers in a neutral compound is <code>0</code>。</li>
+<li>The sum in a polyatomic ion equals the ion charge。</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/simple-ion-oxidation-numbers.png" class="concept-figure img-fluid figure-img" alt="Examples of oxidation numbers in sodium chlorine and simple ions"></p>
+<figcaption>Oxidation numbers of simple ions</figcaption>
+</figure>
+</div>
+</section>
+<section id="worked-examples" class="level3">
+<h3 class="anchored" data-anchor-id="worked-examples">Worked examples</h3>
+<p>对 <code>CO₂</code>：oxygen 为 <code>-2</code>，neutral molecule 的 total 为 <code>0</code>，所以：</p>
+<p><span class="math display">\[
+x+2(-2)=0 \quad\Rightarrow\quad x=+4
+\]</span></p>
+<p>对 <code>NO₃⁻</code>：</p>
+<p><span class="math display">\[
+x+3(-2)=-1 \quad\Rightarrow\quad x=+5
+\]</span></p>
+<p>对 <code>S₂O₃^{2-}</code>：</p>
+<p><span class="math display">\[
+2x+3(-2)=-2 \quad\Rightarrow\quad x=+2
+\]</span></p>
+<p>这里的 <code>+2</code> 是 the average oxidation number of sulfur atoms；two sulfur atoms may occupy different chemical environments。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/oxidation-number-calculation-table.png" class="concept-figure img-fluid figure-img" alt="Worked oxidation number calculations using the total charge of a species"></p>
+<figcaption>Oxidation number calculation table</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/elements-compounds-oxidation-numbers.png" class="concept-figure img-fluid figure-img" alt="Rules for oxidation numbers in elements and compounds"></p>
+<figcaption>Oxidation numbers in elements and compounds</figcaption>
+</figure>
+</div>
+</section>
+<section id="stock-notation" class="level3">
+<h3 class="anchored" data-anchor-id="stock-notation">Stock notation</h3>
+<p>Transition metals 常有 variable oxidation numbers，因此 compound name 可以用 Roman numeral 表示 oxidation number：</p>
+<ul>
+<li><code>FeO</code>：iron(II) oxide；</li>
+<li><code>Fe₂O₃</code>：iron(III) oxide；</li>
+<li><code>KMnO₄</code>：potassium manganate(VII)；</li>
+<li><code>K₂Cr₂O₇</code>：potassium dichromate(VI)。</li>
+</ul>
+<p>例如 <code>MnO₄⁻</code> 中 four oxygen atoms contribute <code>4(-2)=-8</code>，ion overall charge 为 <code>-1</code>，所以 manganese 必须为 <code>+7</code>。</p>
+</section>
+</section>
+<section id="oxidation-reduction-and-redox-agents" class="level2">
+<h2 class="anchored" data-anchor-id="oxidation-reduction-and-redox-agents">2.3.2 Oxidation, reduction and redox agents</h2>
+<section id="identify-the-changes" class="level3">
+<h3 class="anchored" data-anchor-id="identify-the-changes">Identify the changes</h3>
+<p>在 reaction 中比较 reactants 和 products 的 oxidation numbers：</p>
+<ul>
+<li>oxidation number increases → that species is oxidised；</li>
+<li>oxidation number decreases → that species is reduced。</li>
+</ul>
+<p>例如：</p>
+<p><span class="math display">\[
+\ce{2NH3 + 3Br2 -&gt; N2 + 6HBr}
+\]</span></p>
+<p>Nitrogen 从 <code>-3</code> 变为 <code>0</code>，因此 nitrogen is oxidised。Bromine 从 <code>0</code> 变为 <code>-1</code>，因此 bromine is reduced。</p>
+</section>
+<section id="oxidising-and-reducing-agents" class="level3">
+<h3 class="anchored" data-anchor-id="oxidising-and-reducing-agents">Oxidising and reducing agents</h3>
+<p><strong>Oxidising agent</strong> 会使 another species lose electrons；它自己 gains electrons and is reduced，oxidation number decreases。</p>
+<p><strong>Reducing agent</strong> 会使 another species gain electrons；它自己 loses / donates electrons and is oxidised，oxidation number increases。</p>
+<p>一条 redox reaction 必须同时包含 oxidising agent 和 reducing agent。某些 species 可以在不同 reaction conditions 下扮演 either role。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/oxidising-agent.png" class="concept-figure img-fluid figure-img" alt="Oxidising agent gains electrons and is reduced while oxidising iron(II) to iron(III)"></p>
+<figcaption>Oxidising agent example</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/reducing-agent.png" class="concept-figure img-fluid figure-img" alt="Reducing agent loses electrons and is oxidised while reducing iron(III) to iron(II)"></p>
+<figcaption>Reducing agent example</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="disproportionation-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="disproportionation-reactions">2.3.3 Disproportionation reactions</h2>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p><strong>Disproportionation</strong> 是 a reaction in which the same species is simultaneously oxidised and reduced。也就是说，same element in the same starting species ends up in two different oxidation states。</p>
+<p>例如 chlorine 与 water：</p>
+<p><span class="math display">\[
+\ce{Cl2 + H2O &lt;=&gt; HCl + HClO}
+\]</span></p>
+<p>Chlorine 一部分从 <code>0</code> 降到 <code>-1</code>，另一部分从 <code>0</code> 升到 <code>+1</code>，所以 <code>Cl₂</code> has been disproportionated。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/disproportionation-chlorine-water.png" class="concept-figure img-fluid figure-img" alt="Chlorine disproportionation in water to hydrochloric acid and hypochlorous acid"></p>
+<figcaption>Disproportionation of chlorine in water</figcaption>
+</figure>
+</div>
+</section>
+<section id="balancing-disproportionation-in-alkaline-solution" class="level3">
+<h3 class="anchored" data-anchor-id="balancing-disproportionation-in-alkaline-solution">Balancing disproportionation in alkaline solution</h3>
+<p>Hot concentrated aqueous sodium hydroxide 中：</p>
+<p><span class="math display">\[
+\ce{Cl2 + OH- -&gt; Cl- + ClO3- + H2O}
+\]</span></p>
+<p>Method：</p>
+<ol type="1">
+<li>identify oxidation-number changes；</li>
+<li>multiply species so total increase equals total decrease；</li>
+<li>balance charge using <code>OH⁻</code> in alkaline conditions；</li>
+<li>balance O and H using water；</li>
+<li>check atoms and total charge。</li>
+</ol>
+<p>最终 equation：</p>
+<p><span class="math display">\[
+\ce{3Cl2 + 6OH- -&gt; 5Cl- + ClO3- + 3H2O}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/disproportionation-oxidation-numbers.png" class="concept-figure img-fluid figure-img" alt="Oxidation number changes used to balance chlorine disproportionation"></p>
+<figcaption>Oxidation-number changes in disproportionation</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/disproportionation-charge-balance.png" class="concept-figure img-fluid figure-img" alt="Charge balance and final coefficients for chlorine disproportionation in alkaline conditions"></p>
+<figcaption>Charge balance in a disproportionation reaction</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="ionic-equations" class="level2">
+<h2 class="anchored" data-anchor-id="ionic-equations">2.3.4 Ionic equations</h2>
+<section id="half-equations" class="level3">
+<h3 class="anchored" data-anchor-id="half-equations">Half equations</h3>
+<p><strong>Half equation</strong> 只表示 redox reaction 的 one electron-transfer half：</p>
+<p><span class="math display">\[
+\ce{Fe^{2+} -&gt; Fe^{3+} + e-}
+\]</span></p>
+<p><span class="math display">\[
+\ce{Br2 + 2e- -&gt; 2Br-}
+\]</span></p>
+<p>复杂 half equation 在 acidic conditions 中按以下顺序 balance：</p>
+<ol type="1">
+<li>balance the element being oxidised / reduced；</li>
+<li>add <code>H₂O</code> to balance oxygen；</li>
+<li>add <code>H⁺</code> to balance hydrogen；</li>
+<li>add electrons to balance charge。</li>
+</ol>
+</section>
+<section id="worked-example-dichromate-and-ironii" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-dichromate-and-ironii">Worked example: dichromate and iron(II)</h3>
+<p>Reduction half equation：</p>
+<p><span class="math display">\[
+\ce{Cr2O7^{2-} + 14H+ + 6e- -&gt; 2Cr^{3+} + 7H2O}
+\]</span></p>
+<p>Oxidation half equation：</p>
+<p><span class="math display">\[
+\ce{Fe^{2+} -&gt; Fe^{3+} + e-}
+\]</span></p>
+<p>Multiply the iron half equation by <code>6</code>，then add and cancel electrons：</p>
+<p><span class="math display">\[
+\ce{Cr2O7^{2-} + 14H+ + 6Fe^{2+} -&gt; 2Cr^{3+} + 7H2O + 6Fe^{3+}}
+\]</span></p>
+</section>
+<section id="oxidation-number-method" class="level3">
+<h3 class="anchored" data-anchor-id="oxidation-number-method">Oxidation-number method</h3>
+<p>For some equations，直接用 oxidation-number changes 更快：</p>
+<p><span class="math display">\[
+\ce{MnO4- + 5Fe^{2+} + 8H+ -&gt; Mn^{2+} + 5Fe^{3+} + 4H2O}
+\]</span></p>
+<p>Mn 从 <code>+7</code> 降到 <code>+2</code>，每个 Mn gain <code>5e⁻</code>；每个 Fe 从 <code>+2</code> 升到 <code>+3</code>，loss <code>1e⁻</code>，所以需要 <code>5Fe²⁺</code>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/manganate-iron-redox.png" class="concept-figure img-fluid figure-img" alt="Manganate(VII) and iron(II) redox reaction showing oxidation numbers"></p>
+<figcaption>Manganate and iron redox equation</figcaption>
+</figure>
+</div>
+<p>检查方法：</p>
+<ul>
+<li>atoms balanced；</li>
+<li>total charge balanced；</li>
+<li>electrons no longer appear in full ionic equation；</li>
+<li>acidic equation 中只使用 <code>H⁺</code>、<code>H₂O</code> and relevant ions。</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/ionic-equation-oxidation-change.png" class="concept-figure img-fluid figure-img" alt="Oxidation number changes used to balance a manganate and iron ionic equation"></p>
+<figcaption>Oxidation-number change in an ionic equation</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/ionic-equation-charge-balance.png" class="concept-figure img-fluid figure-img" alt="Charge accounting for the manganate and iron ionic equation"></p>
+<figcaption>Charge balance in an ionic equation</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/ionic-equation-final.png" class="concept-figure img-fluid figure-img" alt="Final balanced ionic equation for manganate(VII) reacting with iron(II) in acid"></p>
+<figcaption>Completed ionic equation</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="acid-base-titrations-with-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="acid-base-titrations-with-indicators">2.3.5 Acid-base titrations with indicators</h2>
+<section id="purpose-of-an-acid-base-titration" class="level3">
+<h3 class="anchored" data-anchor-id="purpose-of-an-acid-base-titration">Purpose of an acid-base titration</h3>
+<p>Acid-base titration 用已知 concentration 的 solution 测定 unknown acid / alkali concentration。Titrant 从 burette 加入 analyte，直到达到 <strong>equivalence point</strong>，即 acid 与 base 按 balanced equation 完全反应的 point。</p>
+<p>Acid-base indicators 是 weak acids / bases；它们的 conjugate acid 和 conjugate base 具有 different colours。Indicator colour 会随 <code>H⁺</code> concentration reversible change。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th>Colour in acid</th>
+<th>Colour in alkali</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Litmus</td>
+<td>pink / red</td>
+<td>blue</td>
+</tr>
+<tr class="even">
+<td>Methyl orange</td>
+<td>red</td>
+<td>yellow</td>
+</tr>
+<tr class="odd">
+<td>Phenolphthalein</td>
+<td>colourless</td>
+<td>pink</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/indicator-colours.png" class="concept-figure img-fluid figure-img" alt="Table showing colours of litmus methyl orange and phenolphthalein in acid and alkali"></p>
+<figcaption>Common indicator colours</figcaption>
+</figure>
+</div>
+</section>
+<section id="indicator-selection" class="level3">
+<h3 class="anchored" data-anchor-id="indicator-selection">Indicator selection</h3>
+<p>Good indicator 的 colour transition range 必须 overlap the steep pH change near equivalence point。Indicator 的 end point 应尽量接近 equivalence point。</p>
+<ul>
+<li>strong acid + strong base：methyl orange or phenolphthalein 都可；</li>
+<li>strong acid + weak base：methyl orange usually better；</li>
+<li>weak acid + strong base：phenolphthalein usually better；</li>
+<li>weak acid + weak base：没有 sufficiently sharp colour change，indicator titration 不理想。</li>
+</ul>
+<p>Endpoint 观察时，加入 indicator 后应逐滴加入 titrant，接近 endpoint 时充分 swirl；记录 first permanent colour change，避免 overshoot。</p>
+</section>
+<section id="concentration-equations" class="level3">
+<h3 class="anchored" data-anchor-id="concentration-equations">Concentration equations</h3>
+<p>Concentration：</p>
+<p><span class="math display">\[
+c = \frac{n}{V}
+\]</span></p>
+<p>其中 <code>c</code> 单位为 <code>mol dm⁻³</code>，<code>n</code> 为 moles，<code>V</code> 必须用 <code>dm³</code>。</p>
+<p>因此：</p>
+<p><span class="math display">\[
+n=cV
+\]</span></p>
+<p><span class="math display">\[
+\text{mass}=nM_r
+\]</span></p>
+<p>单位转换：</p>
+<p><span class="math display">\[
+V(\mathrm{dm^3})=\frac{V(\mathrm{cm^3})}{1000}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/concentration-equation.png" class="concept-figure img-fluid figure-img" alt="Concentration equals amount in moles divided by volume in cubic decimetres"></p>
+<figcaption>Concentration equation</figcaption>
+</figure>
+</div>
+</section>
+<section id="worked-example-sodium-carbonate-and-hydrochloric-acid" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-sodium-carbonate-and-hydrochloric-acid">Worked example: sodium carbonate and hydrochloric acid</h3>
+<p><code>25.0 cm³</code> of <code>0.0500 mol dm⁻³ Na₂CO₃</code> is neutralised by <code>20.00 cm³ HCl</code>。</p>
+<p>Balanced equation：</p>
+<p><span class="math display">\[
+\ce{Na2CO3 + 2HCl -&gt; 2NaCl + H2O + CO2}
+\]</span></p>
+<p>Step 1：convert sodium carbonate volume：</p>
+<p><span class="math display">\[
+V=25.0/1000=0.0250\ \mathrm{dm^3}
+\]</span></p>
+<p>Step 2：calculate moles of sodium carbonate：</p>
+<p><span class="math display">\[
+n(\ce{Na2CO3})=0.0500\times0.0250=0.00125\ \mathrm{mol}
+\]</span></p>
+<p>Step 3：use the <code>1:2</code> stoichiometric ratio：</p>
+<p><span class="math display">\[
+n(\ce{HCl})=2\times0.00125=0.00250\ \mathrm{mol}
+\]</span></p>
+<p>Step 4：convert HCl volume and calculate concentration：</p>
+<p><span class="math display">\[
+c(\ce{HCl})=\frac{0.00250}{0.02000}=0.125\ \mathrm{mol\ dm^{-3}}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/2-3-redox-titrations/concentration-example.png" class="concept-figure img-fluid figure-img" alt="Worked concentration calculation for hydrochloric acid titrated against sodium carbonate"></p>
+<figcaption>Worked concentration example</figcaption>
+</figure>
+</div>
+</section>
+<section id="titration-calculation-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="titration-calculation-checklist">Titration calculation checklist</h3>
+<ol type="1">
+<li>write a balanced chemical equation；</li>
+<li>convert all <code>cm³</code> volumes to <code>dm³</code>；</li>
+<li>calculate moles of the known solution using <code>n=cV</code>；</li>
+<li>apply the equation stoichiometry；</li>
+<li>calculate unknown concentration or mass；</li>
+<li>report sensible significant figures based on burette and pipette data。</li>
+</ol>
+</section>
+</section>
+<section id="exam-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="exam-checklist">Exam checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">我能用 OIL RIG 和 oxidation-number changes identify oxidation / reduction。</label></li>
+<li><label><input type="checkbox">我能根据 agent 自己的 oxidation-number change 区分 oxidising agent 与 reducing agent。</label></li>
+<li><label><input type="checkbox">我能正确处理 hydrogen in hydrides、oxygen in peroxides 和 polyatomic ions。</label></li>
+<li><label><input type="checkbox">我能 balance disproportionation reactions and check total charge。</label></li>
+<li><label><input type="checkbox">我能写出 acidic conditions 下的 half equations 和 full ionic equations。</label></li>
+<li><label><input type="checkbox">我能根据 equivalence-point pH 选择 methyl orange 或 phenolphthalein。</label></li>
+<li><label><input type="checkbox">我能在 titration calculations 中正确转换 <code>cm³</code> to <code>dm³</code> 并使用 mole ratio。</label></li>
+</ul>
+</section>
+<section id="source-note" class="level2">
+<h2 class="anchored" data-anchor-id="source-note">Source note</h2>
+<p>本页内容来自项目内的 <code>Note per Chapter/Note per Chapter/2.3 Redox Chemistry - Acid-Base Titrations.pdf.pdf</code>。PDF 中的 redox diagrams、ionic-equation steps、indicator table 和 calculation formulae 已独立提取并统一处理为 white-background PNG，存放在 <code>assets/notes/2-3-redox-titrations/</code>。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/2-2-intermolecular-forces.html" class="pagination-link" aria-label="2.2 Intermolecular Forces">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.2 Intermolecular Forces</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/3-1-physical-chemistry-core-practicals.html" class="pagination-link" aria-label="3.1 Physical Chemistry Core Practicals">
+        <span class="nav-page-text">3.1 Physical Chemistry Core Practicals</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
