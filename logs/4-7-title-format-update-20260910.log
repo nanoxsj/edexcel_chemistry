@@ -1,0 +1,33 @@
+# 4.7 title-format update timing log
+
+Date: 2026-09-10
+Timezone: Asia/Shanghai (+0800)
+Scope: change the structured-question labels, remove the visible Source rows, distinguish the paper with U4A/U4AA in the label format, render, publish, and verify.
+
+The durations below are tool-level wall-clock durations for this run. They measure the command/action itself, not model reasoning or time between actions.
+
+| Step | Action | Duration |
+|---|---|---:|
+| 1 | Read Sites workflow and project hosting configuration | 0.10 s |
+| 2 | Inspect the 4.7 question-card labels and Source rows | 0.10 s |
+| 3 | Replace large headings with inline YYYY Mon · U4A Qn labels and remove visible Source rows | 0.20 s |
+| 4 | Render the Quarto page | 2.776 s |
+| 5 | Validate rendered labels, answer-space count, image references and formula syntax | 0.10 s |
+| 6 | Sync the rendered HTML to the publishing checkout and commit | <0.01 s |
+| 7 | Push the updated page to GitHub Pages | 2.967 s |
+| 8 | Check the Pages build status, including the 5-second build wait | 8.11 s |
+| 9 | Fetch the live page and verify representative U4A labels | 1.218 s |
+
+## Slow-step summary
+
+- Slowest single step: Pages build-status check, 8.11 s, mainly because the build required a 5-second wait.
+- Slowest active operation excluding the intentional wait: GitHub push, 2.967 s.
+- Quarto rendering took 2.776 s.
+- Local editing, validation and commit were negligible compared with network operations.
+
+## Result
+
+- Structured-question labels now use the same inline style as the MCQ bank, for example: 2022 Jan · U4A Q19 Propanal reacts ...
+- Visible per-card Source rows were removed.
+- U4A is retained in the label so a future same-session U4AA question can be shown unambiguously as 2026 May · U4AA Q....
+- GitHub Pages build completed with status built.
