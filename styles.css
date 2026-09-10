@@ -48,6 +48,23 @@ body:has(.home-hero) #quarto-document-content { max-width: 1220px; padding: 2rem
 .tag { display: inline-block; margin: .12rem .25rem .12rem 0; padding: .18rem .55rem; border-radius: 999px; background: var(--blue-soft); color: var(--blue); font-size: .82rem; }
 details.answer-panel { margin-top: .85rem; border-radius: 10px; background: var(--green-soft); border: 1px solid #a7f3d0; padding: .7rem .9rem; }
 details.answer-panel summary { cursor: pointer; font-weight: 650; color: #065f46; }
+.legacy-past-paper-bank { display: none !important; }
+.answer-space {
+  min-height: 3.1rem;
+  margin: .55rem 0 1rem;
+  padding: .55rem .7rem;
+  border-bottom: 1px dashed #9ca3af;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 1.65rem, rgba(148,163,184,.34) 1.65rem, rgba(148,163,184,.34) 1.72rem);
+}
+.answer-space.short { min-height: 2.1rem; }
+.answer-space.medium { min-height: 4rem; }
+.answer-space.long { min-height: 7rem; }
+.answer-space.diagram {
+  min-height: 10rem;
+  border: 1px dashed #94a3b8;
+  border-radius: 8px;
+  background: repeating-linear-gradient(to bottom, rgba(248,250,252,.8) 0, rgba(248,250,252,.8) 1.65rem, rgba(148,163,184,.28) 1.65rem, rgba(148,163,184,.28) 1.72rem);
+}
 .checklist { list-style: none; padding-left: 0; }
 .checklist li { margin: .55rem 0; }
 .checklist input { width: 1rem; height: 1rem; margin-right: .45rem; vertical-align: -.12rem; }
